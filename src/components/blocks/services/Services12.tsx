@@ -36,8 +36,8 @@ const Services12: FC = () => {
               <Rocket className="icon-svg-md text-yellow me-4" />
             </div>
             <div>
-              <h4 className="mb-1">Easy Usage</h4>
-              <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+              <h4 className="mb-1">Digital Document Management</h4>
+              {/* <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p> */}
             </div>
           </a>
         </li>
@@ -55,8 +55,8 @@ const Services12: FC = () => {
               <Savings className="icon-svg-md text-green me-4" />
             </div>
             <div>
-              <h4 className="mb-1">Fast Transactions</h4>
-              <p>Vivamus sagittis lacus augue fusce dapibus tellus nibh.</p>
+              <h4 className="mb-1">Compliance Regulation</h4>
+              {/* <p>Vivamus sagittis lacus augue fusce dapibus tellus nibh.</p> */}
             </div>
           </a>
         </li>
@@ -74,8 +74,8 @@ const Services12: FC = () => {
               <Shield className="icon-svg-md text-red me-4" />
             </div>
             <div>
-              <h4 className="mb-1">Secure Payments</h4>
-              <p>Vestibulum ligula porta felis maecenas faucibus mollis.</p>
+              <h4 className="mb-1">Claims & Billing</h4>
+              {/* <p>Vestibulum ligula porta felis maecenas faucibus mollis.</p> */}
             </div>
           </a>
         </li>
@@ -113,7 +113,10 @@ const Services12: FC = () => {
               </div>
             </div>
 
-            <List title="Easy Usage" color="yellow" />
+            <List
+              title="Are you risking liability with outdated document management methods?"
+              color="orange"
+            />
           </div>
         </div>
 
@@ -153,7 +156,10 @@ const Services12: FC = () => {
               </div>
             </div>
 
-            <List title="Fast Transactions" color="green" />
+            <List
+              title="Are you risking liability with outdated"
+              color="green"
+            />
           </div>
         </div>
 
@@ -193,7 +199,7 @@ const Services12: FC = () => {
               </div>
             </div>
 
-            <List title="Secure Payments" color="red" />
+            <List title="Forward thinking claims planning" color="red" />
           </div>
         </div>
       </div>
@@ -207,25 +213,24 @@ const List = ({ color, title }: ListProps) => {
     <div className="col-lg-6">
       <h2 className="mb-3">{title}</h2>
       <p>
-        Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla
-        non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac,
-        vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor
-        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam
-        quis risus eget urna.
+        Claim rejections or denials can add additional effort to your claims
+        workflow. Add the necessary contraints before submitting claims to
+        increase the chance of quick acceptance and payment.
       </p>
 
       <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
         <li>
-          <i className="uil uil-check" /> Aenean eu leo quam. Pellentesque
-          ornare.
+          <i className="uil uil-check" /> Runs PAS Position Background Checks
+          For You
         </li>
         <li>
-          <i className="uil uil-check" /> Nullam quis risus eget urna mollis
-          ornare.
+          <i className="uil uil-check" /> Reduces Paperwork
         </li>
         <li>
-          <i className="uil uil-check" /> Donec id elit non mi porta gravida at
-          eget.
+          <i className="uil uil-check" /> Minimizes Errors
+        </li>
+        <li>
+          <i className="uil uil-check" /> Saves Time
         </li>
       </ul>
 

@@ -17,20 +17,23 @@ export const processList1 = [
   {
     no: "1",
     className: "me-lg-6",
-    title: "Collect Ideas",
-    subtitle: "Nulla vitae elit libero pharetra augue dapibus.",
+    title: "Book A Demo",
+    subtitle:
+      "Book a demo to see how our software can help you improve your systems to start reducing down paperwork & errors",
   },
   {
     no: "2",
-    title: "Data Analysis",
+    title: "Implement The Software",
     className: "ms-lg-13 mt-6",
-    subtitle: "Vivamus sagittis lacus vel augue laoreet.",
+    subtitle:
+      "Implementing the software can be done in as little as week. A streamlined and seamless process so you can improve efficiency as soon as possible.",
   },
   {
     no: "3",
-    title: "Finalize Product",
+    title: "Improve Efficiency & Stay Compliant",
     className: "mx-lg-6 mt-6",
-    subtitle: "Cras mattis consectetur purus sit amet.",
+    subtitle:
+      "Each tool works for you to continue making your agency more efficient and continually giving you confidence in staying compliant.",
   },
 ];
 
@@ -115,19 +118,19 @@ export const processList5 = [
     Icon: Shield,
     color: "red",
     title: "Improve Efficiency",
-    subtitle: "Etiam porta malesuada magna mollis euismod sem.",
+    // subtitle: "Etiam porta malesuada magna mollis euismod sem.",
   },
   {
     Icon: Savings,
     color: "green",
     title: "Stay Compliant",
-    subtitle: "Etiam porta malesuada magna mollis euismod sem.",
+    // subtitle: "Etiam porta malesuada magna mollis euismod sem.",
   },
   {
     Icon: Loading,
     color: "yellow",
     title: "Increase Profits",
-    subtitle: "Etiam porta malesuada magna mollis euismod sem.",
+    // subtitle: "Etiam porta malesuada magna mollis euismod sem.",
   },
 ];
 
