@@ -12,7 +12,7 @@ const Services12: FC = () => {
       <div className='row'>
         <div className='col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center'>
           <h2 className='fs-15 text-uppercase text-muted mb-3'>
-            Why Choose Sandbox?
+            Why Choose ryzolve?
           </h2>
           <h3 className='display-4 mb-10 px-xl-10 px-xxl-15'>
             All In One Platform To Help Your Agency Grow

@@ -1,11 +1,10 @@
-# Sandbox React
+# ryzolve React
 
 <p><strong>Important note:</strong> This is an React/Next.js template not a WP theme. Please make sure you need the React/Next.js version before purchasing. We can’t be held responsible for wrong purchases, we won’t be providing any refunds for purchases by mistake.</p>
 
-<p>Sandbox is a beautiful and flawless site template that includes numerous UI elements and features, elegant ready-made blocks and rich pages, and everything else you need to create a unique and professional website. Sandbox React landing pages can be used for your React app. It’s super easy to set up and deploy.</p>
+<p>ryzolve is a beautiful and flawless site template that includes numerous UI elements and features, elegant ready-made blocks and rich pages, and everything else you need to create a unique and professional website. ryzolve React landing pages can be used for your React app. It’s super easy to set up and deploy.</p>
 
 <p>Create and manage a visually appealing and impressive portfolio quickly and easily. Make an eye-catching journal to share your amazing stories with the world.</p>
-
 
 <ul>
 <li>Next.js &amp; Bootstrap 5 &amp; SASS
@@ -14,7 +13,7 @@
 </li>
 <li>SEO-ready commented HTML5 files
 </li>
-<li>Thorough <a href="https://sandbox-react.netlify.app/docs" rel="nofollow">help documentation</a> with code snippets
+<li>Thorough <a href="https://ryzolve-react.netlify.app/docs" rel="nofollow">help documentation</a> with code snippets
 </li>
 <li>Well-written code
 </li>

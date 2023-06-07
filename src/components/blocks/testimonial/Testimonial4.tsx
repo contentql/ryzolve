@@ -1,21 +1,21 @@
-import { FC } from "react";
+import { FC } from 'react';
 // -------- custom component -------- //
-import Carousel from "components/reuseable/Carousel";
-import carouselBreakpoints from "utils/carouselBreakpoints";
-import { TestimonialCard3 } from "components/reuseable/testimonial-cards";
+import Carousel from 'components/reuseable/Carousel';
+import carouselBreakpoints from 'utils/carouselBreakpoints';
+import { TestimonialCard3 } from 'components/reuseable/testimonial-cards';
 // -------- data -------- //
-import { testimonialList2 } from "data/testimonial-list";
+import { testimonialList2 } from 'data/testimonial-list';
 
 const Testimonial4: FC = () => {
   return (
-    <div className="wrapper bg-light">
-      <div className="container py-14 py-md-16">
-        <div className="row">
-          <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
-            <h2 className="fs-15 text-uppercase text-muted mb-3">
+    <div className='wrapper bg-gray'>
+      <div className='container py-14 py-md-16'>
+        <div className='row'>
+          <div className='col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center'>
+            <h2 className='fs-15 text-uppercase text-muted mb-3'>
               Happy Customers
             </h2>
-            <h3 className="display-4 mb-6 px-xl-10 px-xxl-15">
+            <h3 className='display-4 mb-6 px-xl-10 px-xxl-15'>
               Our Clients Speak
             </h3>
           </div>
@@ -23,7 +23,7 @@ const Testimonial4: FC = () => {
 
         <Carousel
           grabCursor
-          className="p-2"
+          className='p-2'
           navigation={false}
           breakpoints={carouselBreakpoints}
         >

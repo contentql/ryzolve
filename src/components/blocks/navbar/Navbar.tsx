@@ -99,7 +99,7 @@ const Navbar: FC<NavbarProps> = (props) => {
         className='navbar-collapse offcanvas offcanvas-nav offcanvas-start'
       >
         {/* <div className="offcanvas-header d-lg-none">
-          <h3 className="text-white fs-30 mb-0">Sandbox</h3>
+          <h3 className="text-white fs-30 mb-0">ryzolve</h3>
           <button
             type="button"
             aria-label="Close"

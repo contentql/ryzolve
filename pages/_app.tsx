@@ -41,8 +41,14 @@ function MyApp({ Component, pageProps }: AppProps) {
                 e.classList.remove(CLASS_NAME);
               });
               // @ts-ignore
-              let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
-              for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+              let dd = this._element
+                .closest('.dropdown')
+                .parentNode.closest('.dropdown');
+              for (
+                ;
+                dd && dd !== document;
+                dd = dd.parentNode.closest('.dropdown')
+              ) {
                 dd.classList.add(CLASS_NAME);
               }
               // @ts-ignore
@@ -82,14 +88,18 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sandbox - Modern & Multipurpose NextJS Template</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <title>ryzolve - Modern & Multipurpose NextJS Template</title>
       </Head>
 
       <ThemeProvider>
         {/* <div className="page-loader" /> */}
-        {loading ? <div className="page-loader" /> : <Component {...pageProps} />}
+        {loading ? (
+          <div className='page-loader' />
+        ) : (
+          <Component {...pageProps} />
+        )}
       </ThemeProvider>
     </Fragment>
   );

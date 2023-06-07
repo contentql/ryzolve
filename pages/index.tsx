@@ -21,7 +21,7 @@ const ryzolve = () => {
         <section className='p-12 wrapper bg-gray'>
           <Hero2 />
         </section>
-        <div className='row gx-lg-8 gx-xl-12 process-wrapper text-center mt-9 px-6'>
+        <div className='row gx-lg-8 gx-xl-12 process-wrapper text-center mt-9 px-6 pb-8'>
           {processList5.map(({ title, Icon, color }) => (
             <div key={title} className='col-md-4'>
               {<Icon className={`icon-svg-md text-${color} mb-3`} />}
@@ -30,7 +30,7 @@ const ryzolve = () => {
             </div>
           ))}
         </div>
-        <section className='py-12'>
+        <section>
           <Services2 />
         </section>
         <section className='p-12'>
@@ -62,11 +62,11 @@ const ryzolve = () => {
         /> */}
         {/* <Services14 /> */}
         <Testimonial4 />
-        <section className='p-12'>
+        <section className='px-12 pt-12'>
           <Process1 />
         </section>
         <Pricing4 />
-        <section className='p-12'>
+        <section className='px-12  bg-gray pb-12'>
           <About14 />
         </section>
         <Contact10 />
