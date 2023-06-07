@@ -1,4 +1,4 @@
-# ryzolve React
+# Ryzolve React
 
 <p><strong>Important note:</strong> This is an React/Next.js template not a WP theme. Please make sure you need the React/Next.js version before purchasing. We can’t be held responsible for wrong purchases, we won’t be providing any refunds for purchases by mistake.</p>
 
