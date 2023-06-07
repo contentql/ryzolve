@@ -44,8 +44,7 @@ export const testimonialList2 = [
     name: "Barclay Widerski",
     image: "/img/avatars/te9.jpg",
     designation: "Sales Specialist",
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      Vestibulum ligula porta felis euismod semper. Cras justo odio.`,
+    review: `Suspendisse mattis vulputate tellus, sed malesuada diam iaculis sit amet. Aenean a imperdiet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec molestie nunc varius est blandit, nec pretium libero tincidunt eget porta nibh. `,
   },
   {
     name: "Jackie Sanders",
