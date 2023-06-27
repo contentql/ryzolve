@@ -75,7 +75,7 @@ const ryzolve = () => {
         <section className="mb-12">
           <Pricing4 />
         </section>
-        <section className="px-12  bg-gray pb-12">
+        <section className="px-12  bg-gray pb-14">
           <About14 />
         </section>
         <Contact10 />
