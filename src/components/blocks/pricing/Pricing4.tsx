@@ -5,7 +5,7 @@ const Pricing4: FC = () => {
   return (
     <div>
       <div className="wrapper bg-soft-primary">
-        <div className="container pt-14 pb-18 pt-md-17 pb-md-22 text-center">
+        <div className="container pt-14 pb-18 pt-md-14 pb-md-22 text-center">
           <div className="row">
             <div className="col-lg-10 col-xl-9 col-xxl-8 mx-auto">
               <h3 className="display-4 mb-15 mb-md-6 px-lg-10">
@@ -18,7 +18,7 @@ const Pricing4: FC = () => {
 
       {/* pricing list section */}
       <div className="wrapper bg-light">
-        <div className="container py-14 py-md-16">
+        <div className="container py-14 py-md-14">
           <Pricing2 />
         </div>
       </div>

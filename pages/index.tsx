@@ -1,40 +1,45 @@
-import RyzolveHeader from 'components/ryzolve/RyzolveHeader';
-import React from 'react';
-import { Hero2 } from 'components/blocks/hero';
-import { processList5 } from 'data/process';
-import Image from 'next/image';
-import { Services12, Services2, Services21, Services22 } from 'components/blocks/services';
-import { Testimonial4 } from 'components/blocks/testimonial';
-import { Process1 } from 'components/blocks/process';
-import { Pricing4 } from 'components/blocks/pricing';
-import { Contact10 } from 'components/blocks/contact';
-import { Footer3 } from 'components/blocks/footer';
-import { About14 } from 'components/blocks/about';
+import RyzolveHeader from "components/ryzolve/RyzolveHeader";
+import React from "react";
+import { Hero2 } from "components/blocks/hero";
+import { processList5 } from "data/process";
+import Image from "next/image";
+import {
+  Services12,
+  Services2,
+  Services21,
+  Services22,
+} from "components/blocks/services";
+import { Testimonial4 } from "components/blocks/testimonial";
+import { Process1 } from "components/blocks/process";
+import { Pricing4 } from "components/blocks/pricing";
+import { Contact10 } from "components/blocks/banner/contact";
+import { Footer3 } from "components/blocks/footer";
+import { About14 } from "components/blocks/about";
 
 const ryzolve = () => {
   return (
     <div>
-      <header className='wrapper bg-gray'>
+      <header className="wrapper bg-gray">
         <RyzolveHeader />
       </header>
-      <section className='content-wrapper wrapper'>
-        <section className='p-12 wrapper bg-gray'>
+      <section className="content-wrapper wrapper">
+        <section className="p-12 wrapper bg-gray">
           <Hero2 />
         </section>
 
         {/* Services Section */}
 
         <section className="wrapper bg-light ">
-          <div className="container pt-12 pb-md-2">
+          <section className="container pt-12 pb-md-2">
             {/* ========== services section ========== */}
             <Services21 />
-          </div>
+          </section>
         </section>
 
         <section>
           <Services2 />
         </section>
-        <section className='p-12'>
+        <section className="px-12 py-14">
           {/* <Services12 /> */}
           <Services22 />
         </section>
@@ -64,11 +69,13 @@ const ryzolve = () => {
         /> */}
         {/* <Services14 /> */}
         <Testimonial4 />
-        <section className='px-12 pt-12'>
+        <section className="px-12 pt-14">
           <Process1 />
         </section>
-        <Pricing4 />
-        <section className='px-12  bg-gray pb-12'>
+        <section className="mb-12">
+          <Pricing4 />
+        </section>
+        <section className="px-12  bg-gray pb-12">
           <About14 />
         </section>
         <Contact10 />

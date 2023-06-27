@@ -6,7 +6,7 @@ import { processList1 } from "data/process";
 
 const Process1: FC = () => {
   return (
-    <div className="row gx-md-8 gx-xl-12 gy-10 mb-14 mb-md-18 align-items-center">
+    <div className="row gx-md-8 gx-xl-12 gy-10 mb-14 mb-md-14 align-items-center">
       <div className="col-lg-6 order-lg-2">
         {processList1.map((item) => {
           return <ProcessList1 shadow {...item} key={item.no} />;

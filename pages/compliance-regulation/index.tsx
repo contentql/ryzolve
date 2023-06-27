@@ -39,6 +39,9 @@ const index = () => {
         <section className="px-12  bg-gray pb-12">
           <About14 />
         </section>
+        <section>
+          <Services2 isListingTrue={true} />
+        </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />
       </section>

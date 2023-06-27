@@ -11,7 +11,7 @@ const About14: FC = () => {
   useLightBox();
 
   return (
-    <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center mb-14 mb-md-17 mb-lg-19">
+    <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center">
       <div className="col-md-8 col-lg-6 position-relative">
         <figure className="rounded shadow-lg">
           <img src="/img/photos/about7.jpg" srcSet="/img/photos/about7@2x.jpg 2x" alt="" />
