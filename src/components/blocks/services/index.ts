@@ -6,4 +6,6 @@ import Services21 from "./Services21";
 
 import Services22 from "./Services22";
 
-export { Services2, Services12, Services21, Services22 };
+import Services15 from "./Services15";
+
+export { Services2, Services12, Services21, Services22, Services15 };
