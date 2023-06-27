@@ -396,15 +396,6 @@ export const serviceList11 = [
     title: 'Identity & Branding',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
-  },
-  {
-    id: 4,
-    link: '#',
-    Icon: DeliveryBox,
-    title: 'Product Design',
-    linkType: LinkType.green,
-    iconClassName: 'icon-svg-sm solid-mono text-green mb-3',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
   }
 ];
 

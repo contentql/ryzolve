@@ -19,7 +19,7 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
   const { title, description, Icon, linkUrl, linkType, cardClassName = '', iconClassName } = props;
 
   return (
-    <div className="col-md-6 col-xl-3">
+    <div className="col-md-8 col-xl-4">
       <div className={`card shadow-lg ${cardClassName}`}>
         <div className="card-body">
           <Icon className={iconClassName} />

@@ -3,7 +3,7 @@ import React from 'react';
 import { Hero2 } from 'components/blocks/hero';
 import { processList5 } from 'data/process';
 import Image from 'next/image';
-import { Services12, Services2 } from 'components/blocks/services';
+import { Services12, Services2, Services21, Services22 } from 'components/blocks/services';
 import { Testimonial4 } from 'components/blocks/testimonial';
 import { Process1 } from 'components/blocks/process';
 import { Pricing4 } from 'components/blocks/pricing';
@@ -21,20 +21,22 @@ const ryzolve = () => {
         <section className='p-12 wrapper bg-gray'>
           <Hero2 />
         </section>
-        <div className='row gx-lg-8 gx-xl-12 process-wrapper text-center mt-9 px-6 pb-8'>
-          {processList5.map(({ title, Icon, color }) => (
-            <div key={title} className='col-md-4'>
-              {<Icon className={`icon-svg-md text-${color} mb-3`} />}
-              <h4 className='mb-1'>{title}</h4>
-              {/* <p>{subtitle}</p> */}
-            </div>
-          ))}
-        </div>
+
+        {/* Services Section */}
+
+        <section className="wrapper bg-light ">
+          <div className="container pt-12 pb-md-2">
+            {/* ========== services section ========== */}
+            <Services21 />
+          </div>
+        </section>
+
         <section>
           <Services2 />
         </section>
         <section className='p-12'>
-          <Services12 />
+          {/* <Services12 /> */}
+          <Services22 />
         </section>
         {/* <BlogCard2
           link="#"
