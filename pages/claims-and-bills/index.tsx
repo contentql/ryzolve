@@ -39,7 +39,7 @@ const index = () => {
             description2='Add the necessary contraints before submitting claims to increase the chance of quick acceptance and payment. '
           />
         </section>
-        <section className='mb-md-12'>
+        <section className=''>
           <Testimonial4 />
         </section>
         {/* <section className='px-12 pt-12'>

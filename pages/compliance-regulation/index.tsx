@@ -14,14 +14,14 @@ const index = () => {
         <header className='wrapper'>
           <RyzolveHeader />
         </header>
-        <section className='content-wrapper wrapper'>
+        <section className='p-4 wrapper'>
           <Hero10
             title='Stay Compliant'
             subtitle='Compliance that meets all government requirements, providing automation and peace of mind'
           />
         </section>
       </section>
-      <section className='p-12 wrapper bg-gray'>
+      <section className='content-wrapper wrapper'>
         {/* Services Section */}
 
         <section className='wrapper bg-light '>
@@ -45,7 +45,7 @@ const index = () => {
             ]}
           />
         </section>
-        <section className='mb-4 mb-md-12'>
+        <section className=''>
           <Testimonial4 />
         </section>
         {/* <section className='px-12 pt-12'>
