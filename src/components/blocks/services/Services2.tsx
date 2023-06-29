@@ -31,17 +31,23 @@ const Services2: FC<Services2Props> = ({ isListingTrue }) => {
               Your Agency Shouldn't Have to Waste Time With Outdated Processes
             </h3>
 
-            <p className='mb-6'>
-              Most healthcare providers waste enormous amounts of time and staff
-              using manual processes to manage claims, hire staff and attempt to
-              meet government regulations. These providers end up having staff
-              overwhelmed and frustrated with paperwork that keeps piling up,
-              causing delays for patients which ultimately affects your bottom
-              line. Your agency shouldn't have to waste time with manual
-              processes. We created the Ryzolve software to help agencies like
-              yours implement a digital approach that saves time, resources and
-              overall improves your company's efficiency.
-            </p>
+            <div className='mb-6'>
+              <p>
+                Most healthcare providers waste enormous amounts of time and
+                staff using manual processes to manage claims, hire staff and
+                attempt to meet government regulations. These providers end up
+                having staff overwhelmed and frustrated with paperwork that
+                keeps piling up, causing delays for patients which ultimately
+                affects your bottom line.
+              </p>
+
+              <p>
+                Your agency shouldn't have to waste time with manual processes.
+                We created the Ryzolve software to help agencies like yours
+                implement a digital approach that saves time, resources and
+                overall improves your company's efficiency.
+              </p>
+            </div>
 
             {/* {!isListingTrue && <ListColumn list={aboutList1} />} */}
             <span style={slideInDownAnimate('1200ms')}>
