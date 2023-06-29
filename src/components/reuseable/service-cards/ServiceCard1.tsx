@@ -16,16 +16,24 @@ type ServiceCard1Props = {
 // ===============================================================
 
 const ServiceCard1: FC<ServiceCard1Props> = (props) => {
-  const { title, description, Icon, linkUrl, linkType, cardClassName = '', iconClassName } = props;
+  const {
+    title,
+    description,
+    Icon,
+    linkUrl,
+    linkType,
+    cardClassName,
+    iconClassName,
+  } = props;
 
   return (
-    <div className="col-md-8 col-xl-4">
-      <div className={`card shadow-lg ${cardClassName}`}>
-        <div className="card-body">
+    <div className='col-md-8 col-xl-4 card-ryzole-hover'>
+      <div className={`card shadow-lg ${cardClassName} `}>
+        <div className='card-body'>
           <Icon className={iconClassName} />
-          <h4>{title}</h4>
-          <p className="mb-2">{description}</p>
-          <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} />
+          <p style={{ fontSize: '1.2rem', fontWeight: 'bolder' }}>{title}</p>
+          <p className='mb-2'>{description}</p>
+          {/* <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} /> */}
         </div>
       </div>
     </div>

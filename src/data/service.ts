@@ -385,6 +385,7 @@ export const serviceList11 = [
     Icon: Edit,
     title: 'Improve Efficiency',
     linkType: LinkType.orange,
+
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
@@ -394,7 +395,8 @@ export const serviceList11 = [
     Icon: TeamTwo,
     title: 'Stay Compliant',
     linkType: LinkType.orange,
-    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
+    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3 ',
+
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
@@ -404,6 +406,7 @@ export const serviceList11 = [
     linkType: LinkType.orange,
     title: 'Increase Profits',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
+
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
 ];
