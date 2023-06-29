@@ -43,7 +43,7 @@ const ryzolve = () => {
           <Services22 />
         </section>
         <Testimonial4 />
-        <section className='px-12 pt-14'>
+        <section className='px-4 pt-4 px-md-12 pt-md-14'>
           <Process1 />
         </section>
         <section className='mb-12'>

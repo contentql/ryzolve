@@ -12,12 +12,13 @@
 //custom
 
 .card-ryzole-hover :hover {
-  background: #0d5992;
+  background-color: #0d5992;
   color: white;
   // border-top-left-radius: $card-inner-border-radius;
   border-radius: $card-inner-border-radius;
-  // scale: 1.05;
-  transition-duration: 500ms;
+
+  scale: 1.02;
+  transition-duration: 300ms;
 }
 
 .card-img-top img {

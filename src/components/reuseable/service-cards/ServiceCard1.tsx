@@ -27,7 +27,7 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
   } = props;
 
   return (
-    <div className='col-md-8 col-xl-4 card-ryzole-hover'>
+    <div className='col-md-8 col-xl-4 card-ryzole-hover '>
       <div className={`card shadow-lg ${cardClassName} `}>
         <div className='card-body'>
           <Icon className={iconClassName} />

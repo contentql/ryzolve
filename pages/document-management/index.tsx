@@ -10,17 +10,18 @@ import { About14 } from 'components/blocks/about';
 const index = () => {
   return (
     <div>
-      <header className='wrapper bg-gray'>
-        <RyzolveHeader />
-      </header>
-      <section className='content-wrapper wrapper'>
-        <section className='p-12 wrapper bg-gray'>
+      <section className='bg-rezolve'>
+        <header className='wrapper'>
+          <RyzolveHeader />
+        </header>
+        <section className='p-12 wrapper'>
           <Hero10
             title='Managing Paper Work Made Easier'
             subtitle='Electronic Document Management Helping you increase Efficiency'
           />
         </section>
-
+      </section>
+      <section className='content-wrapper wrapper'>
         {/* Services Section */}
 
         <section className='wrapper bg-light '>
