@@ -10,17 +10,18 @@ import { About14 } from 'components/blocks/about';
 const index = () => {
   return (
     <div>
-      <header className='wrapper bg-gray'>
-        <RyzolveHeader />
-      </header>
-      <section className='content-wrapper wrapper'>
-        <section className='p-12 wrapper bg-gray'>
+      <section className='bg-rezolve'>
+        <header className='wrapper'>
+          <RyzolveHeader />
+        </header>
+        <section className='content-wrapper wrapper'>
           <Hero10
             title='Stay Compliant'
             subtitle='Compliance that meets all government requirements, providing automation and peace of mind'
           />
         </section>
-
+      </section>
+      <section className='p-12 wrapper bg-gray'>
         {/* Services Section */}
 
         <section className='wrapper bg-light '>

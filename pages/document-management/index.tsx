@@ -14,7 +14,7 @@ const index = () => {
         <header className='wrapper'>
           <RyzolveHeader />
         </header>
-        <section className='p-12 wrapper'>
+        <section className='p-4 wrapper'>
           <Hero10
             title='Managing Paper Work Made Easier'
             subtitle='Electronic Document Management Helping you increase Efficiency'
