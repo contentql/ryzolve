@@ -31,19 +31,33 @@ const index = () => {
         </section>
 
         <section>
-          <Services2 />
+          <Services2
+            title='Are you risking liability with outdated document management methods?'
+            description1='Doing background checks for pre-hire and on a monthly basis for potential employees shouldn’t have to be done by hand. 
+'
+            description2='Automate your scheduled and on-demand background checks for all of the following reports: '
+            list={[
+              'OIG U.S.DHHS',
+              'TXL OIG HHSC',
+              'TX: DADS - EMR',
+              'TX DPS CRS',
+            ]}
+          />
         </section>
-        <section className='mb-md-12'>
+        <section className='mb-4 mb-md-12'>
           <Testimonial4 />
         </section>
         {/* <section className='px-12 pt-12'>
           <Process1 />
         </section> */}
-        <section className='px-12  bg-gray pb-12'>
+        <section className='px-4 pb-4 px-md-12  bg-gray pb-md-12'>
           <About14 />
         </section>
         <section>
-          <Services2 isListingTrue={true} />
+          <Services2
+            title='Save time with data verification services'
+            description1='Perform automated verification checks for credentials and age. Reduce human error and agency effort while quickly highlighting issues through exception reporting. '
+          />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />

@@ -5,9 +5,21 @@ import { aboutList1 } from 'data/about';
 import NextLink from 'components/reuseable/links/NextLink';
 import { slideInDownAnimate } from 'utils/animation';
 
-type Services2Props = { isListingTrue?: boolean };
+type Services2Props = {
+  tag?: string;
+  title: string;
+  description1: string;
+  description2?: string;
+  list?: string[];
+};
 
-const Services2: FC<Services2Props> = ({ isListingTrue }) => {
+const Services2: FC<Services2Props> = ({
+  tag = 'Our Solutions',
+  title,
+  description1,
+  description2,
+  list,
+}) => {
   return (
     <section className='wrapper bg-soft-primary py-14'>
       <div className='container'>
@@ -24,37 +36,25 @@ const Services2: FC<Services2Props> = ({ isListingTrue }) => {
           </div>
 
           <div className='col-lg-5'>
-            <h2 className='fs-16 text-uppercase text-muted mb-3'>
-              Our Solutions
-            </h2>
-            <h3 className='display-4 mb-5'>
-              Your Agency Shouldn't Have to Waste Time With Outdated Processes
-            </h3>
+            <h2 className='fs-16 text-uppercase text-muted mb-3'>{tag}</h2>
+            <h3 className='display-4 mb-5'>{title}</h3>
 
             <div className='mb-6'>
-              <p>
-                Most healthcare providers waste enormous amounts of time and
-                staff using manual processes to manage claims, hire staff and
-                attempt to meet government regulations. These providers end up
-                having staff overwhelmed and frustrated with paperwork that
-                keeps piling up, causing delays for patients which ultimately
-                affects your bottom line.
-              </p>
-
-              <p>
-                Your agency shouldn't have to waste time with manual processes.
-                We created the Ryzolve software to help agencies like yours
-                implement a digital approach that saves time, resources and
-                overall improves your company's efficiency.
-              </p>
+              <p>{description1}</p>
+              <p>{description2}</p>
             </div>
 
-            {/* {!isListingTrue && <ListColumn list={aboutList1} />} */}
+            {list && (
+              <div className='mb-8'>
+                <ListColumn list={[[...list]]} />
+              </div>
+            )}
+
             <span style={slideInDownAnimate('1200ms')}>
               <NextLink
                 title='Book a Demo'
                 href='#'
-                className='btn btn-lg btn-primary rounded-pill me-2'
+                className='btn btn-lg btn-primary rounded-pill me-2 '
               />
             </span>
           </div>

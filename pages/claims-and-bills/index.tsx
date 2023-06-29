@@ -31,7 +31,12 @@ const index = () => {
         </section>
 
         <section>
-          <Services2 />
+          <Services2
+            title='Forward thinking claims planning'
+            description1='Claim rejections or denials can add additional effort to your claims workflow. 
+'
+            description2='Add the necessary contraints before submitting claims to increase the chance of quick acceptance and payment. '
+          />
         </section>
         <section className='mb-md-12'>
           <Testimonial4 />

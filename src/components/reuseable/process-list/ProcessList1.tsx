@@ -15,7 +15,7 @@ const ProcessList1: FC<ProcessList1Props> = (props) => {
 
   return (
     <div className={`card ${className} ${shadow && 'shadow-lg'}`}>
-      <div className='card-body p-2 p-lg-6'>
+      <div className='card-body px-4 py-2 px-md-6 py-md-4'>
         <div className='d-flex flex-row'>
           <div>
             <span className='icon btn btn-circle btn-lg btn-soft-primary pe-none me-4'>

@@ -32,7 +32,10 @@ const index = () => {
         </section>
 
         <section>
-          <Services2 />
+          <Services2
+            title='Are you risking liability with outdated document management methods?'
+            description1='We built the Ryzolve software with your frustrations in mind. The Rysolve app contains everything you need to organize your agency, maintain compliance and avoid costly failures in document management. '
+          />
         </section>
         <section className='mb-md-12'>
           <Testimonial4 />
