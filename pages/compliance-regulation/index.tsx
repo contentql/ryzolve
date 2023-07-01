@@ -43,6 +43,7 @@ const index = () => {
               'TX: DADS - EMR',
               'TX DPS CRS',
             ]}
+            image='/img/photos/compliance-reducewaste.svg'
           />
         </section>
         <section className=''>

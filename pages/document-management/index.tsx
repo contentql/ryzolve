@@ -35,7 +35,7 @@ const index = () => {
           <Services2
             title='Are you risking liability with outdated document management methods?'
             description1='We built the Ryzolve software with your frustrations in mind. The Rysolve app contains everything you need to organize your agency, maintain compliance and avoid costly failures in document management. '
-            image='/img/photos/reducewaste-increase.svg'
+            image='/img/photos/doc-man-reducewaste.svg'
           />
         </section>
         <section className=''>

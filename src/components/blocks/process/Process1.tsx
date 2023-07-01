@@ -19,18 +19,14 @@ const Process1: FC = () => {
           Managing Claims and Paperwork Should be Easier.
         </h3>
 
-        <p>
-          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-          vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id
-          dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget
-          urna mollis.
-        </p>
-
-        <p className='mb-6'>
-          Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id
-          ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed
-          consectetur.
-        </p>
+        <figure>
+          <img
+            className='w-auto'
+            alt='our strategy'
+            src='/img/photos/our-strategy.svg'
+            // srcSet='/img/illustrations/i8@2x.png 2x'
+          />
+        </figure>
 
         {/* <NextLink
           href='#'
