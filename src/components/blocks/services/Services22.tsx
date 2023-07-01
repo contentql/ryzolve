@@ -87,9 +87,9 @@ const Services22: FC = () => {
             <div className='col-lg-6'>
               <figure className='rounded shadow-lg'>
                 <img
-                  src='/img/photos/about7.jpg'
-                  srcSet='/img/photos/about7@2x.jpg 2x'
-                  alt=''
+                  src='/img/photos/digital-management.svg'
+                  // srcSet='/img/photos/about7@2x.jpg 2x'
+                  alt='digital-management.svg'
                 />
               </figure>
             </div>
@@ -112,9 +112,9 @@ const Services22: FC = () => {
             <div className='col-lg-6 order-lg-2'>
               <figure className='rounded shadow-lg'>
                 <img
-                  src='/img/photos/about7.jpg'
+                  src='/img/photos/compliance-regulation.svg'
                   srcSet='/img/photos/about7@2x.jpg 2x'
-                  alt=''
+                  alt='compliance-regulation.svg'
                 />
               </figure>
             </div>
@@ -136,9 +136,9 @@ const Services22: FC = () => {
             <div className='col-lg-6'>
               <figure className='rounded shadow-lg'>
                 <img
-                  src='/img/photos/about7.jpg'
-                  srcSet='/img/photos/about7@2x.jpg 2x'
-                  alt=''
+                  src='/img/photos/claims-billing.svg'
+                  // srcSet='/img/photos/about7@2x.jpg 2x'
+                  alt='claims and billing.svg'
                 />
               </figure>
             </div>

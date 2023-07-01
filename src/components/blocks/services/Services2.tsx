@@ -11,6 +11,7 @@ type Services2Props = {
   description1: string;
   description2?: string;
   list?: string[];
+  image?: string;
 };
 
 const Services2: FC<Services2Props> = ({
@@ -19,6 +20,7 @@ const Services2: FC<Services2Props> = ({
   description1,
   description2,
   list,
+  image,
 }) => {
   return (
     <section className='wrapper bg-soft-primary py-14'>
@@ -29,8 +31,8 @@ const Services2: FC<Services2Props> = ({
               <img
                 className='w-auto'
                 alt='our solutions'
-                src='/img/illustrations/i8.png'
-                srcSet='/img/illustrations/i8@2x.png 2x'
+                src={image}
+                // srcSet='/img/illustrations/i8@2x.png 2x'
               />
             </figure>
           </div>

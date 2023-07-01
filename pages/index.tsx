@@ -23,7 +23,7 @@ const ryzolve = () => {
         <header className='wrapper'>
           <RyzolveHeader />
         </header>
-        <section className='p-4 p-md-12 wrapper'>
+        <section className='p-4 p-md-12 wrapper w-100'>
           <Hero2 />
         </section>
       </section>
@@ -48,6 +48,7 @@ const ryzolve = () => {
                 We created the Ryzolve software to help agencies like yours
                 implement a digital approach that saves time, resources and
                 overall improves your company's efficiency."
+            image='/img/photos/reducewaste-increase.svg'
           />
         </section>
         <section className='px-md-12 py-md-14 px-4 py-4'>

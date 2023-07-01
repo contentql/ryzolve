@@ -64,9 +64,9 @@ const About14: FC = () => {
         <figure>
           <img
             className='w-auto'
-            src='/img/illustrations/i2.png'
-            srcSet='/img/illustrations/i2@2x.png 2x'
-            alt=''
+            src='/img/illustrations/ryzolve-about.svg'
+            // srcSet='/img/illustrations/.png 2x'
+            alt='ryzolve-about.png'
           />
         </figure>
       </div>

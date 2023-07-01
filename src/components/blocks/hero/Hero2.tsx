@@ -25,8 +25,8 @@ const Hero2: FC = () => {
 
         <figure className='rounded'>
           <img
-            src='/img/photos/about7.jpg'
-            srcSet='/img/photos/about7@2x.jpg 2x'
+            src='/img/photos/macbook.svg'
+            // srcSet='/img/photos/about7@2x.jpg 2x'
             alt='hero'
           />
         </figure>
