@@ -63,7 +63,17 @@ const ryzolve = () => {
           <Pricing4 />
         </section>
         <section className='px-4 pb-4 px-md-12 bg-light pb-md-14'>
-          <About14 />
+          <About14
+            image='/img/illustrations/ryzolve-about.svg'
+            title='Ryzolve helps healthcare providers reduce wasted time with their filing & paperwork so they can improve efficiency and stay compliant.'
+            description1='We understand how frustrating paperwork, files, and hiring can be with certain processes. Our personal agency struggled with manual processes for years so much that we were losing money. From wasting time hiring, to losing money on denials, we built the Ryzolve software out of this frustration. We believe that your agency shouldn’t have to lose money or suffer from denials and audits. '
+            description2='Personal Agency'
+            list={[
+              '4 Years Of No Penalties',
+              'Saved Hundreds Of Hours Hiring Staff',
+              'Increased Revenue While Reducing/Eliminating Denials',
+            ]}
+          />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />

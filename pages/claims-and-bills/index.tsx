@@ -37,6 +37,7 @@ const index = () => {
             description1='Claim rejections or denials can add additional effort to your claims workflow. 
 '
             description2='Add the necessary contraints before submitting claims to increase the chance of quick acceptance and payment. '
+            image='/img/photos/claims-service.svg'
           />
         </section>
         <section className=''>
@@ -46,7 +47,11 @@ const index = () => {
           <Process1 />
         </section> */}
         <section className='px-12  bg-gray pb-12'>
-          <About14 />
+          <About14
+            image='/img/photos/claims-about.svg'
+            title='Reduced workload, improved accuracy'
+            description1='Our simple claims entry process utilises simple templates to help manage repetitive tasks easily. Automating validation massively reduces the chance of human error and speeds up claims payment. '
+          />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />

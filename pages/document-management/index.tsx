@@ -45,7 +45,16 @@ const index = () => {
           <Process1 />
         </section> */}
         <section className='px-12  bg-gray pb-12'>
-          <About14 />
+          <About14
+            image='/img/photos/doc-feature.svg'
+            title='Streamline repetitive processes for increased efficiency'
+            description1=''
+            list={[
+              'Tailored document suites to fit your healthcare structure',
+              'Templates for painless authorization, client intake and medication workflows',
+              'Flexible digital filing system personalized to your needs',
+            ]}
+          />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />

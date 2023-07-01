@@ -53,12 +53,17 @@ const index = () => {
           <Process1 />
         </section> */}
         <section className='px-4 pb-4 px-md-12  bg-gray pb-md-12'>
-          <About14 />
+          <About14
+            image='/img/photos/compliance-about.svg'
+            title='Maintain governmental compliance with regular process evaluation'
+            description1='Take advantage of annual evaluations and semi-annual supervisory visits with a compliance expert to ensure your agency maintains an optimal setup.'
+          />
         </section>
         <section>
           <Services2
             title='Save time with data verification services'
             description1='Perform automated verification checks for credentials and age. Reduce human error and agency effort while quickly highlighting issues through exception reporting. '
+            image='/img/photos/compliance-service.svg'
           />
         </section>
         <Contact10 />
