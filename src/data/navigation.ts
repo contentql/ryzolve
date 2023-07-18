@@ -121,9 +121,9 @@ const projectsNavigation = [
 
 // blog pages links
 const blogsNavigation = [
-  { id: 1, url: '/', title: 'Document Management' },
-  { id: 2, url: '/', title: 'Compliance Regulation' },
-  { id: 3, url: '/', title: 'Claims & Bills' },
+  { id: 1, url: '/document-management', title: 'Document Management' },
+  { id: 2, url: '/compliance-regulation', title: 'Compliance Regulation' },
+  { id: 3, url: '/claims-and-bills', title: 'Claims & Bills' },
 ];
 
 // documentation pages links

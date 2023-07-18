@@ -39,7 +39,7 @@ export const serviceList1 = [
     title: 'SEO Services',
     linkText: 'Learn More',
     linkType: LinkType.yellow,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ export const serviceList1 = [
     title: 'Web Design',
     linkText: 'Learn More',
     linkType: LinkType.red,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const serviceList1 = [
     linkType: LinkType.green,
     title: 'Social Engagement',
     linkText: 'Learn More',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 4,
@@ -66,8 +66,8 @@ export const serviceList1 = [
     linkType: LinkType.blue,
     title: 'Content Marketing',
     linkText: 'Learn More',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
-  }
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
+  },
 ];
 
 // used in the services-3, services-8, services-13 block
@@ -77,29 +77,29 @@ export const serviceList2 = [
     linkUrl: '#',
     title: '24/7 Support',
     icon: 'uil-phone-volume',
-    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`
+    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
   {
     id: 2,
     linkUrl: '#',
     title: 'Secure Payments',
     icon: 'uil-shield-exclamation',
-    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`
+    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
   {
     id: 3,
     linkUrl: '#',
     title: 'Daily Updates',
     icon: 'uil-laptop-cloud',
-    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`
+    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
   {
     id: 4,
     linkUrl: '#',
     title: 'Market Research',
     icon: 'uil-chart-line',
-    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`
-  }
+    description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
+  },
 ];
 
 // used in the services-4 block
@@ -109,29 +109,29 @@ export const serviceList3 = [
     linkUrl: '#',
     title: '24/7 Support',
     icon: 'uil-phone-volume',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 2,
     linkUrl: '#',
     title: 'Secure Payments',
     icon: 'uil-shield-exclamation',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 3,
     linkUrl: '#',
     title: 'Daily Updates',
     icon: 'uil-laptop-cloud',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 4,
     linkUrl: '#',
     title: 'Market Research',
     icon: 'uil-chart-line',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
-  }
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
+  },
 ];
 
 // used in the services-5 block
@@ -140,44 +140,50 @@ export const serviceList4 = [
     id: 1,
     Icon: Telephone,
     title: '24/7 Support',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 2,
     Icon: Shield,
     title: 'Secure Payments',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 3,
     Icon: CloudComputing,
     title: 'Daily Updates',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 4,
     Icon: Analytics,
     title: 'Market Research',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 5,
     Icon: Settings,
     title: 'System Integration',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 6,
     Icon: Earth,
     title: 'SEO Services',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-  }
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
+  },
 ];
 
 // used in the services-6 block
 export const serviceList5 = [
-  ['Aenean quam ornare curabitur blandit consectetur.', 'Nullam quis risus eget urna mollis ornare aenean leo.'],
-  ['Etiam porta euismod malesuada mollis nisl ornare.', 'Vivamus sagittis lacus augue rutrum maecenas odio.']
+  [
+    'Aenean quam ornare curabitur blandit consectetur.',
+    'Nullam quis risus eget urna mollis ornare aenean leo.',
+  ],
+  [
+    'Etiam porta euismod malesuada mollis nisl ornare.',
+    'Vivamus sagittis lacus augue rutrum maecenas odio.',
+  ],
 ];
 
 // used in the services-7 block
@@ -187,43 +193,43 @@ export const serviceList6 = [
     Icon: Target,
     color: color.aqua,
     title: 'Fitness Goal',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 2,
     Icon: Medal,
     color: color.yellow,
     title: 'Activity Tracking',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 3,
     Icon: ClockThree,
     color: color.red,
     title: 'Sleep Analysis',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 4,
     Icon: Check,
     color: color.pink,
     title: 'Workout Report',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 5,
     Icon: ShopTwo,
     color: color.green,
     title: 'Nutritional Analysis',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 6,
     Icon: Team,
     color: color.purple,
     title: 'Activity Sharing',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-  }
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
+  },
 ];
 
 // used in the services-9 block
@@ -235,7 +241,8 @@ export const serviceList7 = [
     title: '24/7 Support',
     cardColor: 'bg-pale-yellow',
     columnClass: 'col-md-5 offset-md-1 align-self-end',
-    description: 'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta.'
+    description:
+      'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta.',
   },
   {
     id: 2,
@@ -244,7 +251,8 @@ export const serviceList7 = [
     title: 'Secure Payments',
     cardColor: 'bg-pale-red',
     columnClass: 'col-md-6 align-self-end',
-    description: 'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta.'
+    description:
+      'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta.',
   },
   {
     id: 3,
@@ -253,7 +261,7 @@ export const serviceList7 = [
     title: 'Daily Updates',
     cardColor: 'bg-pale-leaf',
     columnClass: 'col-md-5',
-    description: 'Nulla vitae elit libero, a pharetra augue.'
+    description: 'Nulla vitae elit libero, a pharetra augue.',
   },
   {
     id: 4,
@@ -262,8 +270,9 @@ export const serviceList7 = [
     title: 'Market Research',
     cardColor: 'bg-pale-primary',
     columnClass: 'col-md-6 align-self-start',
-    description: 'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget.'
-  }
+    description:
+      'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget.',
+  },
 ];
 
 // used in the services-18 block
@@ -272,26 +281,26 @@ export const serviceList8 = [
     id: 1,
     Icon: Browser,
     title: 'Web Design',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
   {
     id: 2,
     Icon: SmartphoneTwo,
     title: 'Mobile Design',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
   {
     id: 3,
     Icon: SettingsThree,
     title: 'Development',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
   {
     id: 4,
     title: 'SEO',
     Icon: SearchTwo,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`
-  }
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
+  },
 ];
 
 // used in the services-19 block
@@ -302,7 +311,7 @@ export const serviceList9 = [
     color: color.purple,
     title: '24/7 Support',
     icon: 'uil-phone-volume',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 2,
@@ -310,7 +319,7 @@ export const serviceList9 = [
     color: color.green,
     title: 'Secure Payments',
     icon: 'uil-shield-exclamation',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 3,
@@ -318,8 +327,8 @@ export const serviceList9 = [
     color: color.orange,
     title: 'Daily Updates',
     icon: 'uil-laptop-cloud',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
-  }
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
+  },
 ];
 
 // used in the services-20 block
@@ -329,43 +338,43 @@ export const serviceList10 = [
     linkUrl: '#',
     Icon: Script,
     title: 'Software & Integration',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 2,
     linkUrl: '#',
     Icon: Verify,
     title: 'Network Security',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 3,
     linkUrl: '#',
     Icon: CloudNetwork,
     title: 'Cloud Services',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 4,
     linkUrl: '#',
     Icon: Director,
     title: 'Wireless Networking',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 5,
     linkUrl: '#',
     Icon: Setting,
     title: 'IT Solutions',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 6,
     linkUrl: '#',
     Icon: Server,
     title: 'Server Configuration',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-  }
+    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
+  },
 ];
 
 // used in the services-21 block
@@ -374,38 +383,32 @@ export const serviceList11 = [
     id: 1,
     link: '#',
     Icon: Edit,
-    title: 'Content Marketing',
-    linkType: LinkType.fuchsia,
-    iconClassName: 'icon-svg-sm solid-mono text-fuchsia mb-3',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    title: 'Improve Efficiency',
+    linkType: LinkType.orange,
+
+    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 2,
     link: '#',
     Icon: TeamTwo,
-    title: 'Social Engagement',
-    linkType: LinkType.violet,
-    iconClassName: 'icon-svg-sm solid-mono text-violet mb-3',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    title: 'Stay Compliant',
+    linkType: LinkType.orange,
+    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3 ',
+
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 3,
     link: '#',
     Icon: Lamp,
     linkType: LinkType.orange,
-    title: 'Identity & Branding',
+    title: 'Increase Profits',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
-  {
-    id: 4,
-    link: '#',
-    Icon: DeliveryBox,
-    title: 'Product Design',
-    linkType: LinkType.green,
-    iconClassName: 'icon-svg-sm solid-mono text-green mb-3',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
-  }
 ];
 
 // used in the services-24 block
@@ -413,22 +416,31 @@ export const serviceList12 = [
   {
     id: 1,
     title: 'Web Design',
-    image: { '1x': '/img/illustrations/i24.png', '2x': '/img/illustrations/i24@2x.png 2x' },
+    image: {
+      '1x': '/img/illustrations/i24.png',
+      '2x': '/img/illustrations/i24@2x.png 2x',
+    },
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus
-    tellus.`
+    tellus.`,
   },
   {
     id: 2,
     title: 'Graphic Design',
-    image: { '1x': '/img/illustrations/i19.png', '2x': '/img/illustrations/i19@2x.png 2x' },
-    description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`
+    image: {
+      '1x': '/img/illustrations/i19.png',
+      '2x': '/img/illustrations/i19@2x.png 2x',
+    },
+    description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`,
   },
   {
     id: 3,
     title: '3D Animation',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`
-  }
+    image: {
+      '1x': '/img/illustrations/i18.png',
+      '2x': '/img/illustrations/i18@2x.png 2x',
+    },
+    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`,
+  },
 ];
 
 // used in the services-25 block
@@ -439,7 +451,7 @@ export const serviceList13 = [
     color: color.purple,
     title: 'Web Design',
     icon: 'uil-monitor',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.`
+    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.`,
   },
   {
     id: 2,
@@ -447,7 +459,7 @@ export const serviceList13 = [
     color: color.green,
     title: 'Graphic Design',
     icon: 'uil-swatchbook',
-    description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`
+    description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`,
   },
   {
     id: 3,
@@ -455,8 +467,8 @@ export const serviceList13 = [
     color: color.pink,
     title: '3D Animation',
     icon: 'uil-presentation-play',
-    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`
-  }
+    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`,
+  },
 ];
 
 // used in the services-26 block
@@ -465,18 +477,18 @@ export const serviceList14 = [
     id: 1,
     url: '#',
     title: 'Wedding',
-    image: { '1x': '/img/photos/fs1.jpg', '2x': '/img/photos/fs1@2x.jpg 2x' }
+    image: { '1x': '/img/photos/fs1.jpg', '2x': '/img/photos/fs1@2x.jpg 2x' },
   },
   {
     id: 2,
     url: '#',
     title: 'Couples',
-    image: { '1x': '/img/photos/fs2.jpg', '2x': '/img/photos/fs2@2x.jpg 2x' }
+    image: { '1x': '/img/photos/fs2.jpg', '2x': '/img/photos/fs2@2x.jpg 2x' },
   },
   {
     id: 3,
     url: '#',
     title: 'Engagement',
-    image: { '1x': '/img/photos/fs3.jpg', '2x': '/img/photos/fs3@2x.jpg 2x' }
-  }
+    image: { '1x': '/img/photos/fs3.jpg', '2x': '/img/photos/fs3@2x.jpg 2x' },
+  },
 ];

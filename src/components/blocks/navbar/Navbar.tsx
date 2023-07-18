@@ -25,6 +25,7 @@ import {
   documentionNavigation,
 } from "data/navigation";
 import { Logo } from "./partials/Logo";
+import Link from "next/link";
 
 // ===================================================================
 type NavbarProps = {
@@ -202,64 +203,13 @@ const Navbar: FC<NavbarProps> = (props) => {
               </ul>
             </li>
 
-            {/* ===================== blocks nav item ===================== */}
-            {/* <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink
-                title="Services"
-                className="nav-link dropdown-toggle"
-              />
-              <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                <li className="mega-menu-content">
-                  <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
-                    {blocksNavigation.map(({ id, thumnail, title, url }) => (
-                      <li className="col" key={id}>
-                        <Link href={url} passHref legacyBehavior>
-                          <a className="dropdown-item">
-                            <div className="rounded img-svg d-none d-lg-block p-4 mb-lg-2">
-                              <img
-                                className="rounded-0"
-                                src={thumnail}
-                                alt=""
-                              />
-                            </div>
-
-                            <span>{title}</span>
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              </ul>
-            </li> */}
-
             {/* ===================== documentation nav item ===================== */}
             <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="About Us" className="nav-link" />
-              {/* <ul className="dropdown-menu mega-menu">
-                <li className="mega-menu-content">
-                  <div className="row gx-0 gx-lg-3">
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">Usage</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">
-                        {renderLinks(documentionNavigation.usage)}
-                      </ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Styleguide</h6>
-                      <ul className="list-unstyled cc-2">
-                        {renderLinks(documentionNavigation.styleguide)}
-                      </ul>
-                    </div>
-
-                    <div className="col-lg-8">
-                      <h6 className="dropdown-header">Elements</h6>
-                      <ul className="list-unstyled cc-3">
-                        {renderLinks(documentionNavigation.elements)}
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul> */}
+              <NextLink
+                title="About Us"
+                className="nav-link"
+                href="/about-us"
+              />
             </li>
           </ul>
 

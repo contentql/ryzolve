@@ -8,8 +8,8 @@ import { testimonialList2 } from 'data/testimonial-list';
 
 const Testimonial4: FC = () => {
   return (
-    <div className='wrapper bg-gray'>
-      <div className='container py-14 py-md-16'>
+    <div className='wrapper bg-soft-primary'>
+      <div className='container py-14 py-md-14'>
         <div className='row'>
           <div className='col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center'>
             <h2 className='fs-15 text-uppercase text-muted mb-3'>
@@ -21,16 +21,20 @@ const Testimonial4: FC = () => {
           </div>
         </div>
 
-        <Carousel
-          grabCursor
-          className='p-2'
-          navigation={false}
-          breakpoints={carouselBreakpoints}
-        >
-          {testimonialList2.map((item, i) => (
-            <TestimonialCard3 {...item} key={i} />
-          ))}
-        </Carousel>
+        <div className='swiper-container dots-closer mb-6'>
+          <Carousel
+            spaceBetween={0}
+            grabCursor
+            navigation={false}
+            breakpoints={carouselBreakpoints}
+          >
+            {testimonialList2.map((item, i) => (
+              <div className='item-inner' key={i}>
+                <TestimonialCard3 {...item} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );

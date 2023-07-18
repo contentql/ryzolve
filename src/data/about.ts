@@ -8,8 +8,8 @@ import Headphone from "icons/solid-mono/Headphone";
 
 // used in the about-2, about-8, about-11, about-13, about-15, about-17 block
 export const aboutList1 = [
-  // ['Aenean quam ornare. Curabitur blandit.', 'Nullam quis risus eget urna mollis ornare.'],
-  // ['Etiam porta euismod malesuada mollis.', 'Vivamus sagittis lacus vel augue rutrum.']
+  ['Aenean quam ornare. Curabitur blandit.', 'Nullam quis risus eget urna mollis ornare.'],
+  ['Etiam porta euismod malesuada mollis.', 'Vivamus sagittis lacus vel augue rutrum.']
 ];
 
 // used in the about-6, about-19 block

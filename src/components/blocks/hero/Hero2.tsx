@@ -24,10 +24,15 @@ const Hero2: FC = () => {
         />
 
         <figure className="rounded">
+          <img src="/img/photos/macbook.svg" alt="hero" />
           <img
-            src="/img/photos/about7.jpg"
-            srcSet="/img/photos/about7@2x.jpg 2x"
+            src="/img/pages/hero1.jpg"
             alt="hero"
+            className="position-absolute top-0 end-0 mt-4"
+            style={{
+              width: "84%",
+              borderRadius: "0",
+            }}
           />
         </figure>
       </div>
@@ -47,17 +52,9 @@ const Hero2: FC = () => {
         <div className="d-flex justify-content-center justify-content-lg-start">
           <span style={slideInDownAnimate("1200ms")}>
             <NextLink
-              title="Explore Now"
+              title="Book a Demo"
               href="#"
               className="btn btn-lg btn-primary rounded-pill me-2"
-            />
-          </span>
-
-          <span style={slideInDownAnimate("1500ms")}>
-            <NextLink
-              title="Free Trial"
-              href="#"
-              className="btn btn-lg btn-outline-primary rounded-pill"
             />
           </span>
         </div>

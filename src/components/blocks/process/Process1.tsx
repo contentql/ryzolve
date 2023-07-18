@@ -6,7 +6,7 @@ import { processList1 } from "data/process";
 
 const Process1: FC = () => {
   return (
-    <div className="row gx-md-8 gx-xl-12 gy-10 mb-14 mb-md-18 align-items-center">
+    <div className="row gx-md- gx-xl-12 gy-10 mb-4 mb-md-8 px-5 align-items-center">
       <div className="col-lg-6 order-lg-2">
         {processList1.map((item) => {
           return <ProcessList1 shadow {...item} key={item.no} />;
@@ -19,24 +19,25 @@ const Process1: FC = () => {
           Managing Claims and Paperwork Should be Easier.
         </h3>
 
-        <p>
-          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-          vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id
-          dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget
-          urna mollis.
-        </p>
+        <figure
+          style={{
+            maxHeight: "500px",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            alt="our strategy"
+            src="/img/photos/our-strategy.svg"
+            className="img-fluid"
+            // srcSet='/img/illustrations/i8@2x.png 2x'
+          />
+        </figure>
 
-        <p className="mb-6">
-          Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id
-          ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed
-          consectetur.
-        </p>
-
-        <NextLink
-          href="#"
-          title="Learn More"
-          className="btn btn-primary rounded-pill mb-0"
-        />
+        {/* <NextLink
+          href='#'
+          title='Learn More'
+          className='btn btn-primary rounded-pill mb-0'
+        /> */}
       </div>
     </div>
   );
