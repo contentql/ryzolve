@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import Pricing2 from './Pricing2';
+import { FC } from "react";
+import Pricing2 from "./Pricing2";
 
 const Pricing4: FC = () => {
   return (
@@ -9,7 +9,8 @@ const Pricing4: FC = () => {
           <div className="row">
             <div className="col-lg-10 col-xl-9 col-xxl-8 mx-auto">
               <h3 className="display-4 mb-15 mb-md-6 px-lg-10">
-                We offer great prices, premium products and quality service for your business.
+                We offer great prices, premium products and quality service for
+                your business.
               </h3>
             </div>
           </div>

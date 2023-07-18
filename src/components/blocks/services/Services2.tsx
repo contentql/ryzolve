@@ -29,6 +29,8 @@ const Services2: FC<Services2Props> = ({
           <div className="col-lg-6 order-lg-2">
             <figure
               style={{
+                maxHeight: "450px",
+                overflow: "hidden",
                 display: "flex",
                 justifyContent: "end",
                 alignItems: "center",

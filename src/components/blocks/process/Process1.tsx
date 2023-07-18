@@ -19,10 +19,16 @@ const Process1: FC = () => {
           Managing Claims and Paperwork Should be Easier.
         </h3>
 
-        <figure>
+        <figure
+          style={{
+            maxHeight: "500px",
+            overflow: "hidden",
+          }}
+        >
           <img
             alt="our strategy"
             src="/img/photos/our-strategy.svg"
+            className="img-fluid"
             // srcSet='/img/illustrations/i8@2x.png 2x'
           />
         </figure>
