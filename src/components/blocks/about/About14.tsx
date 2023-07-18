@@ -54,11 +54,11 @@
 
 // export default About14;
 
-import { FC } from 'react';
-import AccordionList from 'components/common/AccordionList';
-import { slideInDownAnimate } from 'utils/animation';
-import NextLink from 'components/reuseable/links/NextLink';
-import { list } from 'data/demo-11';
+import { FC } from "react";
+import AccordionList from "components/common/AccordionList";
+import { slideInDownAnimate } from "utils/animation";
+import NextLink from "components/reuseable/links/NextLink";
+import { list } from "data/demo-11";
 
 type About14Props = {
   title: string;
@@ -76,50 +76,50 @@ const About14: FC<About14Props> = ({
   list,
 }) => {
   return (
-    <div className='row gx-lg-8 gx-xl-12 gy-10 align-items-center'>
-      <div className='col-lg-7 order-lg-2'>
+    <div className="row align-items-center">
+      <div className="col-lg-6 order-lg-2">
         <figure>
           <img
-            className='w-auto'
+            className="w-auto"
             src={image}
             // srcSet='/img/illustrations/.png 2x'
-            alt='ryzolve-about.png'
+            alt="ryzolve-about.png"
           />
         </figure>
       </div>
 
-      <div className='col-lg-5'>
-        <h3 className='display-4 mb-7 mt-lg-10'>{title}</h3>
-        <div className='mb-6'>
+      <div className="col-lg-6">
+        <h3 className="display-4 mb-7 mt-lg-10">{title}</h3>
+        <div className="mb-6">
           <p>{description1}</p>
         </div>
-        <span style={slideInDownAnimate('1200ms')}>
+        <span style={slideInDownAnimate("1200ms")}>
           <NextLink
-            title='Book a Demo'
-            href='#'
-            className='btn btn-lg btn-primary rounded-pill me-2 mb-8'
+            title="Book a Demo"
+            href="#"
+            className="btn btn-lg btn-primary rounded-pill me-2 mb-8"
           />
         </span>
-        <List title={description2} color='orange' description={list} />
+        <List title={description2} color="orange" description={list} />
       </div>
     </div>
   );
 };
 
 type ListProps = {
-  color: 'fuchsia' | 'violet' | 'green' | 'orange';
+  color: "fuchsia" | "violet" | "green" | "orange";
   title: any;
   description?: string[];
 };
 
 const List = ({ color, title, description }: ListProps) => {
   return (
-    <div className='col-lg-6'>
-      <h2 className='mb-3'>{title}</h2>
+    <div className="col-lg-6">
+      <h2 className="mb-3">{title}</h2>
       <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
         {description?.map((el) => (
           <li>
-            <i className='uil uil-check' /> {el}
+            <i className="uil uil-check" /> {el}
           </li>
         ))}
       </ul>
