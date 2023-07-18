@@ -1,3 +1,1 @@
-
-
-
+Resizing Images
