@@ -387,7 +387,7 @@ export const serviceList11 = [
     linkType: LinkType.orange,
 
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
+    description: `Tailored Electronic Document Management that suites to fit your healthcare structure Helping you increase Efficiency`,
   },
   {
     id: 2,
@@ -397,7 +397,7 @@ export const serviceList11 = [
     linkType: LinkType.orange,
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3 ',
 
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
+    description: `Compliance that meets all government requirements, providing automation and peace of mind`,
   },
   {
     id: 3,
@@ -407,7 +407,7 @@ export const serviceList11 = [
     title: 'Increase Profits',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
 
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
+    description: `Receive payments directly from your chosen medical insurance partner, without the need to chase`,
   },
 ];
 
