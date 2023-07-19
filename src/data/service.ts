@@ -387,7 +387,7 @@ export const serviceList11 = [
     linkType: LinkType.orange,
 
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
-    description: `Tailored Electronic Document Management that suites to fit your healthcare structure Helping you increase Efficiency`,
+    description: `Electronic Document Management that suites to fit your healthcare structure to increase Efficiency`,
   },
   {
     id: 2,
