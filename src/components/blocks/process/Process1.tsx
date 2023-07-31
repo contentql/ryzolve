@@ -32,6 +32,7 @@ const Process1: FC = () => {
             maxHeight: "500px",
             overflow: "hidden",
           }}
+          className="rounded"
         >
           <img
             alt="our strategy"
