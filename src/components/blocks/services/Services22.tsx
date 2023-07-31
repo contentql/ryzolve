@@ -120,7 +120,7 @@ const Services22: FC = () => {
             </div>
 
             <List
-              title='Data Analysis'
+              title='Compliance and Regulation'
               color='violet'
               description={[
                 'Runs Government Monthly Compliance/Background Checks',
@@ -144,7 +144,7 @@ const Services22: FC = () => {
             </div>
 
             <List
-              title='Finalize Product'
+              title='Claims and Billings'
               color='green'
               description={[
                 'Streamlines Claim Filing Process W/ State & Managed Care Organizations',
