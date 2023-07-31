@@ -85,8 +85,8 @@ const Services22: FC = () => {
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-md-6">
             <Image
-              width={500}
-              height={500}
+              width={600}
+              height={400}
               src="/img/photos/digital-management.svg"
               alt="digital-management.svg"
               className="w-100 rounded"
@@ -107,8 +107,8 @@ const Services22: FC = () => {
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center flex-row-reverse">
           <div className="col-md-6">
             <Image
-              width={500}
-              height={500}
+              width={600}
+              height={400}
               src="/img/photos/compliance-regulation.svg"
               alt="compliance-regulation.svg"
               className="w-100 rounded"
@@ -128,8 +128,8 @@ const Services22: FC = () => {
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-md-6">
             <Image
-              width={500}
-              height={500}
+              width={600}
+              height={400}
               src="/img/photos/claims-billing.svg"
               alt="claims-billing.svg"
               className="w-100 rounded"

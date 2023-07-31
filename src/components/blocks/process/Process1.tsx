@@ -36,7 +36,7 @@ const Process1: FC = () => {
         >
           <img
             alt="our strategy"
-            src="/img/photos/our-strategy.svg"
+            src="/img/illustrations/ryzolve-about.svg"
             className="img-fluid"
             // srcSet='/img/illustrations/i8@2x.png 2x'
           />
