@@ -44,11 +44,17 @@ const ryzolve = () => {
                 having staff overwhelmed and frustrated with paperwork that
                 keeps piling up, causing delays for patients which ultimately
                 affects your bottom line."
-            description2="Your agency shouldn't have to waste time with manual processes.
-                We created the Ryzolve software to help agencies like yours
-                implement a digital approach that saves time, resources and
-                overall improves your company's efficiency."
+            // description2="Your agency shouldn't have to waste time with manual processes.
+            //     We created the Ryzolve software to help agencies like yours
+            //     implement a digital approach that saves time, resources and
+            //     overall improves your company's efficiency."
             image="/img/photos/reducewaste-increase.svg"
+            description3="Personal Agency"
+            list={[
+              "4 Years Of No Penalties",
+              "Saved Hundreds Of Hours Hiring Staff",
+              "Increased Revenue While Reducing/Eliminating Denials",
+            ]}
           />
         </section>
         <section className="px-md-12 py-md-14 px-4 py-4">
@@ -68,12 +74,12 @@ const ryzolve = () => {
             image="/img/illustrations/ryzolve-about.svg"
             title="Ryzolve helps healthcare providers reduce wasted time with their filing & paperwork so they can improve efficiency and stay compliant."
             description1="We understand how frustrating paperwork, files, and hiring can be with certain processes. Our personal agency struggled with manual processes for years so much that we were losing money. From wasting time hiring, to losing money on denials, we built the Ryzolve software out of this frustration. We believe that your agency shouldn’t have to lose money or suffer from denials and audits. "
-            description2="Personal Agency"
-            list={[
-              "4 Years Of No Penalties",
-              "Saved Hundreds Of Hours Hiring Staff",
-              "Increased Revenue While Reducing/Eliminating Denials",
-            ]}
+            // description2="Personal Agency"
+            // list={[
+            //   "4 Years Of No Penalties",
+            //   "Saved Hundreds Of Hours Hiring Staff",
+            //   "Increased Revenue While Reducing/Eliminating Denials",
+            // ]}
           />
         </section>
         <Contact10 />

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import ListColumn from "components/reuseable/ListColumn";
+import Image from "next/image";
 // -------- data -------- //
 import { aboutList1 } from "data/about";
 import NextLink from "components/reuseable/links/NextLink";
@@ -10,15 +11,16 @@ type Services2Props = {
   title: string;
   description1: string;
   description2?: string;
+  description3?: string;
   list?: string[];
-  image?: string;
+  image: string;
 };
 
 const Services2: FC<Services2Props> = ({
   tag = "Our Solutions",
   title,
   description1,
-  description2,
+  description3,
   list,
   image,
 }) => {
@@ -36,8 +38,10 @@ const Services2: FC<Services2Props> = ({
                 alignItems: "center",
               }}
             >
-              <img
-                className="w-100"
+              <Image
+                height={500}
+                width={500}
+                className="rounded"
                 alt="our solutions"
                 src={image}
                 // srcSet='/img/illustrations/i8@2x.png 2x'
@@ -51,7 +55,7 @@ const Services2: FC<Services2Props> = ({
 
             <div className="mb-6">
               <p>{description1}</p>
-              <p>{description2}</p>
+              <h2>{description3}</h2>
             </div>
 
             {list && (
