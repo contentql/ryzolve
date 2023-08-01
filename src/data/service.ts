@@ -381,11 +381,12 @@ export const serviceList10 = [
 export const serviceList11 = [
   {
     id: 1,
-    link: '#',
+    link: '',
+    linkUrl:"/document-management",
     Icon: Edit,
     title: 'Improve Efficiency',
     linkType: LinkType.orange,
-
+    backDescription:'We built the ryzolve software with your frustration in mind. The Ryzolve app contains everything you need to organize ypur agency,mantain compliance and avoid costly failures in document management.',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
     description: `Electronic Document Management that suites to fit your healthcare structure to increase Efficiency`,
   },
@@ -394,9 +395,10 @@ export const serviceList11 = [
     link: '#',
     Icon: TeamTwo,
     title: 'Stay Compliant',
+    linkUrl:"/compliance-regulation",
     linkType: LinkType.orange,
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3 ',
-
+    backDescription: `Doing background checks for pre-hire and on a monthly basis for potential employees shouldn't have to be done by hand, Automate your scheduled on-demand background checks for all of following reports.`,
     description: `Compliance that meets all government requirements, providing automation and peace of mind`,
   },
   {
@@ -404,9 +406,10 @@ export const serviceList11 = [
     link: '#',
     Icon: Lamp,
     linkType: LinkType.orange,
+    linkUrl:"/claims-and-bills",
     title: 'Increase Profits',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
-
+    backDescription: 'Claim rejections or denials can add additional effort to your claims workflow. Add the necessary conatraints before submiting claims to increase the chance of quick acceptance and payments.',
     description: `Receive payments directly from your chosen medical insurance partner, without the need to chase`,
   },
 ];
