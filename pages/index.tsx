@@ -23,7 +23,7 @@ const ryzolve = () => {
         <header className="wrapper">
           <RyzolveHeader />
         </header>
-        <section className="p-4 p-md-12 wrapper w-100">
+        <section className="p-4 p-md-12 wrapper w-auto">
           <Hero2 />
         </section>
       </section>

@@ -45,11 +45,11 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
         <div className="cardcontent card-front">
           <Icon className={iconClassName} />
           <p style={{ fontSize: "1.2rem", fontWeight: "bolder" }}>{title}</p>
-          <p className="mb-2">{description}</p>
+          <p className="mb-2 three-line-truncate">{description}</p>
           {/* <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} /> */}
         </div>
         <div className="cardcontent card-back">
-          <h5 className="mb-2">{backDescription}</h5>
+          <h5 className="mb-2 five-line-truncate">{backDescription}</h5>
           <NextLink
             title="Learn More"
             href={linkUrl}

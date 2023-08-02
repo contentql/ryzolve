@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { slideInDownAnimate, zoomInAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
+import Image from "next/image";
 
 const Hero2: FC = () => {
   return (
@@ -17,15 +18,15 @@ const Hero2: FC = () => {
           className="shape rounded bg-soft-primary rellax d-md-block"
           style={{
             width: "85%",
-            height: "90%",
+            height: "0%",
             right: "-0.8rem",
             bottom: "-1.8rem",
           }}
         />
 
-        <figure className="rounded">
-          <img src="/img/photos/macbook.svg" alt="hero" />
-          <img
+        <figure className="rounded w-75">
+          <img src="/img/photos/macbook.png" alt="hero" />
+          {/* <img
             src="/img/pages/hero1.jpg"
             alt="hero"
             className="position-absolute top-0 end-0 mt-4"
@@ -33,7 +34,7 @@ const Hero2: FC = () => {
               width: "84%",
               borderRadius: "0",
             }}
-          />
+          /> */}
         </figure>
       </div>
 
