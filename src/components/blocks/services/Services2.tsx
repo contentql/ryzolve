@@ -5,6 +5,7 @@ import Image from "next/image";
 import { aboutList1 } from "data/about";
 import NextLink from "components/reuseable/links/NextLink";
 import { slideInDownAnimate } from "utils/animation";
+import { lineHeightMarkup } from "markups/styleguide/misc";
 
 type Services2Props = {
   tag?: string;
@@ -14,6 +15,7 @@ type Services2Props = {
   description3?: string;
   list?: string[];
   image: string;
+  height?: string;
 };
 
 const Services2: FC<Services2Props> = ({
@@ -28,20 +30,21 @@ const Services2: FC<Services2Props> = ({
     <section className="wrapper bg-soft-primary py-14">
       <div className="container">
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center flex-row-reverse">
-          <div className="col-lg-6 order-lg-2">
+          <div className="col-lg-6 order-lg-2 rounded">
             <figure
               style={{
-                maxHeight: "450px",
+                maxHeight: "70vh",
                 overflow: "hidden",
                 display: "flex",
                 justifyContent: "end",
+                height: "70%",
                 alignItems: "center",
               }}
+              className="rounded"
             >
               <Image
-                height={500}
+                height={300}
                 width={500}
-                className="rounded"
                 alt="our solutions"
                 src={image}
                 // srcSet='/img/illustrations/i8@2x.png 2x'

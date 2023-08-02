@@ -25,7 +25,7 @@ const index = () => {
         {/* Services Section */}
 
         <section className="wrapper bg-light ">
-          <section className="container pt-2 pb-md-2">
+          <section className="container pt-2 pb-md-20">
             {/* ========== services section ========== */}
             <Services21 />
           </section>
@@ -33,7 +33,7 @@ const index = () => {
 
         <section>
           <Services2
-            title="Are you risking liability with outdated document management methods?"
+            title="You Shouldnt need to perform background checks by hand"
             description1="Doing background checks for pre-hire and on a monthly basis for potential employees shouldn’t have to be done by hand. 
 "
             description2="Automate your scheduled and on-demand background checks for all of the following reports: "

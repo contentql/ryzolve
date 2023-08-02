@@ -1,61 +1,52 @@
-import { FC } from 'react';
-import { slideInDownAnimate, zoomInAnimate } from 'utils/animation';
-import NextLink from 'components/reuseable/links/NextLink';
-import Image from 'next/image';
+import { FC } from "react";
+import { slideInDownAnimate, zoomInAnimate } from "utils/animation";
+import NextLink from "components/reuseable/links/NextLink";
+import Image from "next/image";
 
 const Hero2: FC = () => {
   return (
-    <div className='row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 mb-md-10 mb-lg-16 align-items-center'>
+    <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7  align-items-center">
       <div
-        className='col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2'
-        style={zoomInAnimate('0ms')}
+        className="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2"
+        style={zoomInAnimate("0ms")}
       >
         <div
-          className='shape bg-dot primary rellax w-17 h-19'
-          style={{ top: '-1.7rem', left: '-1.5rem' }}
+          className="shape bg-dot primary rellax w-17 h-19"
+          style={{ top: "-1.7rem", left: "4.5rem" }}
         />
         <div
-          className='shape rounded bg-soft-primary rellax d-md-block'
+          className="shape rounded bg-soft-primary rellax d-md-block"
           style={{
-            width: '85%',
-            height: '0%',
-            right: '-0.8rem',
-            bottom: '-1.8rem',
+            width: "85%",
+            height: "0%",
+            right: "-0.8rem",
+            bottom: "-1.8rem",
           }}
         />
 
-        <figure className='rounded w-auto'>
-          <img src='/img/photos/macbook.png' alt='hero' />
-          {/* <img
-            src="/img/pages/hero1.jpg"
-            alt="hero"
-            className="position-absolute top-0 end-0 mt-4"
-            style={{
-              width: "84%",
-              borderRadius: "0",
-            }}
-          /> */}
+        <figure className="rounded h-50 w-75" style={{ float: "right" }}>
+          <img src="/img/photos/macbook.png" alt="hero" />
         </figure>
       </div>
 
-      <div className='col-lg-5 mt-lg-n10 text-center text-lg-start'>
-        <h1 className='display-1 mb-5' style={slideInDownAnimate('600ms')}>
+      <div className="col-lg-5 mt-lg-n10 text-center text-lg-start">
+        <h1 className="display-1 mb-5" style={slideInDownAnimate("600ms")}>
           Improve Your Agency's Efficiency & Compliance
         </h1>
 
         <p
-          className='lead fs-25 lh-sm mb-7 px-md-10 px-lg-0'
-          style={slideInDownAnimate('900ms')}
+          className="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0"
+          style={slideInDownAnimate("900ms")}
         >
-          Provider Management Software To Help PAS Agencies Be More Efficient{' '}
+          Provider Management Software To Help PAS Agencies Be More Efficient{" "}
         </p>
 
-        <div className='d-flex justify-content-center justify-content-lg-start'>
-          <span style={slideInDownAnimate('1200ms')}>
+        <div className="d-flex justify-content-center justify-content-lg-start">
+          <span style={slideInDownAnimate("1200ms")}>
             <NextLink
-              title='Book a Demo'
-              href='#'
-              className='btn btn-lg btn-primary rounded-pill me-2'
+              title="Book a Demo"
+              href="#"
+              className="btn btn-lg btn-primary rounded-pill me-2"
             />
           </span>
         </div>

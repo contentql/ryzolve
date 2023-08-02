@@ -129,6 +129,7 @@
 .two-line-truncate,
 .one-line-truncate,
 .three-line-truncate,
+.four-line-truncate,
 .five-line-truncate {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -142,6 +143,9 @@
 }
 .three-line-truncate {
     -webkit-line-clamp: 3 !important;
+}
+.four-line-truncate {
+    -webkit-line-clamp: 4;
 }
 .five-line-truncate {
     -webkit-line-clamp: 5 !important;

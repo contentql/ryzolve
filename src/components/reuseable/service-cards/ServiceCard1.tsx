@@ -43,13 +43,34 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
     <div className="col-md-8 col-xl-4">
       <div className={`effectcard ${cardClassName} `}>
         <div className="cardcontent card-front">
-          <Icon className={iconClassName} />
-          <p style={{ fontSize: "1.2rem", fontWeight: "bolder" }}>{title}</p>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <p
+              style={{
+                fontSize: "1.2rem",
+                fontWeight: "bolder",
+              }}
+            >
+              {title}
+            </p>
+
+            <Icon className={iconClassName} />
+          </div>
+
           <p className="mb-2 three-line-truncate">{description}</p>
+
           {/* <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} /> */}
         </div>
         <div className="cardcontent card-back">
-          <h5 className="mb-2 five-line-truncate">{backDescription}</h5>
+          <p
+            style={{
+              fontSize: "1.2rem",
+              fontWeight: "bolder",
+              color: "#0d5992",
+            }}
+          >
+            {title}
+          </p>
+          <h5 className="mb-2 four-line-truncate">{backDescription}</h5>
           <NextLink
             title="Learn More"
             href={linkUrl}
