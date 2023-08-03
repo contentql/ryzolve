@@ -70,7 +70,7 @@ const Services2: FC<Services2Props> = ({
             <span style={slideInDownAnimate("1200ms")}>
               <NextLink
                 title="Book a Demo"
-                href="#"
+                href="/calendly"
                 className="btn btn-lg btn-primary rounded-pill me-2 "
               />
             </span>

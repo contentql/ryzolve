@@ -12,9 +12,9 @@ const RyzolveHeader = () => {
       navClassName="navbar navbar-expand-lg fancy navbar-light navbar-bg-light"
       button={
         <a
-          href="#"
-          data-bs-toggle="modal"
-          data-bs-target="#modal-signin"
+          href="/calendly"
+          // data-bs-toggle="modal"
+          // data-bs-target="#modal-signin"
           className="btn btn-sm btn-primary rounded-pill"
         >
           Book a demo
