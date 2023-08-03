@@ -25,7 +25,7 @@ const index = () => {
         {/* Services Section */}
 
         <section className="wrapper bg-light ">
-          <section className="container pt-2 pb-md-2">
+          <section className="container pt-2 pb-md-20">
             {/* ========== services section ========== */}
             <Services21 />
           </section>

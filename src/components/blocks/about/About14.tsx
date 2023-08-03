@@ -59,13 +59,14 @@ import AccordionList from "components/common/AccordionList";
 import { slideInDownAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
 import { list } from "data/demo-11";
+import Image from "next/image";
 
 type About14Props = {
   title: string;
   description1: string;
   description2?: string;
   list?: string[];
-  image?: string;
+  image: string;
 };
 
 const About14: FC<About14Props> = ({
@@ -78,8 +79,10 @@ const About14: FC<About14Props> = ({
   return (
     <div className="row align-items-center">
       <div className="col-lg-6 order-lg-2">
-        <figure>
-          <img
+        <figure className="rounded">
+          <Image
+            height={500}
+            width={500}
             className="w-auto"
             src={image}
             // srcSet='/img/illustrations/.png 2x'

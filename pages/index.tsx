@@ -16,6 +16,8 @@ import { Contact10 } from "components/blocks/banner/contact";
 import { Footer3 } from "components/blocks/footer";
 import { About14 } from "components/blocks/about";
 
+// style={{ top: "-1.7rem", left: "-1.5rem" }}
+
 const ryzolve = () => {
   return (
     <div>
@@ -23,13 +25,13 @@ const ryzolve = () => {
         <header className="wrapper">
           <RyzolveHeader />
         </header>
-        <section className="p-4 p-md-12 wrapper w-100">
+        <section className="p-4 p-md-12 wrapper w-auto">
           <Hero2 />
         </section>
       </section>
       <section className="content-wrapper wrapper">
         <section className="wrapper bg-light ">
-          <section className="container pt-16 pt-md-12 pb-md-2">
+          <section className="container pt-16 pt-md-12 pb-md-20">
             {/* ========== services section ========== */}
             <Services21 />
           </section>
@@ -71,7 +73,7 @@ const ryzolve = () => {
         </section>
         <section className="px-2 pb-4 px-md-12 bg-light pb-md-14">
           <About14
-            image="/img/illustrations/ryzolve-about.svg"
+            image="/img/photos/our-strategy.svg"
             title="Ryzolve helps healthcare providers reduce wasted time with their filing & paperwork so they can improve efficiency and stay compliant."
             description1="We understand how frustrating paperwork, files, and hiring can be with certain processes. Our personal agency struggled with manual processes for years so much that we were losing money. From wasting time hiring, to losing money on denials, we built the Ryzolve software out of this frustration. We believe that your agency shouldn’t have to lose money or suffer from denials and audits. "
             // description2="Personal Agency"

@@ -32976,6 +32976,46 @@ button.hamburger span {
   transition-duration: 300ms;
 }
 
+.effectcard {
+  position: relative;
+}
+
+.cardcontent {
+  box-shadow: 0 2rem 2rem rgba(188, 185, 185, 0.5);
+  border: 0;
+  transition: all 1s;
+  border-radius: 8px;
+  position: absolute;
+  background-color: #0d5992;
+  color: white;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  height: 14rem;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.cardcontent[class*=bg-] {
+  box-shadow: none !important;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.effectcard:hover .card-front {
+  background-color: #0d5992;
+  color: white;
+  transform: rotateY(-180deg);
+}
+
+.effectcard:hover .card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(0);
+}
+
 .card-img-top img {
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;

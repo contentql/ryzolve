@@ -12,9 +12,7 @@ const Services22: FC = () => {
     <Fragment>
       <div className="row">
         <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
-          <h2 className="fs-16 text-uppercase text-muted mb-3">
-            Our Solutions
-          </h2>
+          <h2 className="fs-16 text-uppercase text-muted mb-3">Our Strategy</h2>
           <h3 className="display-3 mb-10 px-xl-10 px-xxl-15">
             All In One Platform To Help Your Agency Grow
             {/* <span className='underline-3 style-2 yellow'>reasons</span> */}
@@ -84,13 +82,15 @@ const Services22: FC = () => {
       <div>
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-md-6">
-            <Image
-              width={600}
-              height={400}
-              src="/img/photos/digital-management.svg"
-              alt="digital-management.svg"
-              className="w-100 rounded"
-            />
+            <figure className="rounded">
+              <Image
+                width={600}
+                height={400}
+                src="/img/photos/digital-management.svg"
+                alt="digital-management.svg"
+                className="w-100"
+              />
+            </figure>
           </div>
 
           <List
@@ -106,13 +106,15 @@ const Services22: FC = () => {
         </div>
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center flex-row-reverse">
           <div className="col-md-6">
-            <Image
-              width={600}
-              height={400}
-              src="/img/photos/compliance-regulation.svg"
-              alt="compliance-regulation.svg"
-              className="w-100 rounded"
-            />
+            <figure>
+              <Image
+                width={600}
+                height={400}
+                src="/img/photos/compliance-regulation.svg"
+                alt="compliance-regulation.svg"
+                className="w-100 rounded"
+              />
+            </figure>
           </div>
 
           <List
@@ -127,16 +129,18 @@ const Services22: FC = () => {
         </div>
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-md-6">
-            <Image
-              width={600}
-              height={400}
-              src="/img/photos/claims-billing.svg"
-              alt="claims-billing.svg"
-              className="w-100 rounded"
-              style={{
-                borderRadius: "10px",
-              }}
-            />
+            <figure>
+              <Image
+                width={600}
+                height={400}
+                src="/img/photos/claims-billing.svg"
+                alt="claims-billing.svg"
+                className="w-100 rounded"
+                style={{
+                  borderRadius: "10px",
+                }}
+              />
+            </figure>
           </div>
 
           <List

@@ -388,7 +388,7 @@ export const serviceList11 = [
     linkType: LinkType.orange,
     backDescription:'We built the ryzolve software with your frustration in mind. The Ryzolve app contains everything you need to organize ypur agency,mantain compliance and avoid costly failures in document management.',
     iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
-    description: `Electronic Document Management that suites to fit your healthcare structure to increase Efficiency`,
+    description: `Electronic Document Management that suites to fit your healthcare structure to increase Efficiency,`,
   },
   {
     id: 2,

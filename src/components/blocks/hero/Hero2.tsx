@@ -1,39 +1,31 @@
 import { FC } from "react";
 import { slideInDownAnimate, zoomInAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
+import Image from "next/image";
 
 const Hero2: FC = () => {
   return (
-    <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 mb-md-10 mb-lg-16 align-items-center">
+    <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7  align-items-center">
       <div
         className="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2"
         style={zoomInAnimate("0ms")}
       >
         <div
           className="shape bg-dot primary rellax w-17 h-19"
-          style={{ top: "-1.7rem", left: "-1.5rem" }}
+          style={{ top: "-1.7rem", left: "4.5rem" }}
         />
         <div
           className="shape rounded bg-soft-primary rellax d-md-block"
           style={{
             width: "85%",
-            height: "90%",
+            height: "0%",
             right: "-0.8rem",
             bottom: "-1.8rem",
           }}
         />
 
-        <figure className="rounded">
-          <img src="/img/photos/macbook.svg" alt="hero" />
-          <img
-            src="/img/pages/hero1.jpg"
-            alt="hero"
-            className="position-absolute top-0 end-0 mt-4"
-            style={{
-              width: "84%",
-              borderRadius: "0",
-            }}
-          />
+        <figure className="rounded h-50 w-75" style={{ float: "right" }}>
+          <img src="/img/photos/macbook.png" alt="hero" />
         </figure>
       </div>
 
