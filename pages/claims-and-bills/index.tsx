@@ -43,7 +43,7 @@ const index = () => {
           />
         </section>
         <section className="">
-          <Testimonial4 testimonialData={data?.Testimonial} />
+          <Testimonial4 />
         </section>
         <section className="px-12 py-12 bg-gray">
           <About14
