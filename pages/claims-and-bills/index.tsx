@@ -45,9 +45,6 @@ const index = () => {
         <section className="">
           <Testimonial4 testimonialData={data?.Testimonial} />
         </section>
-        {/* <section className='px-12 pt-12'>
-          <Process1 />
-        </section> */}
         <section className="px-12 py-12 bg-gray">
           <About14
             image="/img/photos/claims-about.svg"
