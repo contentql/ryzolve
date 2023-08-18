@@ -1,6 +1,6 @@
-import { FC, Fragment, ReactElement, useState } from 'react';
-import { Autoplay, Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
+import { FC, Fragment, ReactElement, useState } from "react";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 
 // ==================================================================
 interface CarouselProps extends SwiperProps {
@@ -9,7 +9,7 @@ interface CarouselProps extends SwiperProps {
   spaceBetween?: number;
   slideClassName?: string;
   children: ReactElement[];
-  slidesPerView?: number | 'auto';
+  slidesPerView?: number | "auto";
 }
 // ==================================================================
 
@@ -36,7 +36,7 @@ const Carousel: FC<CarouselProps> = ({
         pagination={pagination ? { clickable: true, el: paginationEl } : false}
         {...others}
       >
-        {children.map((slide, i) => (
+        {children?.map((slide, i) => (
           <SwiperSlide className={slideClassName} key={i}>
             {slide}
           </SwiperSlide>
@@ -47,13 +47,26 @@ const Carousel: FC<CarouselProps> = ({
         {/* custom navigation */}
         {navigation && (
           <div className="swiper-navigation">
-            <div role="button" ref={(node) => setPrevEl(node)} className="swiper-button swiper-button-prev" />
-            <div role="button" ref={(node) => setNextEl(node)} className="swiper-button swiper-button-next" />
+            <div
+              role="button"
+              ref={(node) => setPrevEl(node)}
+              className="swiper-button swiper-button-prev"
+            />
+            <div
+              role="button"
+              ref={(node) => setNextEl(node)}
+              className="swiper-button swiper-button-next"
+            />
           </div>
         )}
 
         {/* custom pagination */}
-        {pagination && <div className="swiper-pagination" ref={(node) => setPaginationEl(node)} />}
+        {pagination && (
+          <div
+            className="swiper-pagination"
+            ref={(node) => setPaginationEl(node)}
+          />
+        )}
       </div>
     </Fragment>
   );
