@@ -8,15 +8,15 @@ import { testimonialList2 } from "data/testimonial-list";
 import { useQuery } from "@tanstack/react-query";
 import { getTestimonialsData } from "queries/testimonial";
 
-type TestimonialProps = {
-  testimonialData: {
-    title: string;
-    description: string;
-    testimonialListing: [];
-  };
-};
+// type TestimonialProps = {
+//   testimonialData: {
+//     title: string;
+//     description: string;
+//     testimonialListing: [];
+//   };
+// };
 
-const Testimonial4: FC<TestimonialProps> = () => {
+const Testimonial4: FC = () => {
   const { data } = useQuery({
     queryKey: ["testimonialData"],
     queryFn: getTestimonialsData,

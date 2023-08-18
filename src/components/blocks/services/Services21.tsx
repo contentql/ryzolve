@@ -4,15 +4,15 @@ import { ServiceCard1 } from "components/reuseable/service-cards";
 import { serviceList11 } from "data/service";
 import { useQueries, useQuery } from "@tanstack/react-query";
 import { getServicesData } from "queries/services-cards";
-type Services21Props = {
-  // id?: string;
-  // name: string;
-  // description: string;
-  // hoverDescription?: string;
-  servicesData: [];
-};
+// type Services21Props = {
+//   // id?: string;
+//   // name: string;
+//   // description: string;
+//   // hoverDescription?: string;
+//   servicesData: [];
+// };
 
-const Services21: FC<Services21Props> = ({ servicesData }) => {
+const Services21: FC = () => {
   // const { data } = useQuery({
   //   queryKey: ["servicesData"],
   //   queryFn: getServicesData,

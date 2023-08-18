@@ -30,7 +30,7 @@ const index = () => {
         <section className="wrapper bg-light ">
           <section className="container pt-2 pb-md-20">
             {/* ========== services section ========== */}
-            <Services21 servicesData={data?.Services} />
+            <Services21 />
           </section>
         </section>
 
