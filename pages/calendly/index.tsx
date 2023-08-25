@@ -1,5 +1,5 @@
-import RyzolveHeader from "components/ryzolve/RyzolveHeader";
-import { InlineWidget, useCalendlyEventListener } from "react-calendly";
+import RyzolveHeader from 'components/ryzolve/RyzolveHeader';
+import { InlineWidget, useCalendlyEventListener } from 'react-calendly';
 
 const index = () => {
   //   useCalendlyEventListener({
@@ -9,12 +9,12 @@ const index = () => {
   //     onEventScheduled: (e) => console.log(e.data.payload),
   //   });
   return (
-    <section className="bg-rezolve-calendly">
-      <header className="wrapper">
+    <section className='bg-rezolve-calendly'>
+      <header className='wrapper'>
         <RyzolveHeader />
       </header>
       <div>
-        <InlineWidget url="https://calendly.com/manojkarajada-mk/Ryzolve" />
+        <InlineWidget url='https://calendly.com/ryzolve-pas-software/ryzolve-demo' />
       </div>
     </section>
   );
