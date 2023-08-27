@@ -14,7 +14,7 @@ const Process1: FC = () => {
 
         <div className="p-8 d-flex justify-content-center">
           <NextLink
-            href="#"
+            href="/calendly"
             title="Book a demo"
             className="btn btn-primary rounded-pill mb-0"
           />
