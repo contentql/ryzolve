@@ -4,12 +4,28 @@ import { ProcessList1 } from "components/reuseable/process-list";
 // -------- data -------- //
 import { processList1 } from "data/process";
 
-const Process1: FC = () => {
+type HowItWorks = {
+  title: string;
+  steps: {
+    id: string;
+    name: string;
+    description: string;
+  }[];
+};
+const Process1: FC<HowItWorks> = ({ title, steps }) => {
   return (
     <div className="row gx-md- gx-xl-12 gy-10 mb-4 mb-md-8 px-5 align-items-center">
       <div className="col-lg-6 order-lg-2">
-        {processList1.map((item) => {
-          return <ProcessList1 shadow {...item} key={item.no} />;
+        {steps?.map((item, index) => {
+          return (
+            <ProcessList1
+              shadow
+              no={index + 1}
+              key={item.id}
+              {...item}
+              className={processList1[index].className}
+            />
+          );
         })}
 
         <div className="p-8 d-flex justify-content-center">
@@ -23,9 +39,7 @@ const Process1: FC = () => {
 
       <div className="col-lg-6">
         <h2 className="fs-16 text-uppercase text-muted mb-3">How it Works</h2>
-        <h3 className="display-4 mb-5">
-          Managing Claims and Paperwork Should be Easier.
-        </h3>
+        <h3 className="display-4 mb-5">{title}</h3>
 
         <figure
           style={{

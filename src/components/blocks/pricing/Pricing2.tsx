@@ -6,10 +6,22 @@ import { PricingCard2 } from "components/reuseable/pricing-cards";
 import { pricingList2 } from "data/pricing";
 
 // =============================================================================
-type Pricing2Props = { className?: string };
+type Pricing2Props = {
+  className?: string;
+  planData?: {
+    id: string;
+    monthly_price: number;
+    yearly_price: number;
+    plan_name: string;
+    plan_features: {
+      id: string;
+      item: string;
+    }[];
+  }[];
+};
 // =============================================================================
 
-const Pricing2: FC<Pricing2Props> = ({ className }) => {
+const Pricing2: FC<Pricing2Props> = ({ className, planData }) => {
   const [activeYearly, setActiveYearly] = useState(false);
 
   return (
@@ -34,9 +46,14 @@ const Pricing2: FC<Pricing2Props> = ({ className }) => {
       </div>
 
       <div className="row gy-6 mt-3 mt-md-5">
-        {pricingList2.map((item, i) => (
+        {planData?.map((item, i) => (
           <div className={`col-md-6 col-lg-4 ${i === 1 && "popular"}`} key={i}>
-            <PricingCard2 {...item} activeYearly={activeYearly} roundedButton />
+            <PricingCard2
+              {...item}
+              activeYearly={activeYearly}
+              Icon={pricingList2[i].Icon}
+              roundedButton
+            />
           </div>
         ))}
       </div>

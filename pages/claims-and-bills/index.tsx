@@ -6,8 +6,14 @@ import { Testimonial4 } from "components/blocks/testimonial";
 import { Contact10 } from "components/blocks/banner/contact";
 import { Footer3 } from "components/blocks/footer";
 import { About14 } from "components/blocks/about";
+import { useQuery } from "@tanstack/react-query";
+import { getClaimsAndBillingData } from "queries/claims-and-bills";
 
 const index = () => {
+  const { data } = useQuery({
+    queryKey: ["claimsAndBillings"],
+    queryFn: () => getClaimsAndBillingData("claimsAndBilling"),
+  });
   return (
     <div>
       <section className="bg-rezolve">
@@ -15,10 +21,7 @@ const index = () => {
           <RyzolveHeader />
         </header>
         <section className="p-4 wrapper">
-          <Hero10
-            title="Ensure outstanding claims are settled efficiently"
-            subtitle="Recevie payments directly form your chosen medical insurence partner, without the need to chase"
-          />
+          <Hero10 title={data?.Hero.title} subtitle={data?.Hero.subtitle} />
         </section>
       </section>
       <section className="content-wrapper wrapper">
@@ -33,9 +36,8 @@ const index = () => {
 
         <section>
           <Services2
-            title="Forward thinking claims planning"
-            description1="Claim rejections or denials can add additional effort to your claims workflow. 
-"
+            title={data?.Solutions.title}
+            description1={data?.Solutions.description}
             description2="Add the necessary contraints before submitting claims to increase the chance of quick acceptance and payment. "
             image="/img/photos/claims-service.svg"
           />
@@ -43,14 +45,11 @@ const index = () => {
         <section className="">
           <Testimonial4 />
         </section>
-        {/* <section className='px-12 pt-12'>
-          <Process1 />
-        </section> */}
         <section className="px-12 py-12 bg-gray">
           <About14
             image="/img/photos/claims-about.svg"
-            title="Reduced workload, improved accuracy"
-            description1="Our simple claims entry process utilises simple templates to help manage repetitive tasks easily. Automating validation massively reduces the chance of human error and speeds up claims payment. "
+            title={data?.About.title}
+            description1={data?.About.description}
           />
         </section>
         <Contact10 />

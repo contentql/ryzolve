@@ -2,7 +2,7 @@ import { FC } from "react";
 
 // ===========================================================
 type ListColumnProps = {
-  list: string[][];
+  list: { item: string }[][];
   rowClass?: string;
   bulletColor?: string;
 };
@@ -15,14 +15,14 @@ const ListColumn: FC<ListColumnProps> = ({
 }) => {
   return (
     <div className={"gy-3 " + rowClass}>
-      {list.map((item, i) => (
+      {list.map((value, i) => (
         <div key={i}>
           <ul className={`icon-list bullet-bg bullet-soft-${bulletColor} mb-0`}>
-            {item.map((li, i) => {
+            {value.map((item, i) => {
               const liProps = i !== 0 ? { className: "mt-3" } : {};
               return (
-                <li key={li} {...liProps}>
-                  <i className="uil uil-check" /> {li}
+                <li key={item.item} {...liProps}>
+                  <i className="uil uil-check" /> {item.item}
                 </li>
               );
             })}
