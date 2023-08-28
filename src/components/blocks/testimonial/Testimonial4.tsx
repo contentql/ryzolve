@@ -27,10 +27,10 @@ const Testimonial4: FC = () => {
         <div className="row">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
             <h2 className="fs-15 text-uppercase text-muted mb-3">
-              {data?.Testimonial.title}
+              {data?.testimonial.title}
             </h2>
             <h3 className="display-4 mb-6 px-xl-10 px-xxl-15">
-              {data?.Testimonial.description}
+              {data?.testimonial.description}
             </h3>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Testimonial4: FC = () => {
             navigation={false}
             breakpoints={carouselBreakpoints}
           >
-            {data?.Testimonial.testimonialListing?.map(
+            {data?.testimonial.testimonialListing?.map(
               (
                 item: {
                   name: string;

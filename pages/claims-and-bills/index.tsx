@@ -12,7 +12,7 @@ import { getClaimsAndBillingData } from "queries/claims-and-bills";
 const index = () => {
   const { data } = useQuery({
     queryKey: ["claimsAndBillings"],
-    queryFn: getClaimsAndBillingData,
+    queryFn: () => getClaimsAndBillingData("claimsAndBilling"),
   });
   return (
     <div>

@@ -13,21 +13,29 @@ import { getServicesData } from "queries/services-cards";
 // };
 
 const Services21: FC = () => {
-  // const { data } = useQuery({
-  //   queryKey: ["servicesData"],
-  //   queryFn: getServicesData,
-  // });
-  // console.log(data);
+  const { data } = useQuery({
+    queryKey: ["servicesData"],
+    queryFn: getServicesData,
+  });
 
-  // const requiredServicesData = data?.Services.map((service,i) => {
-  //   return {
-  //     ...service,icon:serviceList11[i].icon,linkType:serviceList11[i].linkType,iconClassName:serviceList11[i].iconClassName
-  //   }
-  // })
+  // const requiredServicesData = data?.map((value: any) => {
+  //   const requiredValue = value?.attributes.Services.map(
+  //     (service: any, i: number) => {
+  //       return {
+  //         ...service,
+  //         Icon: serviceList11[i].Icon,
+  //         linkType: serviceList11[i].linkType,
+  //         iconClassName: serviceList11[i].iconClassName,
+  //         linkUrl: serviceList11[i].linkUrl,
+  //       };
+  //     }
+  //   );
+  //   return requiredValue;
+  // });
 
   return (
     <div className="row gx-md-5 gy-5 mt-n19 mb-14 mb-md-17 ">
-      {serviceList11.map(({ id, Icon, ...item }) => (
+      {data?.flat().map(({ id, Icon, ...item }: any) => (
         <ServiceCard1 {...item} key={id} Icon={Icon} />
       ))}
     </div>

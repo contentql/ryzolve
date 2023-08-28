@@ -13,7 +13,7 @@ type Services2Props = {
   description1: string;
   description2?: string;
   description3?: string;
-  list?: string[];
+  list?: { item: string }[];
   image: string;
   height?: string;
 };

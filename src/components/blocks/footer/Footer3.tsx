@@ -1,24 +1,33 @@
 import { FC } from "react";
-import Link from "types/link";
+// import Link from "types/link";
 import NextLink from "components/reuseable/links/NextLink";
 import SocialLinks from "components/reuseable/SocialLinks";
 // -------- data -------- //
 import { helps, learnMore } from "data/footer";
+import { getFooterData } from "queries/footer";
+import { useQuery } from "@tanstack/react-query";
 
 // =================================================
 type Footer3Props = { hiddenNewsletter?: boolean };
 // =================================================
 
+type Link = { id: number; name: string; link: string };
+
 const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
+  const { data } = useQuery({
+    queryKey: ["footerData"],
+    queryFn: getFooterData,
+  });
+
   // common links section
   const widget = (list: Link[], title: string) => {
     return (
       <div className="widget">
         <h4 className="widget-title  mb-3">{title}</h4>
         <ul className="list-unstyled text-reset mb-0">
-          {list.map(({ url, title, id }) => (
+          {list?.map(({ link, name, id }) => (
             <li key={id}>
-              <NextLink href={url} title={title} />
+              <NextLink href={link} title={name} />
             </li>
           ))}
         </ul>
@@ -119,7 +128,7 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-lg-4">
             <div className="widget">
-              <h3 className="h2 mb-3 ">Join the Community</h3>
+              <h2 className="mb-3 ">Join the Community</h2>
               <p className="lead mb-5">
                 Lets make something great together. We are trusted by over 5000+
                 clients. Join them by using our services and grow your business.
@@ -133,23 +142,21 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
           </div>
 
           <div className="col-md-4 col-lg-2 offset-lg-2">
-            {widget(helps, "Need Help?")}
+            {widget(data?.NeedHelp.help, "Need Help?")}
           </div>
 
           <div className="col-md-4 col-lg-2">
-            {widget(learnMore, "Learn More")}
+            {widget(data?.LearnMore.help, "Learn More")}
           </div>
 
           <div className="col-md-4 col-lg-2">
             <div className="widget">
               <h4 className="widget-title  mb-3">Get in Touch</h4>
-              <address>
-                Moonshine St. 14/05 Light City, London, United Kingdom
-              </address>
+              <address>{data?.ContactUs.address}</address>
               <a href="mailto:first.last@email.com" className="link-body">
-                info@email.com
+                {data?.ContactUs.email}
               </a>
-              <br /> 00 (123) 456 78 90
+              <br /> {data?.ContactUs.phone}
             </div>
           </div>
         </div>

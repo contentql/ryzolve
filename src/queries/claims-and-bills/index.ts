@@ -1,10 +1,10 @@
 import fetchData from "utils/fetchData";
 
-export const getClaimsAndBillingData = async () => {
+export const getClaimsAndBillingData = async (queryPage: string) => {
   const data = await fetchData(
     `
       query{
-            claimsAndBilling{
+            ${queryPage}{
             data{
                 attributes{
                 Hero{
@@ -12,30 +12,14 @@ export const getClaimsAndBillingData = async () => {
                     title
                     subtitle
                 }
-                Services{
-                    id
-                    name
-                    description
-                    hoverDescription
-                }
-                Testimonial{
-                    id
-                    title
-                    description
-                    testimonialListing{
-                    id
-                    name
-                    review
-                    designation
-                    company_name
-                    rating
-                    }
-                }
                 Solutions{
                     id
                     title
                     description
-                    
+                    personalAgency{
+                        id
+                        item
+                    }
                 }
                 About{
                     id
@@ -51,6 +35,5 @@ export const getClaimsAndBillingData = async () => {
       variables: {},
     }
   );
-  console.log(data);
-  return data.data.claimsAndBilling.data.attributes;
+  return data.data[`${queryPage}`].data.attributes;
 };

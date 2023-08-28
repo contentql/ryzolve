@@ -3,7 +3,12 @@ import { slideInDownAnimate, zoomInAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
 import Image from "next/image";
 
-const Hero2: FC = () => {
+type HomePageHeroProps = {
+  title: String;
+  subtitle: String;
+};
+
+const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
   return (
     <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7  align-items-center">
       <div
@@ -31,14 +36,14 @@ const Hero2: FC = () => {
 
       <div className="col-lg-5 mt-lg-n10 text-center text-lg-start">
         <h1 className="display-1 mb-5" style={slideInDownAnimate("600ms")}>
-          Improve Your Agency's Efficiency & Compliance
+          {title}
         </h1>
 
         <p
           className="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0"
           style={slideInDownAnimate("900ms")}
         >
-          Provider Management Software To Help PAS Agencies Be More Efficient{" "}
+          {subtitle}
         </p>
 
         <div className="d-flex justify-content-center justify-content-lg-start">
