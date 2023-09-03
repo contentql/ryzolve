@@ -1,6 +1,6 @@
-import fetchData from "utils/fetchData";
+import fetchData from 'utils/fetchData';
 
-export const getClaimsAndBillingData = async (queryPage: string) => {
+export const getPageData = async (queryPage: string) => {
   const data = await fetchData(
     `
       query{
@@ -33,7 +33,7 @@ export const getClaimsAndBillingData = async (queryPage: string) => {
   `,
     {
       variables: {},
-    }
+    },
   );
   return data.data[`${queryPage}`].data.attributes;
 };
