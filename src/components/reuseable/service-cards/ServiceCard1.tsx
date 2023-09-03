@@ -1,15 +1,15 @@
-import { FC } from 'react';
-import IconProps from 'types/icon';
-import { LinkType } from 'types/demo-1';
-import NextLink from '../links/NextLink';
+import { FC } from "react";
+import IconProps from "types/icon";
+import { LinkType } from "types/demo-1";
+import NextLink from "../links/NextLink";
 
 // ===============================================================
 type ServiceCard1Props = {
-  title: string;
+  name: string;
   linkUrl: string;
   linkType: LinkType;
   description: string;
-  backDescription?: string;
+  hoverDescription?: string;
   cardClassName?: string;
   iconClassName?: string;
   Icon: (props: IconProps) => JSX.Element;
@@ -18,14 +18,14 @@ type ServiceCard1Props = {
 
 const ServiceCard1: FC<ServiceCard1Props> = (props) => {
   const {
-    title,
+    name,
     description,
     Icon,
     linkUrl,
     linkType,
     cardClassName,
     iconClassName,
-    backDescription,
+    hoverDescription,
   } = props;
 
   return (
@@ -40,39 +40,39 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
     //   </div>
     // </div>
 
-    <div className='col-md-8 col-xl-4'>
+    <div className="col-md-8 col-xl-4">
       <div className={`effectcard ${cardClassName} `}>
-        <div className='cardcontent card-front'>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div className="cardcontent card-front">
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
             <p
               style={{
-                fontSize: '1.2rem',
-                fontWeight: 'bolder',
+                fontSize: "1.2rem",
+                fontWeight: "bolder",
               }}
             >
-              {title}
+              {name}
             </p>
 
             <Icon className={iconClassName} />
           </div>
 
-          <p className='mb-2 three-line-truncate pt-5'>{description}</p>
+          <p className="mb-2 three-line-truncate pt-5">{description}</p>
 
           {/* <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} /> */}
         </div>
-        <div className='cardcontent card-back'>
+        <div className="cardcontent card-back">
           <p
             style={{
-              fontSize: '1.2rem',
-              fontWeight: 'bolder',
-              color: '#0d5992',
+              fontSize: "1.2rem",
+              fontWeight: "bolder",
+              color: "#0d5992",
             }}
           >
-            {title}
+            {name}
           </p>
-          <h5 className='mb-2 four-line-truncate'>{backDescription}</h5>
+          <h5 className="mb-2 four-line-truncate">{hoverDescription}</h5>
           <NextLink
-            title='Learn More'
+            title="Learn More"
             href={linkUrl}
             className={`more hover link-${linkType}`}
           />
