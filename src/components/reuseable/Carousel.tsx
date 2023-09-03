@@ -1,6 +1,6 @@
-import { FC, Fragment, ReactElement, useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
+import { FC, Fragment, ReactElement, useState } from 'react';
+import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
 
 // ==================================================================
 interface CarouselProps extends SwiperProps {
@@ -9,7 +9,8 @@ interface CarouselProps extends SwiperProps {
   spaceBetween?: number;
   slideClassName?: string;
   children: ReactElement[];
-  slidesPerView?: number | "auto";
+  slidesPerView?: number | 'auto';
+  onSideChange?: any;
 }
 // ==================================================================
 
@@ -36,26 +37,28 @@ const Carousel: FC<CarouselProps> = ({
         pagination={pagination ? { clickable: true, el: paginationEl } : false}
         {...others}
       >
-        {children?.map((slide, i) => (
-          <SwiperSlide className={slideClassName} key={i}>
-            {slide}
-          </SwiperSlide>
-        ))}
+        {children?.map((slide, i) => {
+          return (
+            <SwiperSlide className={slideClassName} key={i}>
+              {slide}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
 
-      <div className="swiper-controls">
+      <div className='swiper-controls'>
         {/* custom navigation */}
         {navigation && (
-          <div className="swiper-navigation">
+          <div className='swiper-navigation'>
             <div
-              role="button"
+              role='button'
               ref={(node) => setPrevEl(node)}
-              className="swiper-button swiper-button-prev"
+              className='swiper-button swiper-button-prev'
             />
             <div
-              role="button"
+              role='button'
               ref={(node) => setNextEl(node)}
-              className="swiper-button swiper-button-next"
+              className='swiper-button swiper-button-next'
             />
           </div>
         )}
@@ -63,7 +66,7 @@ const Carousel: FC<CarouselProps> = ({
         {/* custom pagination */}
         {pagination && (
           <div
-            className="swiper-pagination"
+            className='swiper-pagination'
             ref={(node) => setPaginationEl(node)}
           />
         )}

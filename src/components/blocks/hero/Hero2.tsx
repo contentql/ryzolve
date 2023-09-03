@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { slideInDownAnimate, zoomInAnimate } from 'utils/animation';
 import NextLink from 'components/reuseable/links/NextLink';
 import Image from 'next/image';
@@ -11,6 +11,23 @@ type HomePageHeroProps = {
 };
 
 const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const pauseAllExceptActive = () => {
+    const videosArray = document.getElementsByClassName('video-ryzolve');
+
+    for (let index = 0; index < videosArray.length; index++) {
+      if (index !== activeIndex) {
+        videosArray[index].getElementsByTagName('video')[0]?.pause();
+      } else {
+        videosArray[index].getElementsByTagName('video')[0]?.play();
+      }
+    }
+  };
+
+  useEffect(() => {
+    pauseAllExceptActive();
+  });
+
   return (
     <div className='row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7  align-items-center'>
       <div
@@ -46,24 +63,40 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
           <Carousel
             autoHeight
             spaceBetween={5}
-            // navigation={false}
-            slidesPerView={1}
+            // navigation={true}
+            slidesPerView='auto'
             className='dots-over'
-            slideClassName='bg-overlay bg-overlay-400 rounded'
+            // slideClassName='bg-overlay bg-overlay-400 rounded'
+            slideClassName='rounded'
+            // autoplay={true}
+            onSlideChange={(e) => {
+              setActiveIndex(e.activeIndex);
+            }}
           >
             <ReactPlayer
-              url={'https://www.youtube.com/watch?v=JxIN5fruFFo'}
+              url={'/videos/intro-compressed.mp4'}
               controls={true}
               playing={true}
               muted={true}
               loop={true}
+              className='video-ryzolve'
+              // onPlay={() => pauseAllExceptActive()}
             />
+
             <ReactPlayer
-              url={'https://www.youtube.com/watch?v=hWo11lQmaBo'}
+              url={'/videos/testimonial-trm-hospice.mp4'}
               controls={true}
               playing={true}
-              muted={true}
+              muted={false}
               loop={true}
+              className='video-ryzolve'
+              // onPlay={() => pauseAllExceptActive()}
+              // light={
+              //   <img
+              //     src='https://www.shutterstock.com/shutterstock/photos/338250266/display_1500/stock-vector-sample-red-square-grunge-stamp-on-white-sample-stamp-sample-sample-sign-338250266.jpg'
+              //     alt='Thumbnail'
+              //   />
+              // }
             />
           </Carousel>
         </figure>
