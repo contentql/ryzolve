@@ -26,7 +26,7 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
 
   useEffect(() => {
     pauseAllExceptActive();
-  });
+  }, [activeIndex]);
 
   return (
     <div className='row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7  align-items-center'>
