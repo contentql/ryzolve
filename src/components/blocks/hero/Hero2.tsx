@@ -24,7 +24,7 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
         <div
           className='shape rounded bg-soft-primary rellax d-md-block'
           style={{
-            width: '100%',
+            // width: '100%',
             height: '0%',
             right: '-0.8rem',
             bottom: '-1.8rem',
@@ -36,7 +36,7 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
             // float: 'left',
             display: 'block',
             overflow: 'hidden',
-            width: '100%',
+            // width: '100%',
             // height: 'auto',
             borderRadius: '10px',
             top: '-1.3rem',
@@ -69,9 +69,8 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
         </figure>
       </div>
 
-
-      <div className="col-lg-5 mt-lg-n10 text-center text-lg-start">
-        <h1 className="display-1 mb-5" style={slideInDownAnimate("600ms")}>
+      <div className='col-lg-5 mt-lg-n10 text-center text-lg-start'>
+        <h1 className='display-1 mb-5' style={slideInDownAnimate('600ms')}>
           {title}
         </h1>
 
