@@ -34,7 +34,7 @@ const Services21: FC = () => {
   // });
 
   return (
-    <div className="row gx-md-5 gy-5 mt-n19 mb-14 mb-md-17 ">
+    <div className="row gx-md-5 gy-5 mt-n19 mb-14 mb-md-17 w-full flex flex-row justify-content-center align-items-center">
       {data?.flat().map(({ id, Icon, ...item }: any) => (
         <ServiceCard1 {...item} key={id} Icon={Icon} />
       ))}
