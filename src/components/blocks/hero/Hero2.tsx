@@ -29,7 +29,7 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
   }, [activeIndex]);
 
   return (
-    <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7  align-items-center">
+    <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 align-items-center">
       <div
         className="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2"
         style={zoomInAnimate("0ms")}
@@ -79,7 +79,7 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
               playing={true}
               muted={true}
               loop={true}
-              className="video-ryzolve w-100 h-100"
+              className="video-ryzolve"
               // onPlay={() => pauseAllExceptActive()}
             />
 
@@ -89,7 +89,7 @@ const Hero2: FC<HomePageHeroProps> = ({ title, subtitle }) => {
               playing={true}
               muted={false}
               loop={true}
-              className="video-ryzolve w-100 h-100"
+              className="video-ryzolve"
               // onPlay={() => pauseAllExceptActive()}
               // light={
               //   <img
