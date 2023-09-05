@@ -82,7 +82,7 @@ type ListProps = {
 };
 const List = ({ color, title, description }: ListProps) => {
   return (
-    <div className="col-lg-6 p-lg-8 pb-8">
+    <div className="col-lg-6 px-md-20 p-lg-8 pb-8">
       <h2 className="mb-3">
         {title === "Digital Document Management" ? (
           <Bulb className={`icon-svg-sm solid-mono text-${color} me-4`} />
