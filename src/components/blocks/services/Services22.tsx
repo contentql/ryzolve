@@ -39,7 +39,7 @@ const Services22: FC<OurStrategyProps> = ({ title, stepsData }) => {
         {stepsData?.map((step, index) => {
           return (
             <div
-              className={`row gx-lg-8 gx-xl-12 gy-10 align-items-center ${
+              className={`row gx-lg-8 gx-xl-12 gy-10 align-items-center justify-content-center ${
                 index % 2 === 0 && "flex-row-reverse"
               }`}
               key={step.id}
@@ -82,7 +82,7 @@ type ListProps = {
 };
 const List = ({ color, title, description }: ListProps) => {
   return (
-    <div className="col-lg-6 p-8">
+    <div className="col-lg-6 px-md-20 p-lg-8 pb-8">
       <h2 className="mb-3">
         {title === "Digital Document Management" ? (
           <Bulb className={`icon-svg-sm solid-mono text-${color} me-4`} />

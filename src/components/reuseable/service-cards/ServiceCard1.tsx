@@ -40,8 +40,11 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
     //   </div>
     // </div>
 
-    <div className="col-md-8 col-xl-4">
-      <div className={`effectcard ${cardClassName} `}>
+    <div className="col-md-6 col-xl-4">
+      <div
+        className={`effectcard ${cardClassName}`}
+        style={{ minHeight: "35vh" }}
+      >
         <div className="cardcontent card-front">
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <p

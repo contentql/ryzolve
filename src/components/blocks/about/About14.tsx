@@ -78,8 +78,8 @@ const About14: FC<About14Props> = ({
 }) => {
   return (
     <div className="row align-items-center">
-      <div className="col-lg-6 order-lg-2">
-        <figure className="rounded">
+      <div className="col-lg-6 order-lg-2 pb-4 pb-lg-0">
+        <figure className="rounded d-flex align-items-center justify-content-center">
           <Image
             height={500}
             width={500}
