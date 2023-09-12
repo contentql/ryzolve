@@ -43,9 +43,6 @@ const index = () => {
             image="/img/photos/compliance-reducewaste.svg"
           />
         </section>
-        <section className="">
-          <Testimonial4 />
-        </section>
         {/* <section className='px-12 pt-12'>
           <Process1 />
         </section> */}
@@ -62,6 +59,9 @@ const index = () => {
             description1="Perform automated verification checks for credentials and age. Reduce human error and agency effort while quickly highlighting issues through exception reporting. "
             image="/img/photos/compliance-service.svg"
           />
+        </section>
+        <section className="">
+          <Testimonial4 />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />

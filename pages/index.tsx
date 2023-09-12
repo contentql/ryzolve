@@ -70,7 +70,6 @@ const ryzolve = () => {
             stepsData={data?.ourStrategy.steps}
           />
         </section>
-        <Testimonial4 />
         <section className="px-4 pt-4 pb-4 pb-md-8 px-md-12 pt-md-14">
           <Process1
             title={data?.howItWorks.title}
@@ -80,6 +79,7 @@ const ryzolve = () => {
         <section className="mb-12">
           <Pricing4 />
         </section>
+        <Testimonial4 />
         <section className="px-2 pb-4 px-md-12 bg-light pb-md-14">
           <About14
             image="/img/photos/our-strategy.svg"

@@ -4,14 +4,14 @@ import Document, {
   Html,
   Main,
   NextScript,
-} from 'next/document';
+} from "next/document";
 
 export default class ryzolve extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang="en" style={{ scrollBehavior: "smooth" }}>
         <Head>
-          <link rel='shortcut icon' href='/img/favicon.png' type='image/png' />
+          <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
         </Head>
 
         <body>

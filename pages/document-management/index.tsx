@@ -41,9 +41,6 @@ const index = () => {
             image="/img/photos/doc-man-reducewaste.svg"
           />
         </section>
-        <section className="">
-          <Testimonial4 />
-        </section>
         {/* <section className='px-12 pt-12'>
           <Process1 />
         </section> */}
@@ -58,6 +55,9 @@ const index = () => {
               "Flexible digital filing system personalized to your needs",
             ]}
           />
+        </section>
+        <section className="">
+          <Testimonial4 />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />

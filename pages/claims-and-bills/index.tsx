@@ -42,15 +42,15 @@ const index = () => {
             image="/img/photos/claims-service.svg"
           />
         </section>
-        <section className="">
-          <Testimonial4 />
-        </section>
         <section className="px-12 py-12 bg-gray">
           <About14
             image="/img/photos/claims-about.svg"
             title={data?.About.title}
             description1={data?.About.description}
           />
+        </section>
+        <section className="">
+          <Testimonial4 />
         </section>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />
