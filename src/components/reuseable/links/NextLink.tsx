@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { FC, ReactElement } from 'react';
+import Link from "next/link";
+import { FC, ReactElement } from "react";
 
 // ==============================================================
 type NextLinkProps = {
@@ -13,7 +13,7 @@ const NextLink: FC<NextLinkProps> = (props) => {
   const { href, className, title } = props;
 
   return (
-    <Link href={href} className={className}>
+    <Link href={href} className={className} scroll={false}>
       {title}
     </Link>
   );

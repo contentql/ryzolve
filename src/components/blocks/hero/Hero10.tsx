@@ -26,7 +26,7 @@ const Hero10: any = ({ title, subtitle }: any) => {
             <div style={slideInDownAnimate("600ms")}>
               <NextLink
                 title="Read More"
-                href="#"
+                href="#solutions"
                 className="btn btn-lg btn-primary rounded mb-5"
               />
             </div>
