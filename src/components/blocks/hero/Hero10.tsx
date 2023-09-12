@@ -4,7 +4,7 @@ import NextLink from "components/reuseable/links/NextLink";
 
 const Hero10: any = ({ title, subtitle }: any) => {
   return (
-    <section className="wrapper">
+    <section className="wrapper" id="hero">
       <div className="container pt-11 pt-md-13 pb-11 pb-md-19 pb-lg-22 text-center">
         <div className="row">
           <div className="col-lg-8 col-xl-7 col-xxl-6 mx-auto">
