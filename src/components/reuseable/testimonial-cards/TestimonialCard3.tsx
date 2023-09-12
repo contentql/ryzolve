@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import humanize from "utils/humanize";
 
 // =================================================
 type TestimonialCard3Props = {
@@ -36,7 +37,9 @@ const TestimonialCard3: FC<TestimonialCard3Props> = ({ item, image }) => {
   return (
     <div className={`card ${shadow ? "shadow-lg" : ""}`}>
       <div className="card-body">
-        {!hideRating && <span className={`ratings ${rating} mb-3`} />}
+        {!hideRating && (
+          <span className={`ratings ${humanize(Number(rating))} mb-3`} />
+        )}
 
         <blockquote className="icon mb-0">
           <p>“{review}”</p>
