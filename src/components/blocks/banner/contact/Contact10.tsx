@@ -1,8 +1,15 @@
 import { FC } from 'react';
 import Email from 'icons/lineal/Email';
 import SocialLinks from 'components/reuseable/SocialLinks';
+import { useRouter } from 'next/router';
 
 const Contact10: FC = () => {
+  const router = useRouter();
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   // router.push('https://www.africau.edu/images/default/sample.pdf');
+  //   window.location.assign('https://www.africau.edu/images/default/sample.pdf');
+  // };
   return (
     <section className='wrapper bg-light'>
       <div className='container pt-14 pt-md-14'>
@@ -22,49 +29,52 @@ const Contact10: FC = () => {
               </div>
 
               <div className='col-lg-6 pt-8'>
-                <form className='contact-form needs-validation'>
-                  <div className='messages'></div>
-                  <div className='row gx-4'>
-                    <div className='col-12'>
-                      <div className='form-floating mb-4'>
-                        <input
-                          required
-                          type='text'
-                          name='name'
-                          id='frm_name'
-                          placeholder='Jane'
-                          className='form-control border-0'
-                          data-error='First Name is required.'
-                        />
+                {/* <form
+                  className='contact-form needs-validation'
+                  // onSubmit={(e) => handleSubmit(e)}
+                > */}
+                <div className='messages'></div>
+                <div className='row gx-4'>
+                  <div className='col-12'>
+                    <div className='form-floating mb-4'>
+                      <input
+                        required
+                        type='text'
+                        name='name'
+                        id='frm_name'
+                        placeholder='Jane'
+                        className='form-control border-0'
+                        data-error='First Name is required.'
+                      />
 
-                        <label htmlFor='frm_name'>Name *</label>
-                        <div className='invalid-feedback'>
-                          Please enter your name.
-                        </div>
+                      <label htmlFor='frm_name'>Name *</label>
+                      <div className='invalid-feedback'>
+                        Please enter your name.
                       </div>
                     </div>
+                  </div>
 
-                    <div className='col-12'>
-                      <div className='form-floating mb-4'>
-                        <input
-                          required
-                          type='email'
-                          name='email'
-                          id='frm_email'
-                          className='form-control border-0'
-                          placeholder='jane.doe@example.com'
-                          data-error='Valid email is required.'
-                        />
+                  <div className='col-12'>
+                    <div className='form-floating mb-4'>
+                      <input
+                        required
+                        type='email'
+                        name='email'
+                        id='frm_email'
+                        className='form-control border-0'
+                        placeholder='jane.doe@example.com'
+                        data-error='Valid email is required.'
+                      />
 
-                        <label htmlFor='frm_email'>Email *</label>
-                        <div className='valid-feedback'>Looks good!</div>
-                        <div className='invalid-feedback'>
-                          Please provide a valid email address.
-                        </div>
+                      <label htmlFor='frm_email'>Email *</label>
+                      <div className='valid-feedback'>Looks good!</div>
+                      <div className='invalid-feedback'>
+                        Please provide a valid email address.
                       </div>
                     </div>
+                  </div>
 
-                    {/* <div className='col-12'>
+                  {/* <div className='col-12'>
                       <div className='form-floating mb-4'>
                         <textarea
                           required
@@ -83,15 +93,24 @@ const Contact10: FC = () => {
                       </div>
                     </div> */}
 
-                    <div className='col-12'>
-                      <input
+                  <div className='col-12'>
+                    {/* <input
                         type='submit'
                         value='Download Now'
                         className='btn btn-outline-primary rounded-pill btn-send mb-3'
-                      />
-                    </div>
+                      /> */}
+                    <a
+                      href='https://www.africau.edu/images/default/sample.pdf'
+                      target='_blank'
+                      type='submit'
+                    >
+                      <button className='btn btn-outline-primary rounded-pill btn-send mb-3'>
+                        Download Now
+                      </button>
+                    </a>
                   </div>
-                </form>
+                </div>
+                {/* </form> */}
               </div>
             </div>
           </div>
