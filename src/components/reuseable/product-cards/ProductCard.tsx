@@ -1,7 +1,6 @@
-import { FC } from 'react';
-import currency from 'utils/currency';
-import NextLink from '../links/NextLink';
-import ratingGenerate from 'utils/ratings';
+import { FC } from "react";
+import currency from "utils/currency";
+import NextLink from "../links/NextLink";
 
 // =========================================
 type ProductCardProps = {
@@ -18,12 +17,22 @@ type ProductCardProps = {
 // =========================================
 
 const ProductCard: FC<ProductCardProps> = (props) => {
-  const { image, title, new: newProduct, sale, category, salePrice, regularPrice, rating, className = '' } = props;
+  const {
+    image,
+    title,
+    new: newProduct,
+    sale,
+    category,
+    salePrice,
+    regularPrice,
+    rating,
+    className = "",
+  } = props;
 
   const badge = (title: string, color: string) => {
     return (
       <span
-        style={{ top: '1rem', left: '1rem' }}
+        style={{ top: "1rem", left: "1rem" }}
         className={`avatar ${color} text-white w-10 h-10 position-absolute text-uppercase fs-13`}
       >
         <span>{title}</span>
@@ -34,7 +43,11 @@ const ProductCard: FC<ProductCardProps> = (props) => {
   return (
     <div className={`project item ${className}`}>
       <figure className="rounded mb-6 position-relative overflow-hidden">
-        <img src={`/img/photos/${image}.jpg`} srcSet={`/img/photos/${image}@2x.jpg 2x`} alt="" />
+        <img
+          src={`/img/photos/${image}.jpg`}
+          srcSet={`/img/photos/${image}@2x.jpg 2x`}
+          alt=""
+        />
 
         <a
           href="#"
@@ -62,14 +75,13 @@ const ProductCard: FC<ProductCardProps> = (props) => {
           <i className="uil uil-shopping-bag" /> Add to Cart
         </a>
 
-        {newProduct && badge('New!', 'bg-aqua')}
-        {sale && badge('Sale!', 'bg-pink')}
+        {newProduct && badge("New!", "bg-aqua")}
+        {sale && badge("Sale!", "bg-pink")}
       </figure>
 
       <div className="post-header">
         <div className="d-flex flex-row align-items-center justify-content-between mb-2">
           <div className="post-category text-ash mb-0">{category}</div>
-          <span className={`ratings ${ratingGenerate(rating)}`} />
         </div>
 
         <h2 className="post-title h3 fs-22">
@@ -81,7 +93,7 @@ const ProductCard: FC<ProductCardProps> = (props) => {
             <>
               <del>
                 <span className="amount">{currency(salePrice)}</span>
-              </del>{' '}
+              </del>{" "}
               <ins>
                 <span className="amount">{currency(regularPrice)}</span>
               </ins>

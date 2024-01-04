@@ -1,8 +1,7 @@
-import dayjs from 'dayjs';
-import { FC } from 'react';
-import NextLink from './links/NextLink';
-import ratingGenerate from 'utils/ratings';
-import FigureImage from 'components/reuseable/FigureImage';
+import dayjs from "dayjs";
+import { FC } from "react";
+import NextLink from "./links/NextLink";
+import FigureImage from "components/reuseable/FigureImage";
 
 // ===================================================================
 type ReviewCardProps = {
@@ -19,7 +18,12 @@ const ReviewCard: FC<ReviewCardProps> = (props) => {
   return (
     <li className="comment">
       <div className="comment-header d-md-flex align-items-center">
-        <FigureImage width={120} height={120} src={user.image} className="user-avatar rounded-circle overflow-hidden" />
+        <FigureImage
+          width={120}
+          height={120}
+          src={user.image}
+          className="user-avatar rounded-circle overflow-hidden"
+        />
 
         <div>
           <h6 className="comment-author">
@@ -29,14 +33,13 @@ const ReviewCard: FC<ReviewCardProps> = (props) => {
           <ul className="post-meta">
             <li>
               <i className="uil uil-calendar-alt" />
-              {dayjs(createdAt).format('DD MMM YYYY')}
+              {dayjs(createdAt).format("DD MMM YYYY")}
             </li>
           </ul>
         </div>
       </div>
 
       <div className="d-flex flex-row align-items-center mt-5 mb-2">
-        <span className={`ratings ${ratingGenerate(review.rating)}`} />
         <h6 className="mb-0">{review.title}</h6>
       </div>
 
