@@ -239,13 +239,13 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
 
             {/* ===================== About us ===================== */}
-            {/* <li className='nav-item dropdown dropdown-mega'>
+            <li className="nav-item dropdown dropdown-mega">
               <NextLink
-                title='About Us'
-                className='nav-link'
-                href='/about-us'
+                title="Training"
+                className="nav-link"
+                href="https://training-module-dev.vercel.app/"
               />
-            </li> */}
+            </li>
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}

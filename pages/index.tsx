@@ -26,6 +26,8 @@ const ryzolve = () => {
     queryFn: getHomePageData,
   });
 
+  // console.log(data);
+
   return (
     <div>
       <section className="bg-rezolve">

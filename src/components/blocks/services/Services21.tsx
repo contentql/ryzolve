@@ -18,6 +18,8 @@ const Services21: FC = () => {
     queryFn: getServicesData,
   });
 
+  console.log(data);
+
   // const requiredServicesData = data?.map((value: any) => {
   //   const requiredValue = value?.attributes.Services.map(
   //     (service: any, i: number) => {
