@@ -4,7 +4,7 @@ import NextLink from "components/reuseable/links/NextLink";
 
 const Hero12: FC = () => {
   return (
-    <section className="content-wrapper ">
+    <section className="content-wrapper">
       <div className="container pt-10 pb-15 pt-md-5 pb-md-16">
         <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start order-2 order-lg-0">
