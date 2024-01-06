@@ -12,7 +12,8 @@ const Hero12: FC = () => {
               className="display-1 mb-5 mx-md-n5 mx-lg-0"
               style={slideInDownAnimate("600ms")}
             >
-              Improve Your Agency's Efficiency & Compliance
+              Improve Your Agency's{" "}
+              <span className="text-blue">Efficiency & Compliance</span>
             </h1>
 
             <p className="lead fs-lg mb-7" style={slideInDownAnimate("900ms")}>
