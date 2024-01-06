@@ -34,7 +34,7 @@ const ryzolve = () => {
 
   return (
     <div>
-      {/* <section className="bg-rezolve"> */}
+      {/* <section className="bg-gray"> */}
       {/* <header className="wrapper"> */}
       {/* <RyzolveHeader /> */}
       <Navbar

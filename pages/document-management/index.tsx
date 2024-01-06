@@ -8,6 +8,9 @@ import { Footer3 } from "components/blocks/footer";
 import { About14 } from "components/blocks/about";
 import { useQuery } from "@tanstack/react-query";
 import { getPageData } from "queries/getPageData";
+import { Navbar } from "components/blocks/navbar";
+import NextLink from "components/reuseable/links/NextLink";
+import Services9 from "components/blocks/services/Services9";
 
 const index = () => {
   const { data } = useQuery({
@@ -16,21 +19,49 @@ const index = () => {
   });
   return (
     <div>
-      <section className="bg-rezolve">
-        <header className="wrapper">
+      {/* <section className="bg-gray"> */}
+      {/* <header className="wrapper">
           <RyzolveHeader />
-        </header>
-        <section className="p-4 wrapper">
-          <Hero10 title={data?.Hero.title} subtitle={data?.Hero.subtitle} />
-        </section>
+        </header> */}
+      <Navbar
+        logoAlt="logo-purple"
+        navClassName="navbar navbar-expand-lg  navbar-light navbar-bg-light caret-none"
+        button={
+          <NextLink
+            title="Book a Demo"
+            href="#"
+            className="btn btn-sm btn-primary rounded"
+          />
+        }
+      />
+      {/* <section className="p-4 wrapper">
+        <Hero10 title={data?.Hero.title} subtitle={data?.Hero.subtitle} />
+      </section> */}
+      <section className="wrapper">
+        <div className="container pt-10 pb-6 pt-md-14 pb-md-4 text-center">
+          <div className="row">
+            <div className="col-md-8 col-lg-7 col-xl-6 col-xxl-5 mx-auto mb-11">
+              <h1 className="display-1 mb-3">{data?.Hero.title}</h1>
+              <p className="lead px-lg-7 px-xl-7 px-xxl-6">
+                {data?.Hero.subtitle}
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+      {/* </section> */}
       <section className="content-wrapper wrapper">
         {/* Services Section */}
 
-        <section className="wrapper bg-light ">
-          <section className="container pt-16 pt-md-12">
-            {/* ========== services section ========== */}
+        <section className="wrapper bg-gray ">
+          {/* <section className="container pt-16 pt-md-12">
+            ========== services section ==========
             <Services21 />
+          </section> */}
+          <section className="wrapper bg-gray">
+            <div className="container pt-6 pb-12 pt-md-16 ">
+              <Services9 />
+            </div>
           </section>
         </section>
 
