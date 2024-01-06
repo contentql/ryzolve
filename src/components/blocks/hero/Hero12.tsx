@@ -23,8 +23,8 @@ const Hero12: FC = () => {
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
                 <NextLink
-                  href="#"
-                  title="See Projects"
+                  href="/calendly"
+                  title="Book a demo"
                   className="btn btn-primary rounded me-2"
                 />
               </span>

@@ -81,9 +81,9 @@ const About14: FC<About14Props> = ({
       <div className="col-lg-6 order-lg-2 pb-4 pb-lg-0">
         <figure className="rounded d-flex align-items-center justify-content-center">
           <Image
-            height={500}
+            height={100}
             width={500}
-            className="w-auto"
+            className="w-auto h-auto"
             src={image}
             // srcSet='/img/illustrations/.png 2x'
             alt="ryzolve-about.png"
@@ -93,7 +93,7 @@ const About14: FC<About14Props> = ({
 
       <div className="col-lg-6">
         <h3 className="display-4 mb-7 mt-lg-10">{title}</h3>
-        <div className="mb-6">
+        <div className="mb-10">
           <p>{description1}</p>
         </div>
         <span style={slideInDownAnimate("1200ms")}>

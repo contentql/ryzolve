@@ -43,7 +43,7 @@ const ryzolve = () => {
         button={
           <NextLink
             title="Book a Demo"
-            href="#"
+            href="/calendly"
             className="btn btn-sm btn-primary rounded"
           />
         }
@@ -92,7 +92,7 @@ const ryzolve = () => {
             stepsData={data?.ourStrategy.steps}
           />
         </section>
-        <section className="px-4 pt-4 pb-4 pb-md-8 px-md-12 pt-md-14">
+        <section className="px-4 px-md-12 pt-md-12 pb-md-10 bg-gray">
           <Process1
             title={data?.howItWorks.title}
             steps={data?.howItWorks.working_steps}
@@ -102,7 +102,7 @@ const ryzolve = () => {
           <Pricing4 />
         </section>
         <Testimonial4 />
-        <section className="px-2 pb-4 px-md-12 bg-light pb-md-14">
+        <section className="px-2 pb-4 px-md-12 bg-light pt-md-12">
           <About14
             image="/img/photos/our-strategy.svg"
             title={data?.aboutUs.title}
