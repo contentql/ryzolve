@@ -27,7 +27,7 @@ const Services2: FC<Services2Props> = ({
   image,
 }) => {
   return (
-    <section className="wrapper bg-gray py-14" id="solutions">
+    <section className="wrapper py-14" id="solutions">
       <div className="container">
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center flex-row-reverse">
           <div className="col-lg-6 order-lg-2 rounded">
