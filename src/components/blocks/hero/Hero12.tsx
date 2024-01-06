@@ -12,12 +12,12 @@ const Hero12: FC = () => {
               className="display-1 mb-5 mx-md-n5 mx-lg-0"
               style={slideInDownAnimate("600ms")}
             >
-              Creative. Smart. Awesome.
+              Improve Your Agency's Efficiency & Compliance
             </h1>
 
             <p className="lead fs-lg mb-7" style={slideInDownAnimate("900ms")}>
-              We specialize in web, mobile and identity design. We love to turn
-              ideas into beautiful things.
+              Provider Management Software To Help PAS Agencies Be More
+              Efficient
             </p>
 
             <div className="d-flex justify-content-center justify-content-lg-start">
