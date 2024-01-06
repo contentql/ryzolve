@@ -12,7 +12,7 @@ import {
 } from "components/blocks/services";
 import {} from "components/blocks/services";
 import { Testimonial4 } from "components/blocks/testimonial";
-import { Process1 } from "components/blocks/process";
+import { Process1, Process3 } from "components/blocks/process";
 import { Pricing4 } from "components/blocks/pricing";
 import { Contact10 } from "components/blocks/banner/contact";
 import { Footer3 } from "components/blocks/footer";
@@ -54,7 +54,7 @@ const ryzolve = () => {
         <Hero12 />
         {/* </section> */}
       </section>
-      <section className=" bg-light">
+      <section>
         {/* <section className="wrapper bg-light "> */}
         {/* <section className="container pt-16 pt-md-12"> */}
         {/* ========== services section ========== */}
@@ -62,11 +62,11 @@ const ryzolve = () => {
         {/* </section> */}
         {/* </section> */}
 
-        <div className="container py-14 pt-md-16">
+        <div className="container py-14 pt-md-16 ">
           <Services16 />
         </div>
 
-        <section>
+        <section className=" bg-gray">
           <Services2
             title={data?.ourSolutions?.title}
             description1={data?.ourSolutions?.description}
@@ -84,38 +84,58 @@ const ryzolve = () => {
             list={data?.ourSolutions?.personalAgency}
           />
         </section>
-        <section className="px-md-12 py-md-14 px-4 py-4">
-          {/* <Services12 /> */}
-          {/* edit this */}
-          <Services22
-            title={data?.ourStrategy.title}
-            stepsData={data?.ourStrategy.steps}
-          />
-        </section>
-        <section className="px-4 px-md-12 pt-md-12 pb-md-10 bg-gray">
-          <Process1
-            title={data?.howItWorks.title}
-            steps={data?.howItWorks.working_steps}
-          />
-        </section>
+
+        {/* <div className="container py-14 pt-md-16">
+          <Process3 />
+        </div> */}
+
+        <div className="container py-6 pt-md-4">
+          <section className="px-md-12 py-md-14 px-4 py-4">
+            {/* <Services12 /> */}
+            {/* edit this */}
+            <Services22
+              title={data?.ourStrategy.title}
+              stepsData={data?.ourStrategy.steps}
+            />
+          </section>
+        </div>
+
+        <div className="bg-gray">
+          <div className="container py-6 pt-md-4">
+            <section className="px-4 px-md-12 pt-md-12 pb-md-10 ">
+              <Process1
+                title={data?.howItWorks.title}
+                steps={data?.howItWorks.working_steps}
+              />
+            </section>
+          </div>
+        </div>
+
         <section className="mb-12">
           <Pricing4 />
         </section>
         <Testimonial4 />
-        <section className="px-2 pb-4 px-md-12 bg-light pt-md-12">
-          <About14
-            image="/img/photos/our-strategy.svg"
-            title={data?.aboutUs.title}
-            description1={data?.aboutUs.description}
-            // description2="Personal Agency"
-            // list={[
-            //   "4 Years Of No Penalties",
-            //   "Saved Hundreds Of Hours Hiring Staff",
-            //   "Increased Revenue While Reducing/Eliminating Denials",
-            // ]}
-          />
-        </section>
+
+        <div className="">
+          <div className="container py-6 pt-md-4">
+            <section className="px-2 pb-4 px-md-12 bg-light pt-md-12">
+              <About14
+                image="/img/photos/our-strategy.svg"
+                title={data?.aboutUs.title}
+                description1={data?.aboutUs.description}
+                // description2="Personal Agency"
+                // list={[
+                //   "4 Years Of No Penalties",
+                //   "Saved Hundreds Of Hours Hiring Staff",
+                //   "Increased Revenue While Reducing/Eliminating Denials",
+                // ]}
+              />
+            </section>
+          </div>
+        </div>
+
         <Contact10 />
+
         <Footer3 hiddenNewsletter={true} />
       </section>
     </div>
