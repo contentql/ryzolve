@@ -1,6 +1,6 @@
 import RyzolveHeader from "components/ryzolve/RyzolveHeader";
 import React from "react";
-import { Hero2 } from "components/blocks/hero";
+import { Hero2, Hero12 } from "components/blocks/hero";
 import { processList5 } from "data/process";
 import Image from "next/image";
 import {
@@ -8,7 +8,9 @@ import {
   Services2,
   Services21,
   Services22,
+  Services16,
 } from "components/blocks/services";
+import {} from "components/blocks/services";
 import { Testimonial4 } from "components/blocks/testimonial";
 import { Process1 } from "components/blocks/process";
 import { Pricing4 } from "components/blocks/pricing";
@@ -17,6 +19,8 @@ import { Footer3 } from "components/blocks/footer";
 import { About14 } from "components/blocks/about";
 import { useQuery } from "@tanstack/react-query";
 import { getHomePageData } from "queries/home-page";
+import { Navbar } from "components/blocks/navbar";
+import NextLink from "components/reuseable/links/NextLink";
 
 // style={{ top: "-1.7rem", left: "-1.5rem" }}
 
@@ -30,21 +34,37 @@ const ryzolve = () => {
 
   return (
     <div>
-      <section className="bg-rezolve">
-        <header className="wrapper">
-          <RyzolveHeader />
-        </header>
-        <section className="p-4 p-md-12 wrapper w-auto">
-          <Hero2 title={data?.hero.title} subtitle={data?.hero.subtitle} />
-        </section>
+      {/* <section className="bg-rezolve"> */}
+      {/* <header className="wrapper"> */}
+      {/* <RyzolveHeader /> */}
+      <Navbar
+        logoAlt="logo-purple"
+        navClassName="navbar navbar-expand-lg  navbar-light navbar-bg-light caret-none"
+        button={
+          <NextLink
+            title="Book a Demo"
+            href="#"
+            className="btn btn-sm btn-primary rounded"
+          />
+        }
+      />
+      {/* </header> */}
+      <section>
+        {/* <Hero2 title={data?.hero.title} subtitle={data?.hero.subtitle} /> */}
+        <Hero12 />
+        {/* </section> */}
       </section>
-      <section className="content-wrapper wrapper">
-        <section className="wrapper bg-light ">
-          <section className="container pt-16 pt-md-12">
-            {/* ========== services section ========== */}
-            <Services21 />
-          </section>
-        </section>
+      <section className=" bg-light">
+        {/* <section className="wrapper bg-light "> */}
+        {/* <section className="container pt-16 pt-md-12"> */}
+        {/* ========== services section ========== */}
+        {/* <Services21 /> */}
+        {/* </section> */}
+        {/* </section> */}
+
+        <div className="container py-14 pt-md-16">
+          <Services16 />
+        </div>
 
         <section>
           <Services2
