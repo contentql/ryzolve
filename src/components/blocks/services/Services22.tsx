@@ -97,7 +97,7 @@ const List = ({ color, title, description }: ListProps) => {
       </h2>
       <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
         {description?.map((el) => (
-          <li key={el.id}>
+          <li key={el.id} className="text-dark">
             <i className="uil uil-check" /> {el.item}
           </li>
         ))}

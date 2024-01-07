@@ -94,7 +94,7 @@ const About14: FC<About14Props> = ({
       <div className="col-lg-6">
         <h3 className="display-4 mb-7 mt-lg-10">{title}</h3>
         <div className="mb-10">
-          <p>{description1}</p>
+          <p className="text-dark">{description1}</p>
         </div>
         <span style={slideInDownAnimate("1200ms")}>
           <NextLink

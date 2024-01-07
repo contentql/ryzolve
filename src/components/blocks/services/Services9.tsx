@@ -7,22 +7,57 @@ import { serviceList7 } from "data/service";
 import { getServicesData } from "queries/services-cards";
 import { useQuery } from "@tanstack/react-query";
 
+type GridCard = {
+  title: string;
+  description: string;
+};
+
 const Services9: FC = () => {
   const { data } = useQuery({
     queryKey: ["servicesData"],
     queryFn: getServicesData,
   });
+
+  const GridCard: FC<GridCard> = ({ title, description }) => {
+    return (
+      <div className="ryzolve-custom-services-grid-card">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    );
+  };
+
+  const styles = {
+    card: {
+      backgroundColor: "white",
+      border: "1px solid blue",
+      padding: "20px",
+      borderRadius: "8px",
+      marginBottom: "12px",
+      display: "grid",
+
+      // gridTemplateRows: "repeat(2, 1fr)",
+    },
+  };
   return (
     <div className="row gx-lg-8 gx-xl-12 gy-10 mb-lg-22 mb-xl-8 align-items-center">
       <div className="col-lg-7 order-lg-2">
-        <div className="row gx-md-5 gy-5">
+        {/* <div className="flex"> */}
+        <div
+          // className="col col-md-5 gx-md-2 gy-5"
+          // className="col-md-5"
+          // style={{ gridTemplateRows: "repeat(2, 1fr)" }}
+
+          className="ryzolve-custom-grid-services"
+        >
           {serviceList7.map(({ id, Icon, color, ...item }) => (
-            <ServiceCard4
+            <GridCard
               key={id}
-              Icon={<Icon className={`icon-svg-md text-${color} mb-3`} />}
+              // Icon={<Icon className={`icon-svg-md text-${color} mb-3`} />}
               {...item}
             />
           ))}
+          {/* </div> */}
         </div>
       </div>
 

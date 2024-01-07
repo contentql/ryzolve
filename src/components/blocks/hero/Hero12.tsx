@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { slideInDownAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
+import Typewriter from "typewriter-effect";
 
 const Hero12: FC = () => {
   return (
@@ -12,11 +13,28 @@ const Hero12: FC = () => {
               className="display-1 mb-5 mx-md-n5 mx-lg-0"
               style={slideInDownAnimate("600ms")}
             >
-              Improve Your Agency's{" "}
-              <span className="text-blue">Efficiency & Compliance</span>
+              Improve Your Agency's
+              {/* <span className="text-blue">Efficiency & Compliance</span> */}
+              <span className="text-primary">
+                <Typewriter
+                  options={{
+                    loop: true,
+                    autoStart: true,
+                    strings: [
+                      "Efficiency.",
+                      "Compliance.",
+                      "Profits.",
+                      "Training.",
+                    ],
+                  }}
+                />
+              </span>
             </h1>
 
-            <p className="lead fs-lg mb-7" style={slideInDownAnimate("900ms")}>
+            <p
+              className="fs-lg mb-7 text-dark"
+              style={slideInDownAnimate("900ms")}
+            >
               Provider Management Software To Help PAS Agencies Be More
               Efficient
             </p>

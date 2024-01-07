@@ -56,7 +56,7 @@ const Services2: FC<Services2Props> = ({
             <h2 className="fs-16 text-uppercase text-muted mb-3">{tag}</h2>
             <h3 className="display-4 mb-5">{title}</h3>
 
-            <div className="mb-6">
+            <div className="mb-6 text-dark">
               <p>{description1}</p>
               <h2>{description3}</h2>
             </div>
