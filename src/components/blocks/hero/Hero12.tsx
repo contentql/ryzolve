@@ -21,10 +21,10 @@ const Hero12: FC = () => {
                     loop: true,
                     autoStart: true,
                     strings: [
-                      "Efficiency.",
-                      "Compliance.",
-                      "Profits.",
-                      "Training.",
+                      "Efficiency",
+                      "Compliance",
+                      "Profits",
+                      "Training",
                     ],
                   }}
                 />
@@ -32,7 +32,7 @@ const Hero12: FC = () => {
             </h1>
 
             <p
-              className="fs-lg mb-7 text-dark"
+              className="fs-lg mb-7 custom-text"
               style={slideInDownAnimate("900ms")}
             >
               Provider Management Software To Help PAS Agencies Be More
