@@ -102,7 +102,7 @@ const ryzolve = () => {
 
         <div className="bg-gray">
           <div className="container py-6 pt-md-4">
-            <section className="px-4 px-md-12 pt-md-12 pb-md-10 ">
+            <section className="px-2 px-md-12 pt-md-12 pb-md-10 ">
               <Process1
                 title={data?.howItWorks.title}
                 steps={data?.howItWorks.working_steps}
