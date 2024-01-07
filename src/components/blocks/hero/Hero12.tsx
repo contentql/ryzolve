@@ -13,19 +13,14 @@ const Hero12: FC = () => {
               className="display-1 mb-5 mx-md-n5 mx-lg-0 custom-heading-text"
               style={slideInDownAnimate("600ms")}
             >
-              Improve Your Agency's
+              Enhance your agency's
               {/* <span className="text-blue">Efficiency & Compliance</span> */}
               <span className="text-primary">
                 <Typewriter
                   options={{
                     loop: true,
                     autoStart: true,
-                    strings: [
-                      "Efficiency",
-                      "Compliance",
-                      "Profits",
-                      "Training",
-                    ],
+                    strings: ["efficiency", "compliance", "profits"],
                   }}
                 />
               </span>
