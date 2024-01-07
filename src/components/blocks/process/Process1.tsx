@@ -32,7 +32,7 @@ const Process1: FC<HowItWorks> = ({ title, steps }) => {
 
         <div className="col-lg-6">
           <h2 className="fs-16 text-uppercase text-muted mb-3">How it Works</h2>
-          <h3 className="display-4 mb-5">{title}</h3>
+          <h3 className="display-4 mb-5 custom-description-text">{title}</h3>
 
           <figure
             style={{

@@ -21,7 +21,11 @@ const ListColumn: FC<ListColumnProps> = ({
             {value.map((item, i) => {
               const liProps = i !== 0 ? { className: "mt-3" } : {};
               return (
-                <li key={item.item} {...liProps} className="text-dark">
+                <li
+                  key={item.item}
+                  {...liProps}
+                  className="custom-card-description-text"
+                >
                   <i className="uil uil-check" /> {item.item}
                 </li>
               );

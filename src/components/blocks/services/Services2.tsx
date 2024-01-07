@@ -54,11 +54,11 @@ const Services2: FC<Services2Props> = ({
 
           <div className="col-lg-6">
             <h2 className="fs-16 text-uppercase text-muted mb-3">{tag}</h2>
-            <h3 className="display-4 mb-5">{title}</h3>
+            <h3 className="display-4 mb-5 custom-description-text">{title}</h3>
 
-            <div className="mb-6 text-dark">
-              <p>{description1}</p>
-              <h2>{description3}</h2>
+            <div className="mb-6">
+              <p className="custom-card-description-text">{description1}</p>
+              <h2 className="custom-description-text">{description3}</h2>
             </div>
 
             {list && (

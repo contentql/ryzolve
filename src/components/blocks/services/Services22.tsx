@@ -27,7 +27,7 @@ const Services22: FC<OurStrategyProps> = ({ title, stepsData }) => {
       <div className="row">
         <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
           <h2 className="fs-16 text-uppercase text-muted mb-3">Our Strategy</h2>
-          <h3 className="display-3 mb-10 px-xl-10 px-xxl-15">
+          <h3 className="display-3 mb-10 px-xl-10 px-xxl-15 custom-description-text">
             {title}
             {/* <span className='underline-3 style-2 yellow'>reasons</span> */}
           </h3>
@@ -83,7 +83,7 @@ type ListProps = {
 const List = ({ color, title, description }: ListProps) => {
   return (
     <div className="col-lg-6 px-md-20 p-lg-8 pb-8">
-      <h2 className="mb-3">
+      <h2 className="mb-3 custom-description-text">
         {title === "Digital Document Management" ? (
           <Bulb className={`icon-svg-sm solid-mono text-${color} me-4`} />
         ) : title === "Compliance Regulation" ? (
@@ -97,7 +97,7 @@ const List = ({ color, title, description }: ListProps) => {
       </h2>
       <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
         {description?.map((el) => (
-          <li key={el.id} className="text-dark">
+          <li key={el.id} className="custom-card-description-text">
             <i className="uil uil-check" /> {el.item}
           </li>
         ))}
