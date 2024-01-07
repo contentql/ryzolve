@@ -10,7 +10,7 @@ const Hero12: FC = () => {
         <div className="row gx-lg-8 gx-xl-12 gy-10 mb-5 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start order-2 order-lg-0">
             <h1
-              className="display-1 mb-5 mx-md-n5 mx-lg-0"
+              className="display-1 mb-5 mx-md-n5 mx-lg-0 custom-heading-text"
               style={slideInDownAnimate("600ms")}
             >
               Improve Your Agency's
@@ -32,7 +32,7 @@ const Hero12: FC = () => {
             </h1>
 
             <p
-              className="fs-lg mb-7 custom-text"
+              className="fs-lg mb-7 custom-description-text"
               style={slideInDownAnimate("900ms")}
             >
               Provider Management Software To Help PAS Agencies Be More

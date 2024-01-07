@@ -120,8 +120,8 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
       <div className={`card shadow-lg ${cardClassName}`}>
         <div className="card-body">
           <Icon className={iconClassName} />
-          <h4>{title}</h4>
-          <p className="mb-2 text-dark">{description}</p>
+          <h4 className="custom-card-text">{title}</h4>
+          <p className="mb-2 custom-card-description-text ">{description}</p>
           <NextLink
             title="Learn More"
             href={linkUrl}
