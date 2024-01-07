@@ -25,7 +25,7 @@ const ProcessList1: FC<ProcessList1Props> = (props) => {
 
           <div>
             <h4 className="mb-1 custom-card-text">{name}</h4>
-            <p className="mb-0 custom-description-text">{description}</p>
+            <p className="mb-0 custom-card-description-text">{description}</p>
           </div>
         </div>
       </div>
