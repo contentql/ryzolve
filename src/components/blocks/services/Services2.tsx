@@ -53,7 +53,7 @@ const Services2: FC<Services2Props> = ({
           </div>
 
           <div className="col-lg-6">
-            <h2 className="fs-16 text-uppercase text-muted mb-3">{tag}</h2>
+            <h2 className="fs-16 text-uppercase text-primary mb-3">{tag}</h2>
             <h3 className="display-4 mb-5 custom-description-text">{title}</h3>
 
             <div className="mb-6">
