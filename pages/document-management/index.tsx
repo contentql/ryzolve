@@ -1,6 +1,7 @@
 import RyzolveHeader from "components/ryzolve/RyzolveHeader";
 import React from "react";
 import { Hero10 } from "components/blocks/hero";
+import { slideInDownAnimate } from "utils/animation";
 import { Services2, Services21 } from "components/blocks/services";
 import { Testimonial4 } from "components/blocks/testimonial";
 import { Contact10 } from "components/blocks/banner/contact";
@@ -38,14 +39,30 @@ const index = () => {
         <Hero10 title={data?.Hero.title} subtitle={data?.Hero.subtitle} />
       </section> */}
       <section className="wrapper">
-        <div className="container pt-10 pb-6 pt-md-14 pb-md-4 text-center">
+        <div className="pt-10 pb-6 pt-md-14 pb-md-4 text-center">
           <div className="row">
-            <div className="col-md-8 col-lg-7 col-xl-6 col-xxl-5 mx-auto mb-11">
-              <h1 className="display-1 mb-3">{data?.Hero.title}</h1>
-              <p className="lead px-lg-7 px-xl-7 px-xxl-6">
+            <div className="col-md-8 col-lg-8 col-xl-6 col-xxl-5 mx-auto mb-11">
+              <h1 className="display-1 mb-3 custom-heading-text">
+                {data?.Hero.title}
+              </h1>
+              <p className="px-lg-7 px-xl-7 px-xxl-6 custom-description-text">
                 {data?.Hero.subtitle}
               </p>
+              <div style={slideInDownAnimate("600ms")}>
+                <NextLink
+                  title="Read More"
+                  href="#solutions"
+                  className="btn btn-lg btn-primary rounded mt-6"
+                />
+              </div>
             </div>
+            {/* <div style={slideInDownAnimate("600ms")}>
+              <NextLink
+                title="Read More"
+                href="#solutions"
+                className="btn btn-lg btn-primary rounded mb-5"
+              />
+            </div> */}
           </div>
         </div>
       </section>
@@ -59,23 +76,25 @@ const index = () => {
             <Services21 />
           </section> */}
           <section className="wrapper bg-gray">
-            <div className="container pt-6 pb-12 pt-md-16 ">
+            <div className="container pt-8 pb-4 pt-md-8 ">
               <Services9 />
             </div>
           </section>
         </section>
 
         <section>
-          <Services2
-            title={data?.Solutions.title}
-            description1={data?.Solutions.description}
-            image="/img/photos/doc-man-reducewaste.svg"
-          />
+          <div className="container pt-8 pb-8 pt-md-10 pb-md-10 ">
+            <Services2
+              title={data?.Solutions.title}
+              description1={data?.Solutions.description}
+              image="/img/photos/doc-man-reducewaste.svg"
+            />
+          </div>
         </section>
         {/* <section className='px-12 pt-12'>
           <Process1 />
         </section> */}
-        <section className="px-12 py-12 bg-gray">
+        <section className="px-12 pt-8 pb-8 pt-md-10 pb-md-10 bg-gray">
           <About14
             image="/img/photos/doc-feature.svg"
             title={data?.About.title}

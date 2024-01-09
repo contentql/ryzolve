@@ -79,22 +79,33 @@ const About14: FC<About14Props> = ({
   return (
     <div className="row align-items-center">
       <div className="col-lg-6 order-lg-2 pb-4 pb-lg-0">
-        <figure className="rounded d-flex align-items-center justify-content-center">
+        <figure
+          style={{
+            maxHeight: "45vh",
+            overflow: "hidden",
+            display: "flex",
+            justifyContent: "end",
+            // height: "30%",
+            alignItems: "center",
+          }}
+          className="rounded"
+        >
           <Image
-            height={100}
+            height={300}
             width={500}
-            className="w-auto h-auto"
+            alt="our solutions"
             src={image}
-            // srcSet='/img/illustrations/.png 2x'
-            alt="ryzolve-about.png"
+            // srcSet='/img/illustrations/i8@2x.png 2x'
           />
         </figure>
       </div>
 
       <div className="col-lg-6">
-        <h3 className="display-4 mb-7 mt-lg-10">{title}</h3>
+        <h3 className="display-4 mb-7 mt-lg-10 custom-description-text">
+          {title}
+        </h3>
         <div className="mb-10">
-          <p className="text-dark">{description1}</p>
+          <p className="custom-card-description-text">{description1}</p>
         </div>
         <span style={slideInDownAnimate("1200ms")}>
           <NextLink
@@ -119,7 +130,9 @@ const List = ({ color, title, description }: ListProps) => {
   return (
     <div className="col-lg-6">
       <h2 className="mb-3">{title}</h2>
-      <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
+      <ul
+        className={`icon-list bullet-bg bullet-soft-${color} custom-card-description-text`}
+      >
         {description?.map((el) => (
           <li>
             <i className="uil uil-check" /> {el}

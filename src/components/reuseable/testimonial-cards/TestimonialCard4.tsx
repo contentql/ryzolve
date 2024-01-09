@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import Carousel from '../Carousel';
-import TestimonialCard2 from './TestimonialCard2';
-import { testimonialList2 } from 'data/testimonial-list';
+import { FC } from "react";
+import Carousel from "../Carousel";
+import TestimonialCard2 from "./TestimonialCard2";
+import { testimonialList2 } from "data/testimonial-list";
 
 // ============================================================
 type TestimonialCard4Props = {
@@ -11,29 +11,27 @@ type TestimonialCard4Props = {
 // ============================================================
 
 const TestimonialCard4: FC<TestimonialCard4Props> = ({
-  className = '',
-  sliderWrapperClassname = 'p-10 p-md-11 p-lg-13'
+  className = "",
+  sliderWrapperClassname = "p-4 p-md-4 pt-lg-10 pb-lg-8",
 }) => {
   return (
     <div className={`card shadow-lg ${className}`}>
-      <div className="row gx-0">
-        <div
-          style={{ backgroundImage: 'url(/img/photos/tm1.jpg)' }}
-          className="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start"
-        />
-
-        <div className="col-lg-6">
-          <div className={sliderWrapperClassname}>
-            <div className="swiper-container dots-closer mb-4">
-              <Carousel grabCursor slidesPerView={1} navigation={false}>
-                {testimonialList2.map((item, i) => (
-                  <TestimonialCard2 key={i} {...item} />
-                ))}
-              </Carousel>
+      <div className={sliderWrapperClassname}>
+        <Carousel
+          // grabCursor
+          slidesPerView={1}
+          navigation={false}
+          className="dots-closer"
+        >
+          {testimonialList2.map((item, i) => (
+            <div>
+              <TestimonialCard2 key={i} {...item} />
             </div>
-          </div>
-        </div>
+          ))}
+        </Carousel>
       </div>
+      {/* </div> */}
+      {/* </div> */}
     </div>
   );
 };

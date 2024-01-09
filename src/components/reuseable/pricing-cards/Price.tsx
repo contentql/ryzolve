@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 
 // ======================================
 type PriceProps = {
@@ -10,13 +10,15 @@ type PriceProps = {
 // ======================================
 
 const Price: FC<PriceProps> = (props) => {
-  const { value, duration, classes, currency = '$' } = props;
+  const { value, duration, classes, currency = "$" } = props;
 
   return (
     <div className={`price justify-content-start ${classes}`}>
       <span className="price-currency">{currency}</span>
       <span className="price-value">{value}</span>
-      <span className="price-duration">{duration}</span>
+      <span className="price-duration custom-card-description-text">
+        {duration}
+      </span>
     </div>
   );
 };

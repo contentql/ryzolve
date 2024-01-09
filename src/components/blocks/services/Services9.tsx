@@ -21,8 +21,8 @@ const Services9: FC = () => {
   const GridCard: FC<GridCard> = ({ title, description }) => {
     return (
       <div className="ryzolve-custom-services-grid-card">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <h3 className="custom-description-text">{title}</h3>
+        <p className="custom-card-description-text">{description}</p>
       </div>
     );
   };
@@ -33,14 +33,14 @@ const Services9: FC = () => {
       border: "1px solid blue",
       padding: "20px",
       borderRadius: "8px",
-      marginBottom: "12px",
+      // marginBottom: "12px",
       display: "grid",
 
       // gridTemplateRows: "repeat(2, 1fr)",
     },
   };
   return (
-    <div className="row gx-lg-8 gx-xl-12 gy-10 mb-lg-22 mb-xl-8 align-items-center">
+    <div className="row gx-lg-8 gx-xl-12 gy-8s mb-lg-22 mb-xl-8 align-items-center">
       <div className="col-lg-7 order-lg-2">
         {/* <div className="flex"> */}
         <div
@@ -62,11 +62,11 @@ const Services9: FC = () => {
       </div>
 
       <div className="col-lg-5">
-        <h2 className="fs-15 text-uppercase text-muted mb-3">What We Do?</h2>
-        <h3 className="display-4 mb-5">
+        <h2 className="fs-15 text-uppercase text-primary mb-3">What We Do?</h2>
+        <h3 className="display-4 mb-5 custom-description-text">
           The service we offer is specifically designed to meet your needs.
         </h3>
-        <p>
+        <p className="custom-card-description-text">
           Our solutions are carefully crafted to cater to your unique needs,
           emphasizing enhanced efficiency, streamlined hiring processes, strict
           government compliance standards, and increased profitability. We are

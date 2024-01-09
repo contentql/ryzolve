@@ -32,13 +32,13 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
   const monthClasses = !activeYearly ? "price-show" : "price-hide price-hidden";
 
   return (
-    <div className="pricing card shadow-lg text-center">
+    <div className="pricing card shadow-lg custom-description-text">
       <div className="card-body">
         <Icon />
 
         <h4 className="card-title">{plan_name}</h4>
 
-        <div className="prices text-dark">
+        <div className="prices">
           <Price duration="mo" value={monthly_price} classes={monthClasses} />
           <Price duration="yr" value={yearly_price} classes={yearClasses} />
         </div>

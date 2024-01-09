@@ -10,6 +10,8 @@
     "sass": "sass --no-source-map src/assets/scss:public/css"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@popperjs/core": "^2.11.6",
     "@tanstack/react-query": "^4.32.6",
     "animate.css": "^4.1.1",

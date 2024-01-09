@@ -16,13 +16,15 @@ const Contact10: FC = () => {
         <div className="card bg-soft-primary mb-8">
           <div className="card-body p-12">
             <div className="row gx-md-8 gx-xl-12 gy-10">
-              <div className="col-lg-6">
+              <div className="col-lg-6 ">
                 <Email />
-                <h2 className="display-4 mb-3 pe-lg-10">
+                <h2 className="display-4 mb-3 pe-lg-10 custom-description-text">
                   7 Reasons Why Your Agency Might Not Pass An Audit.
-                  <h2 className="pt-2">(w/Checklist)</h2>
+                  <h2 className="pt-2 custom-description-text">
+                    (w/Checklist)
+                  </h2>
                 </h2>
-                <p className="lead pe-lg-12 mb-0">
+                <p className="pe-lg-12 mb-0 custom-description-text">
                   Complete the form below to receive this free downloadable
                   guide.
                 </p>

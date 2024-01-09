@@ -11,7 +11,7 @@ import {
   Services16,
 } from "components/blocks/services";
 import {} from "components/blocks/services";
-import { Testimonial4 } from "components/blocks/testimonial";
+import { Testimonial4, Testimonial2 } from "components/blocks/testimonial";
 import { Process1, Process3 } from "components/blocks/process";
 import { Pricing4 } from "components/blocks/pricing";
 import { Contact10 } from "components/blocks/banner/contact";
@@ -33,21 +33,23 @@ const ryzolve = () => {
   // console.log(data);
 
   return (
-    <div>
+    <main className="content-wrapper">
       {/* <section className="bg-gray"> */}
       {/* <header className="wrapper"> */}
       {/* <RyzolveHeader /> */}
-      <Navbar
-        logoAlt="logo-purple"
-        navClassName="navbar navbar-expand-lg  navbar-light navbar-bg-light caret-none"
-        button={
-          <NextLink
-            title="Book a Demo"
-            href="/calendly"
-            className="btn btn-sm btn-primary rounded"
-          />
-        }
-      />
+      <div className="custom-description-text">
+        <Navbar
+          logoAlt="logo-purple"
+          navClassName="navbar navbar-expand-lg  navbar-light navbar-bg-light caret-none"
+          button={
+            <NextLink
+              title="Book a Demo"
+              href="/calendly"
+              className="btn btn-sm btn-primary rounded"
+            />
+          }
+        />
+      </div>
       {/* </header> */}
       <section>
         {/* <Hero2 title={data?.hero.title} subtitle={data?.hero.subtitle} /> */}
@@ -62,11 +64,11 @@ const ryzolve = () => {
         {/* </section> */}
         {/* </section> */}
 
-        <div className="container py-14 pt-md-16 ">
+        <div className="container pt-14 pb-8 pt-md-16 ">
           <Services16 />
         </div>
 
-        <section className=" bg-gray">
+        <section className="pb-8 pb-md-8 bg-gray">
           <Services2
             title={data?.ourSolutions?.title}
             description1={data?.ourSolutions?.description}
@@ -89,32 +91,35 @@ const ryzolve = () => {
           <Process3 />
         </div> */}
 
-        <div className="container py-6 pt-md-4">
-          <section className="px-md-12 py-md-14 px-4 py-4">
-            {/* <Services12 /> */}
-            {/* edit this */}
-            <Services22
-              title={data?.ourStrategy.title}
-              stepsData={data?.ourStrategy.steps}
-            />
-          </section>
+        <div className="container py-8 pt-md-8">
+          {/* <section className="px-md-12 py-md-14 px-4 py-4"> */}
+          {/* <Services12 /> */}
+          {/* edit this */}
+          <Services22
+            title={data?.ourStrategy.title}
+            stepsData={data?.ourStrategy.steps}
+          />
+          {/* </section> */}
         </div>
 
         <div className="bg-gray">
-          <div className="container py-6 pt-md-4">
-            <section className="px-2 px-md-12 pt-md-12 pb-md-10 ">
-              <Process1
-                title={data?.howItWorks.title}
-                steps={data?.howItWorks.working_steps}
-              />
-            </section>
+          <div className="container py-8 pt-md-8">
+            {/* <section className="px-2 px-md-12 pt-md-12 pb-md-10 "> */}
+            <Process1
+              title={data?.howItWorks.title}
+              steps={data?.howItWorks.working_steps}
+            />
+            {/* </section> */}
           </div>
         </div>
 
-        <section className="mb-12">
+        <section className="">
           <Pricing4 />
         </section>
-        <Testimonial4 />
+
+        <div className="bg-light">
+          <Testimonial2 />
+        </div>
 
         {/* <div className="">
           <div className="container py-6 pt-md-4">
@@ -138,7 +143,7 @@ const ryzolve = () => {
 
         <Footer3 hiddenNewsletter={true} />
       </section>
-    </div>
+    </main>
   );
 };
 

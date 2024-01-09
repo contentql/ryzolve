@@ -39,7 +39,7 @@ const Pricing2: FC<Pricing2Props> = ({ className, planData }) => {
         style={{ bottom: "0.5rem", left: "-2.5rem" }}
       />
 
-      <div className="pricing-switcher-wrapper switcher">
+      <div className="pricing-switcher-wrapper switche custom-description-text">
         <p className="mb-0 pe-3">Monthly</p>
         <Switch value={activeYearly} onChange={setActiveYearly} />
         <p className="mb-0 ps-3">Yearly</p>
