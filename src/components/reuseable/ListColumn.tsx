@@ -31,13 +31,6 @@ const ListColumn: FC<ListColumnProps> = ({
                   {...liProps}
                   className="custom-card-description-text"
                 >
-                  {/* <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      alignItems: "center",
-                    }}
-                  > */}
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     color="#007aff"

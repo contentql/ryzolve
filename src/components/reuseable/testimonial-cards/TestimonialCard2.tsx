@@ -8,19 +8,32 @@ type TestimonialCard2Props = {
   designation: string;
   blockClassName?: HTMLAttributes<HTMLQuoteElement>["className"];
   blockDetailsClassName?: HTMLAttributes<HTMLDivElement>["className"];
+  videoUrl: string;
 };
 // =================================================
 
 const TestimonialCard2: FC<TestimonialCard2Props> = (props) => {
-  const { name, review, designation, blockClassName, blockDetailsClassName } =
-    props;
+  const {
+    name,
+    review,
+    designation,
+    blockClassName,
+    blockDetailsClassName,
+    videoUrl,
+  } = props;
 
   return (
     <div className="custom-testmonial-card px-4">
       <div className=" mb-8 mb-md-8 ml-4 ml-md-4 position-relative">
         <Plyr
           options={{ loadSprite: true, clickToPlay: true }}
-          source={{ type: "video", sources: [{ src: "/media/movie.mp4" }] }}
+          source={{
+            type: "video",
+            sources: [
+              { src: videoUrl },
+              // { src: "/videos/intro-compressed.mp4" },
+            ],
+          }}
         />
       </div>
       <div className="pt-10">

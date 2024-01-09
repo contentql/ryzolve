@@ -60,6 +60,8 @@ import { slideInDownAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
 import { list } from "data/demo-11";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 type About14Props = {
   title: string;
@@ -119,7 +121,7 @@ const About14: FC<About14Props> = ({
           <NextLink
             title="Book a Demo"
             href="/calendly"
-            className="btn btn-lg btn-primary rounded-pill me-2 mb-8"
+            className="btn btn-lg btn-primary rounded-pill mx-6"
           />
         </span>
       </div>
@@ -135,14 +137,23 @@ type ListProps = {
 
 const List = ({ color, title, description }: ListProps) => {
   return (
-    <div className="col-lg-6">
+    <div className="col-lg-12">
       <h2 className="mb-3">{title}</h2>
       <ul
         className={`icon-list bullet-bg bullet-soft-${color} custom-card-description-text`}
       >
         {description?.map((el) => (
-          <li>
-            <i className="uil uil-check" /> {el}
+          <li className="custom-card-description-text">
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              color="#007aff"
+              style={{
+                height: 18,
+                marginRight: 10,
+              }}
+            />
+            <span> {el}</span>
+            {/* </div> */}
           </li>
         ))}
       </ul>

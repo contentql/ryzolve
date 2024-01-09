@@ -3,7 +3,7 @@ import React from "react";
 import { Hero10 } from "components/blocks/hero";
 import { slideInDownAnimate } from "utils/animation";
 import { Services2, Services21 } from "components/blocks/services";
-import { Testimonial4 } from "components/blocks/testimonial";
+import { Testimonial4, Testimonial2 } from "components/blocks/testimonial";
 import { Contact10 } from "components/blocks/banner/contact";
 import { Footer3 } from "components/blocks/footer";
 import { About14 } from "components/blocks/about";
@@ -98,9 +98,9 @@ const index = () => {
           />
           {/* </div> */}
         </div>
-        <section className="">
-          <Testimonial4 />
-        </section>
+        <div className="bg-light pt-8">
+          <Testimonial2 />
+        </div>
         <Contact10 />
         <Footer3 hiddenNewsletter={true} />
       </section>

@@ -12,6 +12,7 @@ type HowItWorks = {
     description: string;
   }[];
 };
+
 const Process1: FC<HowItWorks> = ({ title, steps }) => {
   return (
     <div>
@@ -20,6 +21,7 @@ const Process1: FC<HowItWorks> = ({ title, steps }) => {
           {steps?.map((item, index) => {
             return (
               <ProcessList1
+                index={index}
                 shadow
                 no={index + 1}
                 key={item.id}

@@ -31,6 +31,7 @@ export const testimonialList2 = [
     name: "Jane Cooper",
     image: "/img/avatars/te7.jpg",
     designation: "CEO, ABC Corporation",
+    videoUrl: "/videos/intro-compressed.mp4",
     review:
       "Morbi scelerisque vel ante nec convallis. Sed neque eros, volutpat ut augue quis, lacinia ornare felis. Donec molestie nunc varius est blandit, nec pretium libero tincidunt eget porta nibh.",
   },
@@ -38,17 +39,20 @@ export const testimonialList2 = [
     name: "Lisa Simpson",
     image: "/img/avatars/te8.jpg",
     designation: "CEO, ABC Corporation",
+    videoUrl: "/videos/testimonial-trm-hospice.mp4",
     review: `Suspendisse mattis vulputate tellus, sed malesuada diam iaculis sit amet. Aenean a imperdiet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec molestie nunc varius est blandit, nec pretium libero tincidunt eget porta nibh. `,
   },
   {
     name: "Barclay Widerski",
     image: "/img/avatars/te9.jpg",
     designation: "Sales Specialist",
+    videoUrl: "/videos/intro-compressed.mp4",
     review: `Suspendisse mattis vulputate tellus, sed malesuada diam iaculis sit amet. Aenean a imperdiet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec molestie nunc varius est blandit, nec pretium libero tincidunt eget porta nibh. `,
   },
   {
     name: "Jackie Sanders",
     image: "/img/avatars/te10.jpg",
+    videoUrl: "/videos/intro-compressed.mp4",
     designation: "Investment Planner",
     review: `Suspendisse mattis vulputate tellus, sed malesuada diam iaculis sit amet. Aenean a imperdiet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec molestie nunc varius est blandit, nec pretium libero tincidunt eget porta nibh.`,
   },
