@@ -107,6 +107,14 @@ const About14: FC<About14Props> = ({
         <div className="mb-10">
           <p className="custom-card-description-text">{description1}</p>
         </div>
+        {/* <span style={slideInDownAnimate("1200ms")}>
+          <NextLink
+            title="Book a Demo"
+            href="/calendly"
+            className="btn btn-lg btn-primary rounded-pill me-2 mb-8"
+          />
+        </span> */}
+        <List title={description2} color="orange" description={list} />
         <span style={slideInDownAnimate("1200ms")}>
           <NextLink
             title="Book a Demo"
@@ -114,7 +122,6 @@ const About14: FC<About14Props> = ({
             className="btn btn-lg btn-primary rounded-pill me-2 mb-8"
           />
         </span>
-        <List title={description2} color="orange" description={list} />
       </div>
     </div>
   );

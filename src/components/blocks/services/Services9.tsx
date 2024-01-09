@@ -64,7 +64,7 @@ const Services9: FC = () => {
       <div className="col-lg-5">
         <h2 className="fs-15 text-uppercase text-primary mb-3">What We Do?</h2>
         <h3 className="display-4 mb-5 custom-description-text">
-          The service we offer is specifically designed to meet your needs.
+          The service we offer is designed to meet your agency's needs.
         </h3>
         <p className="custom-card-description-text">
           Our solutions are carefully crafted to cater to your unique needs,

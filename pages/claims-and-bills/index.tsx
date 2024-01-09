@@ -46,7 +46,7 @@ const index = () => {
         <div className="pt-10 pb-6 pt-md-14 pb-md-4 text-center">
           <div className="row mb-11">
             {/* <div className="col-md-10 col-lg-8 col-xl-6 col-xxl-5 mx-auto mb-11"> */}
-            <h1 className="display-1 mb-3 custom-heading-text mx-auto">
+            <h1 className="display-1 mb-3 custom-page-heading-text mx-auto">
               {data?.Hero.title}
             </h1>
             <p className="px-lg-7 px-xl-7 px-xxl-6 custom-description-text">
