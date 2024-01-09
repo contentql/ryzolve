@@ -40,6 +40,7 @@ type NavbarProps = {
   navClassName?: string;
   button?: ReactElement;
   navOtherClass?: string;
+  loginButton?: ReactElement;
 };
 // ===================================================================
 
@@ -56,6 +57,7 @@ const Navbar: FC<NavbarProps> = (props) => {
     navOtherClass,
     stickyBox,
     logoAlt,
+    loginButton,
   } = props;
 
   const sticky = useSticky(350);
@@ -202,7 +204,12 @@ const Navbar: FC<NavbarProps> = (props) => {
           )}
 
           {/* ============= contact button ============= */}
-          {button && <li className="nav-item d-none d-md-block">{button}</li>}
+          <div style={{ display: "flex", gap: 12 }}>
+            {button && <li className="nav-item d-none d-md-block">{button}</li>}
+            {loginButton && (
+              <li className="nav-item d-none d-md-block">{loginButton}</li>
+            )}
+          </div>
 
           {/* ============= shopping cart button ============= */}
           {cart && (

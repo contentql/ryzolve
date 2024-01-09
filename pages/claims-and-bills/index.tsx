@@ -30,6 +30,13 @@ const index = () => {
             className="btn btn-sm btn-primary rounded"
           />
         }
+        loginButton={
+          <NextLink
+            title="Login"
+            href="https://ryzolve.com/providerapp"
+            className="btn btn-sm btn-outline-primary rounded"
+          />
+        }
       />
       {/* <section className="p-4 wrapper">
         <Hero10 title={data?.Hero.title} subtitle={data?.Hero.subtitle} />

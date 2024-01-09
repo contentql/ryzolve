@@ -48,6 +48,13 @@ const ryzolve = () => {
               className="btn btn-sm btn-primary rounded"
             />
           }
+          loginButton={
+            <NextLink
+              title="Login"
+              href="https://ryzolve.com/providerapp"
+              className="btn btn-sm btn-outline-primary rounded"
+            />
+          }
         />
       </div>
       {/* </header> */}
