@@ -53,7 +53,7 @@ const index = () => {
               </p>
               <div style={slideInDownAnimate('600ms')}>
                 <NextLink
-                  title='Read More'
+                  title='Explore'
                   href='#solutions'
                   className='btn btn-lg btn-primary rounded mt-6'
                 />
