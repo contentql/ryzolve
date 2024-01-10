@@ -108,7 +108,7 @@ const index = () => {
             />
           </div>
         </section>
-        <div className='bg-gray '>
+        <div className='bg-gray my-8'>
           <Testimonial2 />
         </div>
         <Contact10 />
