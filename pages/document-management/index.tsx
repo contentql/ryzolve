@@ -45,24 +45,25 @@ const index = () => {
       {/* <section className="p-4 wrapper">
         <Hero10 title={data?.Hero.title} subtitle={data?.Hero.subtitle} />
       </section> */}
+
       <section className='wrapper'>
         <div className='pt-10 pb-6 pt-md-14 pb-md-4 text-center'>
           <div className='row'>
-            <div className='col-md-8 col-lg-8 col-xl-6 col-xxl-5 mx-auto mb-11'>
-              <h1 className='display-1 mb-3 custom-page-heading-text'>
-                {data?.Hero.title}
-              </h1>
-              <p className='px-lg-7 px-xl-7 px-xxl-6 custom-description-text'>
-                {data?.Hero.subtitle}
-              </p>
-              <div style={slideInDownAnimate('600ms')}>
-                <NextLink
-                  title='Explore'
-                  href='#solutions'
-                  className='btn btn-lg btn-primary rounded mt-6'
-                />
-              </div>
+            {/* <div className='col-md-8 col-lg-8 col-xl-6 col-xxl-5 mx-auto mb-11'> */}
+            <h1 className='display-1 mb-3 custom-page-heading-text'>
+              {data?.Hero.title}
+            </h1>
+            <p className='px-lg-7 px-xl-7 px-xxl-6 custom-description-text'>
+              {data?.Hero.subtitle}
+            </p>
+            <div style={slideInDownAnimate('600ms')}>
+              <NextLink
+                title='Explore'
+                href='#solutions'
+                className='btn btn-lg btn-primary rounded mt-6'
+              />
             </div>
+            {/* </div> */}
             {/* <div style={slideInDownAnimate("600ms")}>
               <NextLink
                 title="Explore"
