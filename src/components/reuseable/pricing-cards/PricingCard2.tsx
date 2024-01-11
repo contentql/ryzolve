@@ -55,7 +55,7 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
                 style={{
                   height: 18,
                   marginRight: 20,
-                  marginLeft: -32,
+                  marginLeft: -32, 
                 }}
               />
               <span>
