@@ -2,6 +2,9 @@ import { FC } from "react";
 import Price from "./Price";
 import NextLink from "../links/NextLink";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+
 // ================================================================
 type PricingCard2Props = {
   plan_name: string;
@@ -46,7 +49,15 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
         <ul className="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
           {plan_features.map((item, i) => (
             <li key={i}>
-              <i className="uil uil-check" />
+              <FontAwesomeIcon
+                icon={faCircleCheck}
+                color="#007aff"
+                style={{
+                  height: 18,
+                  marginRight: 20,
+                  marginLeft: -32,
+                }}
+              />
               <span>
                 <strong>{item.item.split(" ")[0]}</strong>{" "}
                 {item.item.split(" ").slice(1).join(" ")}
