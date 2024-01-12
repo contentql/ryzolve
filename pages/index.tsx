@@ -45,14 +45,14 @@ const ryzolve = () => {
             <NextLink
               title="Book a Demo"
               href="/calendly"
-              className="btn btn-sm btn-primary rounded"
+              className="btn btn-sm btn-secondary rounded"
             />
           }
           loginButton={
             <NextLink
               title="Login"
               href="https://ryzolve.com/providerapp"
-              className="btn btn-sm btn-outline-primary rounded"
+              className="btn btn-sm btn-outline-secondary rounded"
             />
           }
         />

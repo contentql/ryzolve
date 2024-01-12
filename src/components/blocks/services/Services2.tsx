@@ -71,7 +71,7 @@ const Services2: FC<Services2Props> = ({
               <NextLink
                 title="Book a Demo"
                 href="/calendly"
-                className="btn btn-lg btn-primary rounded-pill me-2 "
+                className="btn btn-lg btn-secondary rounded-pill me-2 "
               />
             </span>
           </div>

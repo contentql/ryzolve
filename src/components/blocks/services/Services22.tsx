@@ -25,7 +25,7 @@ const Services22: FC<OurStrategyProps> = ({ title, stepsData }) => {
     {
       color: "orange",
       image: "/img/photos/digital-management.svg",
-      checkColor: "#f78b77",
+      checkColor: "#f50",
     },
     {
       color: "violet",
@@ -104,9 +104,9 @@ const List = ({ color, title, description, checkColor }: ListProps) => {
   return (
     <div className="col-lg-6 px-md-20 p-lg-8 pb-8">
       <h2 className="mb-3 custom-description-text ml-20 ml-md-20 px-4">
-        {title === "Digital Document Management" ? (
+        {title === "Digital document management" ? (
           <Bulb className={`icon-svg-sm solid-mono text-${color} me-4`} />
-        ) : title === "Compliance Regulation" ? (
+        ) : title === "Compliance regulation" ? (
           <Compare className={`icon-svg-sm solid-mono text-${color} me-4`} />
         ) : title === "Claims & Billing" ? (
           <DeliveryBox

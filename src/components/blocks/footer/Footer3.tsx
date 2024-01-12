@@ -138,7 +138,7 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
               <NextLink
                 title="Join Us"
                 href="#"
-                className="btn  btn-primary rounded-pill"
+                className="btn  btn-secondary rounded-pill"
               />
             </div>
           </div>

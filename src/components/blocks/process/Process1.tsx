@@ -58,7 +58,7 @@ const Process1: FC<HowItWorks> = ({ title, steps }) => {
         <NextLink
           href="/calendly"
           title="Book a demo"
-          className="btn btn-primary rounded-pill mb-0"
+          className="btn btn-secondary rounded-pill mb-0"
         />
       </div>
     </div>

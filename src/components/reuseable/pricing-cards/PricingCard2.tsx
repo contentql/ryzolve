@@ -55,7 +55,7 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
                 style={{
                   height: 18,
                   marginRight: 20,
-                  marginLeft: -32, 
+                  marginLeft: -32,
                 }}
               />
               <span>
@@ -69,7 +69,7 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
         <NextLink
           href="#"
           title="Choose Plan"
-          className={`btn btn-primary ${
+          className={`btn btn-secondary ${
             roundedButton ? "rounded" : "rounded-pill"
           }`}
         />
