@@ -57,8 +57,8 @@ const Hero12: FC = () => {
             <figure>
               <img
                 className="w-auto"
-                src="/img/photos/hero1.gif"
-                // srcSet="/img/illustrations/i6@2x.png"
+                src="/img/photos/i6.png"
+                srcSet="/img/illustrations/i6@2x.png"
                 alt=""
               />
             </figure>
