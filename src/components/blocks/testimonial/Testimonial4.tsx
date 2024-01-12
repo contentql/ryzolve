@@ -16,8 +16,6 @@ import { getTestimonialsData } from "queries/testimonial";
 //   };
 // };
 
-
-
 const Testimonial4: FC = () => {
   const { data } = useQuery({
     queryKey: ["testimonialData"],
@@ -25,7 +23,7 @@ const Testimonial4: FC = () => {
   });
   return (
     <div className="wrapper bg-soft-primary">
-      <div className="container py-14 py-md-14">
+      <div className="container py-18 py-md-8">
         <div className="row">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
             <h2 className="fs-15 text-uppercase text-muted mb-3">

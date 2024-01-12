@@ -1,5 +1,5 @@
 // Font Import
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1");
 
 // Bootstrap Configuration
 @import "../../../../node_modules/bootstrap/scss/mixins";
@@ -24,27 +24,27 @@ $font-family-serif: "DM Serif Display";
 }
 .display-1 {
   @include font-size(2.6rem);
-  line-height: 1.1
+  line-height: 1.1;
 }
 .display-2 {
   @include font-size(2.4rem);
-  line-height: 1.15
+  line-height: 1.15;
 }
 .display-3 {
   @include font-size(2.3rem);
-  line-height: 1.15
+  line-height: 1.15;
 }
 .display-4 {
   @include font-size(2rem);
-  line-height: 1.2
+  line-height: 1.2;
 }
 .display-5 {
   @include font-size(1.8rem);
-  line-height: 1.2
+  line-height: 1.2;
 }
 .display-6 {
   @include font-size(1.6rem);
-  line-height: 1.25
+  line-height: 1.25;
 }
 h2.post-title,
 .h2.post-title {

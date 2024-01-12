@@ -40,6 +40,7 @@ type NavbarProps = {
   navClassName?: string;
   button?: ReactElement;
   navOtherClass?: string;
+  loginButton?: ReactElement;
 };
 // ===================================================================
 
@@ -56,16 +57,19 @@ const Navbar: FC<NavbarProps> = (props) => {
     navOtherClass,
     stickyBox,
     logoAlt,
+    loginButton,
   } = props;
 
   const sticky = useSticky(350);
   const navbarRef = useRef<HTMLElement | null>(null);
 
   // dynamically render the logo
-  const logo = sticky ? "logo-dark" : logoAlt ?? "logo-dark";
+  // const logo = sticky ? "logo-dark" : logoAlt ?? "logo-dark";
   // dynamically added navbar classname
-  const fixedClassName =
-    "navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed";
+  // const fixedClassName =
+  //   "navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed";
+
+  const fixedClassName = "navbar navbar-expand-lg navbar-clone fixed";
 
   // render inner nav item links
   const renderLinks = (links: LinkType[]) => {
@@ -102,105 +106,9 @@ const Navbar: FC<NavbarProps> = (props) => {
         </div> */}
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-          <ul className="navbar-nav">
-            {/* ===================== demos nav item ===================== */}
-            {/* <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Demos" className="nav-link dropdown-toggle" />
-
-              <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                <li className="mega-menu-content mega-menu-scroll">
-                  <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
-                    {demos.map(({ id, title, url, thumnail }) => (
-                      <li className="col" key={id}>
-                        <Link href={url} passHref legacyBehavior>
-                          <a className="dropdown-item">
-                            <img
-                              alt={title}
-                              src={`/img/demos/${thumnail}.jpg`}
-                              srcSet={`/img/demos/${thumnail}@2x.jpg 2x`}
-                              className="rounded lift d-none d-lg-block"
-                            />
-                            <span className="d-lg-none">{title}</span>
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <span className="d-none d-lg-flex">
-                    <i className="uil uil-direction" />
-                    <strong>Scroll to view more</strong>
-                  </span>
-                </li>
-              </ul>
-            </li> */}
-
-            {/*  ===================== pages nav item  ===================== */}
-            {/* <li className="nav-item dropdown">
-              <DropdownToggleLink title="Pages" className="nav-link dropdown-toggle" />
-
-              <ul className="dropdown-menu">
-                {pages.map(({ id, title, children }) => {
-                  return (
-                    <li className="dropdown dropdown-submenu dropend" key={id}>
-                      <DropdownToggleLink title={title} />
-                      <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                    </li>
-                  );
-                })}
-
-                <ListItemLink href="/pricing" title="Pricing" linkClassName="dropdown-item" />
-              </ul>
-            </li> */}
-
-            {/* ===================== projects nav item  ===================== */}
-            {/* <li className="nav-item dropdown">
-              <DropdownToggleLink title="Projects" className="nav-link dropdown-toggle" />
-
-              <div className="dropdown-menu dropdown-lg">
-                <div className="dropdown-lg-content">
-                  {projectsNavigation.map(({ title, children }, i) => (
-                    <div key={title + i}>
-                      <h6 className="dropdown-header">{title}</h6>
-                      <ul className="list-unstyled">{renderLinks(children)}</ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </li> */}
-
-            {/* ===================== blog nav item ===================== */}
-            {/* <li className='nav-item dropdown'>
-              <DropdownToggleLink
-                title='Services'
-                className='nav-link dropdown-toggle'
-              />
-
-              <ul className='dropdown-menu'>
-                {blogsNavigation.map(({ id, url, title }) => {
-                  if (!url) {
-                    return (
-                      <li
-                        className='dropdown dropdown-submenu dropend'
-                        key={id}
-                      ></li>
-                    );
-                  }
-                  return (
-                    <ListItemLink
-                      key={id}
-                      href={url}
-                      title={title}
-                      linkClassName='dropdown-item'
-                    />
-                  );
-                })}
-              </ul>
-            </li> */}
-
-            {/* custom for ryzolve */}
+          <ul className="navbar-nav custom-description-text">
             <li
-              className="nav-item dropdown dropdown-mega"
+              className="nav-item dropdown dropdown-mega custom-description-text"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
@@ -238,7 +146,6 @@ const Navbar: FC<NavbarProps> = (props) => {
               />
             </li>
 
-            {/* ===================== About us ===================== */}
             <li className="nav-item dropdown dropdown-mega">
               <NextLink
                 title="Training"
@@ -298,7 +205,12 @@ const Navbar: FC<NavbarProps> = (props) => {
           )}
 
           {/* ============= contact button ============= */}
-          {button && <li className="nav-item d-none d-md-block">{button}</li>}
+          <div style={{ display: "flex", gap: 12 }}>
+            {button && <li className="nav-item d-none d-md-block">{button}</li>}
+            {loginButton && (
+              <li className="nav-item d-none d-md-block">{loginButton}</li>
+            )}
+          </div>
 
           {/* ============= shopping cart button ============= */}
           {cart && (

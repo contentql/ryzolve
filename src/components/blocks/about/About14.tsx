@@ -60,6 +60,8 @@ import { slideInDownAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
 import { list } from "data/demo-11";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 type About14Props = {
   title: string;
@@ -79,31 +81,49 @@ const About14: FC<About14Props> = ({
   return (
     <div className="row align-items-center">
       <div className="col-lg-6 order-lg-2 pb-4 pb-lg-0">
-        <figure className="rounded d-flex align-items-center justify-content-center">
+        <figure
+          style={{
+            maxHeight: "45vh",
+            overflow: "hidden",
+            display: "flex",
+            justifyContent: "end",
+            // height: "30%",
+            alignItems: "center",
+          }}
+          className="rounded"
+        >
           <Image
-            height={500}
+            height={300}
             width={500}
-            className="w-auto"
+            alt="our solutions"
             src={image}
-            // srcSet='/img/illustrations/.png 2x'
-            alt="ryzolve-about.png"
+            // srcSet='/img/illustrations/i8@2x.png 2x'
           />
         </figure>
       </div>
 
       <div className="col-lg-6">
-        <h3 className="display-4 mb-7 mt-lg-10">{title}</h3>
-        <div className="mb-6">
-          <p>{description1}</p>
+        <h3 className="display-4 mb-7 mt-lg-10 custom-description-text">
+          {title}
+        </h3>
+        <div className="mb-10">
+          <p className="custom-card-description-text">{description1}</p>
         </div>
-        <span style={slideInDownAnimate("1200ms")}>
+        {/* <span style={slideInDownAnimate("1200ms")}>
           <NextLink
             title="Book a Demo"
             href="/calendly"
             className="btn btn-lg btn-primary rounded-pill me-2 mb-8"
           />
-        </span>
+        </span> */}
         <List title={description2} color="orange" description={list} />
+        <span style={slideInDownAnimate("1200ms")}>
+          <NextLink
+            title="Book a Demo"
+            href="/calendly"
+            className="btn btn-lg btn-secondary rounded-pill"
+          />
+        </span>
       </div>
     </div>
   );
@@ -117,12 +137,23 @@ type ListProps = {
 
 const List = ({ color, title, description }: ListProps) => {
   return (
-    <div className="col-lg-6">
+    <div className="col-lg-12">
       <h2 className="mb-3">{title}</h2>
-      <ul className={`icon-list bullet-bg bullet-soft-${color}`}>
+      <ul
+        className={`icon-list bullet-bg bullet-soft-${color} custom-card-description-text`}
+      >
         {description?.map((el) => (
-          <li>
-            <i className="uil uil-check" /> {el}
+          <li className="custom-card-description-text">
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              color="#007aff"
+              style={{
+                height: 18,
+                marginRight: 10,
+              }}
+            />
+            <span> {el}</span>
+            {/* </div> */}
           </li>
         ))}
       </ul>

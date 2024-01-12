@@ -1,71 +1,71 @@
-import Edit from 'icons/solid-mono/Edit';
-import Lamp from 'icons/solid-mono/Lamp';
-import Team from 'icons/lineal/Team';
-import Check from 'icons/lineal/Check';
-import Medal from 'icons/lineal/Medal';
-import Earth from 'icons/lineal/Earth';
-import Shield from 'icons/lineal/Shield';
-import Target from 'icons/lineal/Target';
-import Search from 'icons/lineal/Search';
-import ChatTwo from 'icons/lineal/ChatTwo';
-import Script from 'icons/solid-duo/Script';
-import Verify from 'icons/solid-mono/Verify';
-import Server from 'icons/solid-duo/Server';
-import Setting from 'icons/solid-duo/Setting';
-import TeamTwo from 'icons/solid-mono/TeamTwo';
-import ShopTwo from 'icons/lineal/ShopTwo';
-import Browser from 'icons/lineal/Browser';
-import Director from 'icons/solid-duo/Director';
-import Settings from 'icons/lineal/Settings';
-import Telephone from 'icons/lineal/Telephone';
-import SearchTwo from 'icons/lineal/SearchTwo';
-import Analytics from 'icons/lineal/Analytics';
-import Megaphone from 'icons/lineal/Megaphone';
-import ClockThree from 'icons/lineal/ClockThree';
-import DeliveryBox from 'icons/solid-mono/DeliveryBox';
-import CloudNetwork from 'icons/solid-duo/CloudNetwork';
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo';
-import SettingsThree from 'icons/lineal/SettingsThree';
-import CloudComputing from 'icons/lineal/CloudComputing';
-import { LinkType } from 'types/demo-1';
-import color from 'utils/color';
+import Edit from "icons/solid-mono/Edit";
+import Lamp from "icons/solid-mono/Lamp";
+import Team from "icons/lineal/Team";
+import Check from "icons/lineal/Check";
+import Medal from "icons/lineal/Medal";
+import Earth from "icons/lineal/Earth";
+import Shield from "icons/lineal/Shield";
+import Target from "icons/lineal/Target";
+import Search from "icons/lineal/Search";
+import ChatTwo from "icons/lineal/ChatTwo";
+import Script from "icons/solid-duo/Script";
+import Verify from "icons/solid-mono/Verify";
+import Server from "icons/solid-duo/Server";
+import Setting from "icons/solid-duo/Setting";
+import TeamTwo from "icons/solid-mono/TeamTwo";
+import ShopTwo from "icons/lineal/ShopTwo";
+import Browser from "icons/lineal/Browser";
+import Director from "icons/solid-duo/Director";
+import Settings from "icons/lineal/Settings";
+import Telephone from "icons/lineal/Telephone";
+import SearchTwo from "icons/lineal/SearchTwo";
+import Analytics from "icons/lineal/Analytics";
+import Megaphone from "icons/lineal/Megaphone";
+import ClockThree from "icons/lineal/ClockThree";
+import DeliveryBox from "icons/solid-mono/DeliveryBox";
+import CloudNetwork from "icons/solid-duo/CloudNetwork";
+import SmartphoneTwo from "icons/lineal/SmartphoneTwo";
+import SettingsThree from "icons/lineal/SettingsThree";
+import CloudComputing from "icons/lineal/CloudComputing";
+import { LinkType } from "types/demo-1";
+import color from "utils/color";
 
 // used in the services-1 block
 export const serviceList1 = [
   {
     id: 1,
-    link: '#',
+    link: "#",
     icon: Search,
-    title: 'SEO Services',
-    linkText: 'Learn More',
+    title: "SEO Services",
+    linkText: "Learn More",
     linkType: LinkType.yellow,
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 2,
-    link: '#',
+    link: "#",
     icon: Browser,
-    title: 'Web Design',
-    linkText: 'Learn More',
+    title: "Web Design",
+    linkText: "Learn More",
     linkType: LinkType.red,
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 3,
-    link: '#',
+    link: "#",
     icon: ChatTwo,
     linkType: LinkType.green,
-    title: 'Social Engagement',
-    linkText: 'Learn More',
+    title: "Social Engagement",
+    linkText: "Learn More",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
   {
     id: 4,
-    link: '#',
+    link: "#",
     icon: Megaphone,
     linkType: LinkType.blue,
-    title: 'Content Marketing',
-    linkText: 'Learn More',
+    title: "Content Marketing",
+    linkText: "Learn More",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`,
   },
 ];
@@ -74,30 +74,30 @@ export const serviceList1 = [
 export const serviceList2 = [
   {
     id: 1,
-    linkUrl: '#',
-    title: '24/7 Support',
-    icon: 'uil-phone-volume',
+    linkUrl: "#",
+    title: "24/7 Support",
+    icon: "uil-phone-volume",
     description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
   {
     id: 2,
-    linkUrl: '#',
-    title: 'Secure Payments',
-    icon: 'uil-shield-exclamation',
+    linkUrl: "#",
+    title: "Secure Payments",
+    icon: "uil-shield-exclamation",
     description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
   {
     id: 3,
-    linkUrl: '#',
-    title: 'Daily Updates',
-    icon: 'uil-laptop-cloud',
+    linkUrl: "#",
+    title: "Daily Updates",
+    icon: "uil-laptop-cloud",
     description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
   {
     id: 4,
-    linkUrl: '#',
-    title: 'Market Research',
-    icon: 'uil-chart-line',
+    linkUrl: "#",
+    title: "Market Research",
+    icon: "uil-chart-line",
     description: `Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.`,
   },
 ];
@@ -106,30 +106,30 @@ export const serviceList2 = [
 export const serviceList3 = [
   {
     id: 1,
-    linkUrl: '#',
-    title: '24/7 Support',
-    icon: 'uil-phone-volume',
+    linkUrl: "#",
+    title: "24/7 Support",
+    icon: "uil-phone-volume",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 2,
-    linkUrl: '#',
-    title: 'Secure Payments',
-    icon: 'uil-shield-exclamation',
+    linkUrl: "#",
+    title: "Secure Payments",
+    icon: "uil-shield-exclamation",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 3,
-    linkUrl: '#',
-    title: 'Daily Updates',
-    icon: 'uil-laptop-cloud',
+    linkUrl: "#",
+    title: "Daily Updates",
+    icon: "uil-laptop-cloud",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 4,
-    linkUrl: '#',
-    title: 'Market Research',
-    icon: 'uil-chart-line',
+    linkUrl: "#",
+    title: "Market Research",
+    icon: "uil-chart-line",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
 ];
@@ -139,37 +139,37 @@ export const serviceList4 = [
   {
     id: 1,
     Icon: Telephone,
-    title: '24/7 Support',
+    title: "24/7 Support",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 2,
     Icon: Shield,
-    title: 'Secure Payments',
+    title: "Secure Payments",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 3,
     Icon: CloudComputing,
-    title: 'Daily Updates',
+    title: "Daily Updates",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 4,
     Icon: Analytics,
-    title: 'Market Research',
+    title: "Market Research",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 5,
     Icon: Settings,
-    title: 'System Integration',
+    title: "System Integration",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 6,
     Icon: Earth,
-    title: 'SEO Services',
+    title: "SEO Services",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
 ];
@@ -177,12 +177,12 @@ export const serviceList4 = [
 // used in the services-6 block
 export const serviceList5 = [
   [
-    'Aenean quam ornare curabitur blandit consectetur.',
-    'Nullam quis risus eget urna mollis ornare aenean leo.',
+    "Aenean quam ornare curabitur blandit consectetur.",
+    "Nullam quis risus eget urna mollis ornare aenean leo.",
   ],
   [
-    'Etiam porta euismod malesuada mollis nisl ornare.',
-    'Vivamus sagittis lacus augue rutrum maecenas odio.',
+    "Etiam porta euismod malesuada mollis nisl ornare.",
+    "Vivamus sagittis lacus augue rutrum maecenas odio.",
   ],
 ];
 
@@ -192,42 +192,42 @@ export const serviceList6 = [
     id: 1,
     Icon: Target,
     color: color.aqua,
-    title: 'Fitness Goal',
+    title: "Fitness Goal",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 2,
     Icon: Medal,
     color: color.yellow,
-    title: 'Activity Tracking',
+    title: "Activity Tracking",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 3,
     Icon: ClockThree,
     color: color.red,
-    title: 'Sleep Analysis',
+    title: "Sleep Analysis",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 4,
     Icon: Check,
     color: color.pink,
-    title: 'Workout Report',
+    title: "Workout Report",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 5,
     Icon: ShopTwo,
     color: color.green,
-    title: 'Nutritional Analysis',
+    title: "Nutritional Analysis",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 6,
     Icon: Team,
     color: color.purple,
-    title: 'Activity Sharing',
+    title: "Activity Sharing",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
 ];
@@ -238,40 +238,41 @@ export const serviceList7 = [
     id: 1,
     Icon: Telephone,
     color: color.yellow,
-    title: '24/7 Support',
-    cardColor: 'bg-pale-yellow',
-    columnClass: 'col-md-5 offset-md-1 align-self-end',
+    title: "Improve Efficiency",
+    cardColor: "bg-pale-yellow",
+    columnClass: "col-md-5 offset-md-1 align-self-end",
     description:
-      'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta.',
+      "Document Management that suites to fit your healthcare structure to increase Efficiency.",
   },
   {
     id: 2,
     Icon: Shield,
     color: color.red,
-    title: 'Secure Payments',
-    cardColor: 'bg-pale-red',
-    columnClass: 'col-md-6 align-self-end',
+    title: "Stay Compliant",
+    cardColor: "bg-pale-red",
+    columnClass: "col-md-6 align-self-end",
     description:
-      'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta.',
+      "Compliance that meets all government requirements, providing automation and peace of mind.",
   },
   {
     id: 3,
     color: color.leaf,
     Icon: CloudComputing,
-    title: 'Daily Updates',
-    cardColor: 'bg-pale-leaf',
-    columnClass: 'col-md-5',
-    description: 'Nulla vitae elit libero, a pharetra augue.',
+    title: "Increase Profits",
+    cardColor: "bg-pale-leaf",
+    columnClass: "col-md-5",
+    description:
+      "Receive payments directly from your chosen medical insurance partner, without the need to chase.",
   },
   {
     id: 4,
     Icon: Analytics,
     color: color.primary,
-    title: 'Market Research',
-    cardColor: 'bg-pale-primary',
-    columnClass: 'col-md-6 align-self-start',
+    title: "Training",
+    cardColor: "bg-pale-primary",
+    columnClass: "col-md-6 align-self-start",
     description:
-      'Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget.',
+      "We facilitate the licensing and training processes for home care, provide certificates.",
   },
 ];
 
@@ -280,24 +281,24 @@ export const serviceList8 = [
   {
     id: 1,
     Icon: Browser,
-    title: 'Web Design',
+    title: "Web Design",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
   {
     id: 2,
     Icon: SmartphoneTwo,
-    title: 'Mobile Design',
+    title: "Mobile Design",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
   {
     id: 3,
     Icon: SettingsThree,
-    title: 'Development',
+    title: "Development",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
   {
     id: 4,
-    title: 'SEO',
+    title: "SEO",
     Icon: SearchTwo,
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
   },
@@ -307,26 +308,26 @@ export const serviceList8 = [
 export const serviceList9 = [
   {
     id: 1,
-    linkUrl: '#',
+    linkUrl: "#",
     color: color.purple,
-    title: '24/7 Support',
-    icon: 'uil-phone-volume',
+    title: "24/7 Support",
+    icon: "uil-phone-volume",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 2,
-    linkUrl: '#',
+    linkUrl: "#",
     color: color.green,
-    title: 'Secure Payments',
-    icon: 'uil-shield-exclamation',
+    title: "Secure Payments",
+    icon: "uil-shield-exclamation",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
   {
     id: 3,
-    linkUrl: '#',
+    linkUrl: "#",
     color: color.orange,
-    title: 'Daily Updates',
-    icon: 'uil-laptop-cloud',
+    title: "Daily Updates",
+    icon: "uil-laptop-cloud",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`,
   },
 ];
@@ -335,44 +336,44 @@ export const serviceList9 = [
 export const serviceList10 = [
   {
     id: 1,
-    linkUrl: '#',
+    linkUrl: "#",
     Icon: Script,
-    title: 'Software & Integration',
+    title: "Software & Integration",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 2,
-    linkUrl: '#',
+    linkUrl: "#",
     Icon: Verify,
-    title: 'Network Security',
+    title: "Network Security",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 3,
-    linkUrl: '#',
+    linkUrl: "#",
     Icon: CloudNetwork,
-    title: 'Cloud Services',
+    title: "Cloud Services",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 4,
-    linkUrl: '#',
+    linkUrl: "#",
     Icon: Director,
-    title: 'Wireless Networking',
+    title: "Wireless Networking",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 5,
-    linkUrl: '#',
+    linkUrl: "#",
     Icon: Setting,
-    title: 'IT Solutions',
+    title: "IT Solutions",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
   {
     id: 6,
-    linkUrl: '#',
+    linkUrl: "#",
     Icon: Server,
-    title: 'Server Configuration',
+    title: "Server Configuration",
     description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`,
   },
 ];
@@ -381,35 +382,37 @@ export const serviceList10 = [
 export const serviceList11 = [
   {
     id: 1,
-    link: '',
-    linkUrl:"/document-management",
+    link: "",
+    linkUrl: "/document-management",
     Icon: Edit,
-    title: 'Improve Efficiency',
+    title: "Improve Efficiency",
     linkType: LinkType.orange,
-    backDescription:'We built the ryzolve software with your frustration in mind. The Ryzolve app contains everything you need to organize ypur agency,mantain compliance and avoid costly failures in document management.',
-    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
+    backDescription:
+      "We built the ryzolve software with your frustration in mind. The Ryzolve app contains everything you need to organize ypur agency,mantain compliance and avoid costly failures in document management.",
+    iconClassName: "icon-svg-sm solid-mono text-orange mb-3",
     description: `Electronic Document Management that suites to fit your healthcare structure to increase Efficiency,`,
   },
   {
     id: 2,
-    link: '#',
+    link: "#",
     Icon: TeamTwo,
-    title: 'Stay Compliant',
-    linkUrl:"/compliance-regulation",
+    title: "Stay Compliant",
+    linkUrl: "/compliance-regulation",
     linkType: LinkType.orange,
-    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3 ',
+    iconClassName: "icon-svg-sm solid-mono text-orange mb-3 ",
     backDescription: `Doing background checks for pre-hire and on a monthly basis for potential employees shouldn't have to be done by hand, Automate your scheduled on-demand background checks for all of following reports.`,
     description: `Compliance that meets all government requirements, providing automation and peace of mind`,
   },
   {
     id: 3,
-    link: '#',
+    link: "#",
     Icon: Lamp,
     linkType: LinkType.orange,
-    linkUrl:"/claims-and-bills",
-    title: 'Increase Profits',
-    iconClassName: 'icon-svg-sm solid-mono text-orange mb-3',
-    backDescription: 'Claim rejections or denials can add additional effort to your claims workflow. Add the necessary conatraints before submiting claims to increase the chance of quick acceptance and payments.',
+    linkUrl: "/claims-and-bills",
+    title: "Increase Profits",
+    iconClassName: "icon-svg-sm solid-mono text-orange mb-3",
+    backDescription:
+      "Claim rejections or denials can add additional effort to your claims workflow. Add the necessary conatraints before submiting claims to increase the chance of quick acceptance and payments.",
     description: `Receive payments directly from your chosen medical insurance partner, without the need to chase`,
   },
 ];
@@ -418,29 +421,29 @@ export const serviceList11 = [
 export const serviceList12 = [
   {
     id: 1,
-    title: 'Web Design',
+    title: "Web Design",
     image: {
-      '1x': '/img/illustrations/i24.png',
-      '2x': '/img/illustrations/i24@2x.png 2x',
+      "1x": "/img/illustrations/i24.png",
+      "2x": "/img/illustrations/i24@2x.png 2x",
     },
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus
     tellus.`,
   },
   {
     id: 2,
-    title: 'Graphic Design',
+    title: "Graphic Design",
     image: {
-      '1x': '/img/illustrations/i19.png',
-      '2x': '/img/illustrations/i19@2x.png 2x',
+      "1x": "/img/illustrations/i19.png",
+      "2x": "/img/illustrations/i19@2x.png 2x",
     },
     description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`,
   },
   {
     id: 3,
-    title: '3D Animation',
+    title: "3D Animation",
     image: {
-      '1x': '/img/illustrations/i18.png',
-      '2x': '/img/illustrations/i18@2x.png 2x',
+      "1x": "/img/illustrations/i18.png",
+      "2x": "/img/illustrations/i18@2x.png 2x",
     },
     description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`,
   },
@@ -450,26 +453,26 @@ export const serviceList12 = [
 export const serviceList13 = [
   {
     id: 1,
-    linkUrl: '#',
+    linkUrl: "#",
     color: color.purple,
-    title: 'Web Design',
-    icon: 'uil-monitor',
+    title: "Web Design",
+    icon: "uil-monitor",
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.`,
   },
   {
     id: 2,
-    linkUrl: '#',
+    linkUrl: "#",
     color: color.green,
-    title: 'Graphic Design',
-    icon: 'uil-swatchbook',
+    title: "Graphic Design",
+    icon: "uil-swatchbook",
     description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`,
   },
   {
     id: 3,
-    linkUrl: '#',
+    linkUrl: "#",
     color: color.pink,
-    title: '3D Animation',
-    icon: 'uil-presentation-play',
+    title: "3D Animation",
+    icon: "uil-presentation-play",
     description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`,
   },
 ];
@@ -478,20 +481,20 @@ export const serviceList13 = [
 export const serviceList14 = [
   {
     id: 1,
-    url: '#',
-    title: 'Wedding',
-    image: { '1x': '/img/photos/fs1.jpg', '2x': '/img/photos/fs1@2x.jpg 2x' },
+    url: "#",
+    title: "Wedding",
+    image: { "1x": "/img/photos/fs1.jpg", "2x": "/img/photos/fs1@2x.jpg 2x" },
   },
   {
     id: 2,
-    url: '#',
-    title: 'Couples',
-    image: { '1x': '/img/photos/fs2.jpg', '2x': '/img/photos/fs2@2x.jpg 2x' },
+    url: "#",
+    title: "Couples",
+    image: { "1x": "/img/photos/fs2.jpg", "2x": "/img/photos/fs2@2x.jpg 2x" },
   },
   {
     id: 3,
-    url: '#',
-    title: 'Engagement',
-    image: { '1x': '/img/photos/fs3.jpg', '2x': '/img/photos/fs3@2x.jpg 2x' },
+    url: "#",
+    title: "Engagement",
+    image: { "1x": "/img/photos/fs3.jpg", "2x": "/img/photos/fs3@2x.jpg 2x" },
   },
 ];

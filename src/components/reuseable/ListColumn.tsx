@@ -1,8 +1,13 @@
 import { FC } from "react";
+// import { faCircleCheck } from "assets/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 // ===========================================================
 type ListColumnProps = {
   list: { item: string }[][];
+
   rowClass?: string;
   bulletColor?: string;
 };
@@ -21,8 +26,21 @@ const ListColumn: FC<ListColumnProps> = ({
             {value.map((item, i) => {
               const liProps = i !== 0 ? { className: "mt-3" } : {};
               return (
-                <li key={item.item} {...liProps}>
-                  <i className="uil uil-check" /> {item.item}
+                <li
+                  key={item.item}
+                  {...liProps}
+                  className="custom-card-description-text"
+                >
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    color="#007aff"
+                    style={{
+                      height: 18,
+                      marginRight: 20,
+                    }}
+                  />
+                  <span> {item.item}</span>
+                  {/* </div> */}
                 </li>
               );
             })}

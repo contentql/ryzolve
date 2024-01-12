@@ -1,1 +1,64 @@
 // Use this to write your custom SCSS
+.ryzolve-custom-grid-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  // padding: 20px;
+}
+
+.ryzolve-custom-services-grid-card {
+  background-color: white;
+  //   border: 2px solid rgb(152, 152, 255);
+  border: 1px solid #b5d0f8;
+  padding: 20px;
+  border-radius: 8px;
+  // margin-bottom: 12px;
+  // display: "grid,
+  //   border: 5px solid red;
+}
+.ryzolve-custom-services-grid-card:hover {
+  background-color: white;
+  //   border: 2px solid rgb(1, 1, 252);
+  border: 1px solid #0b5cff;
+  padding: 20px;
+  border-radius: 8px;
+  // margin-bottom: 12px;
+  // color: #0b5cff;
+  //   box-shadow: 10px 5px 5px rgba(1, 1, 252, 0.368);
+  box-shadow: 0 16px 20px #0b5cff29;
+  // display: "grid,
+  //   border: 5px solid red;
+}
+.custom-heading-text {
+  color: #00031f;
+  font-weight: 800;
+  font-size: 64px;
+}
+
+.custom-page-heading-text {
+  color: #00031f;
+  font-weight: 800;
+  font-size: 44px;
+}
+
+.custom-description-text {
+  color: #00031f;
+  font-weight: 600;
+}
+
+.custom-card-description-text {
+  color: #00031f;
+  font-weight: 400;
+}
+
+.custom-card-text {
+  color: #00031f;
+  font-weight: 700;
+}
+
+.custom-testmonial-card {
+  display: grid;
+  // justify-content:;
+  grid-template-columns: repeat(2, 4fr);
+  gap: 8px;
+}
