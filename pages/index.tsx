@@ -40,7 +40,7 @@ const ryzolve = () => {
       <div className="custom-description-text">
         <Navbar
           logoAlt="logo-purple"
-          navClassName="navbar navbar-expand-lg  navbar-light navbar-bg-light caret-none"
+          navClassName="navbar navbar-expand-lg navbar-light navbar-bg-light caret-none"
           button={
             <NextLink
               title="Book a Demo"

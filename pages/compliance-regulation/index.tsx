@@ -55,7 +55,7 @@ const index = () => {
               <NextLink
                 title="Explore"
                 href="#solutions"
-                className="btn btn-lg btn-secondary rounded mt-6"
+                className="btn btn-lg btn-secondary rounded my-6"
               />
             </div>
             {/* </div> */}

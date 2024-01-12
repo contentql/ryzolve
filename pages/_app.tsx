@@ -93,7 +93,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ryzolve - Modern & Multipurpose NextJS Template</title>
+        <title>ryzolve</title>
       </Head>
 
       <QueryClientProvider client={queryClient}>

@@ -11,7 +11,7 @@ export default class ryzolve extends Document {
     return (
       <Html lang="en" style={{ scrollBehavior: "smooth" }}>
         <Head>
-          <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="/img/favicon.svg" type="image/svg" />
         </Head>
 
         <body>

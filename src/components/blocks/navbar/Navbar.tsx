@@ -64,10 +64,12 @@ const Navbar: FC<NavbarProps> = (props) => {
   const navbarRef = useRef<HTMLElement | null>(null);
 
   // dynamically render the logo
-  const logo = sticky ? "logo-dark" : logoAlt ?? "logo-dark";
+  // const logo = sticky ? "logo-dark" : logoAlt ?? "logo-dark";
   // dynamically added navbar classname
-  const fixedClassName =
-    "navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed";
+  // const fixedClassName =
+  //   "navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed";
+
+  const fixedClassName = "navbar navbar-expand-lg navbar-clone fixed";
 
   // render inner nav item links
   const renderLinks = (links: LinkType[]) => {
@@ -144,7 +146,6 @@ const Navbar: FC<NavbarProps> = (props) => {
               />
             </li>
 
-            {/* ===================== About us ===================== */}
             <li className="nav-item dropdown dropdown-mega">
               <NextLink
                 title="Training"
