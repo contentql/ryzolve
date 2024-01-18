@@ -31,7 +31,7 @@ const TestimonialCard4: FC<TestimonialCard4Props> = ({
           navigation={false}
           className="dots-closer"
         >
-          {testimonialList.map((item, i: number) => (
+          {testimonialList?.map((item, i: number) => (
             <div>
               <TestimonialCard2 key={i} {...item} />
             </div>
