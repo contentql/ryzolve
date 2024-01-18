@@ -7,12 +7,19 @@ import { testimonialList2 } from "data/testimonial-list";
 type TestimonialCard4Props = {
   className?: string;
   sliderWrapperClassname?: string;
+  testimonialList: {
+    name: string;
+    company_name: string;
+    designation: string;
+    review: string;
+  }[];
 };
 // ============================================================
 
 const TestimonialCard4: FC<TestimonialCard4Props> = ({
   className = "",
   sliderWrapperClassname = "p-4 p-md-4 pt-lg-10 pb-lg-8",
+  testimonialList,
 }) => {
   return (
     <div className={`card shadow-lg ${className}`}>
@@ -23,7 +30,7 @@ const TestimonialCard4: FC<TestimonialCard4Props> = ({
           navigation={false}
           className="dots-closer"
         >
-          {testimonialList2.map((item, i) => (
+          {testimonialList?.map((item, i) => (
             <div>
               <TestimonialCard2 key={i} {...item} />
             </div>

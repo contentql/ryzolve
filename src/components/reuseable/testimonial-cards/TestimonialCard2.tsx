@@ -1,5 +1,6 @@
 import { FC, HTMLAttributes } from "react";
 import Plyr from "plyr-react";
+import { testimonialList2 } from "data/testimonial-list";
 
 // =================================================
 type TestimonialCard2Props = {
@@ -7,8 +8,9 @@ type TestimonialCard2Props = {
   review: string;
   designation: string;
   blockClassName?: HTMLAttributes<HTMLQuoteElement>["className"];
+  company_name: string;
   blockDetailsClassName?: HTMLAttributes<HTMLDivElement>["className"];
-  videoUrl: string;
+  // videoUrl: string;
 };
 // =================================================
 
@@ -18,9 +20,14 @@ const TestimonialCard2: FC<TestimonialCard2Props> = (props) => {
     review,
     designation,
     blockClassName,
+    company_name,
     blockDetailsClassName,
-    videoUrl,
+    // videoUrl,
   } = props;
+
+  const videoUrl =
+    testimonialList2[Math.floor(Math.random() * testimonialList2.length)]
+      .videoUrl;
 
   return (
     <div className="custom-testmonial-card px-4">
@@ -42,7 +49,9 @@ const TestimonialCard2: FC<TestimonialCard2Props> = (props) => {
           <div className={blockDetailsClassName}>
             <div className="info ps-0">
               <h5 className="mb-1">{name}</h5>
-              <p className="mb-0">{designation}</p>
+              <p className="mb-0">
+                {designation}, {company_name}
+              </p>
             </div>
           </div>
         </blockquote>
