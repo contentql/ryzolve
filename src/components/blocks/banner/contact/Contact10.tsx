@@ -19,9 +19,9 @@ const Contact10: FC = () => {
               <div className="col-lg-6 ">
                 <Email />
                 <h2 className="display-4 mb-3 pe-lg-10 custom-description-text">
-                  7 Reasons why your agency might not pass an audit.
+                  7 Common Reasons Agencies Fail State Audits.
                   <h2 className="pt-2 custom-description-text">
-                    (w/Checklist)
+                    (and Proven Checklist to Avoid Them)
                   </h2>
                 </h2>
                 <p className="pe-lg-12 mb-0 custom-description-text">

@@ -38,7 +38,7 @@ const TestimonialCard2: FC<TestimonialCard2Props> = (props) => {
             type: "video",
             sources: [
               { src: videoUrl },
-              // { src: "/videos/intro-compressed.mp4" },
+              // { src: "https://www.youtube.com/watch?v=aPTv60w1upk" },
             ],
           }}
         />
