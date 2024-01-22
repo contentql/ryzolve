@@ -1,31 +1,28 @@
 import fetchData from "utils/fetchData";
 
-export const getTestimonialsData = async () => {
+export const getTestimonialData = async () => {
   const data = await fetchData(
     `
-    query{
-      testimonial{
-        data{
-          attributes{
-            testimonial{
-              title
-              description
-              testimonialListing{
-                name
-                review
-                designation
-                company_name
-                rating
-              }
+        query  {
+            reviews(filters: { source: { eq: "ryzolve" }}){
+                data{
+                attributes{
+                    name
+                    review
+                    designation
+                    company
+                    video_url
+                    display
+                }
             }
-          }
         }
-      }
     }
-  `,
+
+    `,
     {
       variables: {},
     }
   );
-  return data.data.testimonial.data.attributes;
+
+  return data.data.reviews.data;
 };

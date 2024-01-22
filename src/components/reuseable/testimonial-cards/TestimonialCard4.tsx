@@ -9,7 +9,7 @@ type TestimonialCard4Props = {
   sliderWrapperClassname?: string;
   testimonialList: {
     name: string;
-    company_name: string;
+    company: string;
     designation: string;
     review: string;
   }[];
@@ -32,7 +32,7 @@ const TestimonialCard4: FC<TestimonialCard4Props> = ({
         >
           {testimonialList?.map((item, i) => (
             <div>
-              <TestimonialCard2 key={i} {...item} />
+              <TestimonialCard2 key={i} {...item} item={item} />
             </div>
           ))}
         </Carousel>
