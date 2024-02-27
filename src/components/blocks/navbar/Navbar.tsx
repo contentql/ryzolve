@@ -1,31 +1,21 @@
-import LinkType from "types/link";
 import { FC, Fragment, ReactElement, useRef } from "react";
+import LinkType from "types/link";
 // -------- custom hook -------- //
 import useSticky from "hooks/useSticky";
 // -------- custom component -------- //
-import NextLink from "components/reuseable/links/NextLink";
 import SocialLinks from "components/reuseable/SocialLinks";
 import ListItemLink from "components/reuseable/links/ListItemLink";
-import DropdownToggleLink from "components/reuseable/links/DropdownToggleLink";
+import NextLink from "components/reuseable/links/NextLink";
 // -------- partial header component -------- //
 import Info from "./partials/Info";
-import Search from "./partials/Search";
-import Social from "./partials/Social";
-import Signin from "./partials/Signin";
-import Signup from "./partials/Signup";
 import Language from "./partials/Language";
 import MiniCart from "./partials/MiniCart";
+import Search from "./partials/Search";
+import Signin from "./partials/Signin";
+import Signup from "./partials/Signup";
+import Social from "./partials/Social";
 // -------- data -------- //
-import {
-  demos,
-  pages,
-  blogsNavigation,
-  blocksNavigation,
-  projectsNavigation,
-  documentionNavigation,
-} from "data/navigation";
 import { Logo } from "./partials/Logo";
-import Link from "next/link";
 
 // ===================================================================
 type NavbarProps = {
@@ -152,6 +142,14 @@ const Navbar: FC<NavbarProps> = (props) => {
                 className="nav-link"
                 href="https://training-module-dev.vercel.app/"
               />
+            </li>
+
+            <li className="nav-item dropdown dropdown-mega">
+              <NextLink title="Contact" className="nav-link" href="/" />
+            </li>
+
+            <li className="nav-item dropdown dropdown-mega">
+              <NextLink title="About Us" className="nav-link" href="/" />
             </li>
           </ul>
 
