@@ -95,55 +95,39 @@ const Navbar: FC<NavbarProps> = (props) => {
         data-bs-scroll="true"
         className="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
       >
-        {/* <div className="offcanvas-header d-lg-none">
-          <h3 className="text-white fs-30 mb-0">ryzolve</h3>
-          <button
-            type="button"
-            aria-label="Close"
-            data-bs-dismiss="offcanvas"
-            className="btn-close btn-close-white"
-          />
-        </div> */}
-
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav custom-description-text">
-            <li
-              className="nav-item dropdown dropdown-mega custom-description-text"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              <NextLink
-                title="Document Management"
-                className="nav-link"
-                href="/document-management"
+            <li className="nav-item dropdown">
+              <DropdownToggleLink
+                title="Our Products"
+                className="nav-link dropdown-toggle"
               />
-            </li>
 
-            <li
-              className="nav-item dropdown dropdown-mega"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              <NextLink
-                title="Compliance Regulation"
-                className="nav-link"
-                href="/compliance-regulation"
-              />
-            </li>
-
-            <li
-              className="nav-item dropdown dropdown-mega"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              <NextLink
-                title="Claims & Bills"
-                className="nav-link"
-                href="/claims-and-bills"
-              />
+              <ul className="dropdown-menu">
+                {blogsNavigation.map(({ id, url, title, children }: any) => {
+                  if (!url && children) {
+                    return (
+                      <li
+                        className="dropdown dropdown-submenu dropend"
+                        key={id}
+                      >
+                        <DropdownToggleLink title="our products" />
+                        <ul className="dropdown-menu">
+                          {renderLinks(children)}
+                        </ul>
+                      </li>
+                    );
+                  }
+                  return (
+                    <ListItemLink
+                      key={id}
+                      href={url}
+                      title={title}
+                      linkClassName="dropdown-item"
+                    />
+                  );
+                })}
+              </ul>
             </li>
 
             <li className="nav-item dropdown dropdown-mega">
@@ -151,6 +135,31 @@ const Navbar: FC<NavbarProps> = (props) => {
                 title="Training"
                 className="nav-link"
                 href="https://training-module-dev.vercel.app/"
+              />
+            </li>
+            <li
+              className="nav-item dropdown dropdown-mega"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              <NextLink
+                title="About Us"
+                className="nav-link"
+                href="https://training-module-dev.vercel.app/about-us/"
+              />
+            </li>
+
+            <li
+              className="nav-item dropdown dropdown-mega"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              <NextLink
+                title="Contact"
+                className="nav-link"
+                href="https://training-module-dev.vercel.app/contact/"
               />
             </li>
           </ul>
