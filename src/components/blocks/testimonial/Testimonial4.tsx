@@ -6,7 +6,7 @@ import { TestimonialCard3 } from "components/reuseable/testimonial-cards";
 // -------- data -------- //
 import { testimonialList2 } from "data/testimonial-list";
 import { useQuery } from "@tanstack/react-query";
-import { getTestimonialsData } from "queries/testimonial";
+import { getTestimonialData } from "queries/testimonial";
 
 // type TestimonialProps = {
 //   testimonialData: {
@@ -19,7 +19,7 @@ import { getTestimonialsData } from "queries/testimonial";
 const Testimonial4: FC = () => {
   const { data } = useQuery({
     queryKey: ["testimonialData"],
-    queryFn: getTestimonialsData,
+    queryFn: getTestimonialData,
   });
   return (
     <div className="wrapper bg-soft-primary">
