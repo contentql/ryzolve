@@ -120,7 +120,7 @@ const ryzolve = () => {
           </div>
         </div>
 
-        <section className="">
+        <section>
           <Pricing4 />
         </section>
 

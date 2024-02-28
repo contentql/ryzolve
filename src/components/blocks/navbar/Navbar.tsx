@@ -146,7 +146,7 @@ const Navbar: FC<NavbarProps> = (props) => {
               <NextLink
                 title="About Us"
                 className="nav-link"
-                href="https://training-module-dev.vercel.app/about-us/"
+                href="/about-us"
               />
             </li>
 
