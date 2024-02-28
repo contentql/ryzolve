@@ -156,11 +156,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <NextLink
-                title="Contact"
-                className="nav-link"
-                href="https://training-module-dev.vercel.app/contact/"
-              />
+              <NextLink title="Contact" className="nav-link" href="/contact" />
             </li>
           </ul>
 
