@@ -23,11 +23,11 @@ const Contact: NextPage = () => {
       <header className="wrapper bg-soft-primary">
         <Navbar
           logoAlt="logo-purple"
-          navClassName="navbar navbar-expand-lg  navbar-light navbar-bg-light caret-none"
+          navClassName="navbar navbar-expand-lg center-nav transparent navbar-light"
           button={
             <NextLink
               title="Book a Demo"
-              href="#"
+              href="/calendly"
               className="btn btn-sm btn-secondary rounded"
             />
           }
