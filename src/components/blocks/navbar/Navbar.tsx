@@ -137,7 +137,7 @@ const Navbar: FC<NavbarProps> = (props) => {
               <NextLink
                 title="Training"
                 className="nav-link"
-                href="https://training-module-dev.vercel.app/"
+                href={process.env.NEXT_PUBLIC_RYZOLVE_TRAINING}
               />
             </li>
             <li

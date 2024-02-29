@@ -3,7 +3,7 @@ import { FC, ReactElement } from "react";
 
 // ==============================================================
 type NextLinkProps = {
-  href: string;
+  href: string | any;
   className?: string;
   title: string | ReactElement;
 };
