@@ -57,7 +57,7 @@ const TestimonialCard2 = (props: any) => {
       <div className="mb-2 mb-md-8 ml-md-4">
         <ReactPlayer
           url={item?.attributes.video_url}
-          width={isDesktop ? 650 : 420}
+          width={isDesktop ? 650 : 400}
         />
       </div>
       <div className="md-pt-10 pt-4">
