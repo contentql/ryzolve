@@ -84,7 +84,7 @@ const index = () => {
             <Services21 />
           </section> */}
           <section className="wrapper bg-gray">
-            <div className="container pt-8 pb-4 pt-md-8 ">
+            <div className="container pt-8 pb-8 pt-md-8 ">
               <Services9 />
             </div>
           </section>
@@ -102,7 +102,7 @@ const index = () => {
         {/* <section className='px-12 pt-12'>
           <Process1 />
         </section> */}
-        <section className="px-12 pt-8 pb-8 pt-md-10 pb-md-10 bg-gray">
+        <section className="px-6 pt-8 pb-8 pt-md-10 pb-md-10 bg-gray">
           <About14
             image="/img/photos/doc-feature.svg"
             title={data?.About.title}
