@@ -59,6 +59,16 @@
 .custom-testmonial-card {
   display: grid;
   // justify-content:;
+
   grid-template-columns: repeat(2, 4fr);
   gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .custom-testmonial-card {
+    grid-template-columns: 1fr;
+  }
+  .custom-testmonial-card > * {
+    width: 88%;
+  }
 }

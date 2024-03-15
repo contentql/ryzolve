@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes, useEffect, useState } from "react";
 import Plyr from "plyr-react";
 import { testimonialList2 } from "data/testimonial-list";
 import ReactPlayer from "react-player";
@@ -28,26 +28,39 @@ const TestimonialCard2 = (props: any) => {
     // videoUrl,
   } = props;
 
+  const [isDesktop, setDesktop] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 1000) {
+      setDesktop(true);
+    } else {
+      setDesktop(false);
+    }
+
+    const updateMedia = () => {
+      if (window.innerWidth > 1450) {
+        setDesktop(true);
+      } else {
+        setDesktop(false);
+      }
+    };
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  }, []);
+
   const videoUrl =
     testimonialList2[Math.floor(Math.random() * testimonialList2.length)]
       .videoUrl;
 
   return (
-    <div className="custom-testmonial-card px-4">
-      <div className=" mb-8 mb-md-8 ml-4 ml-md-4 position-relative">
+    <div className="custom-testmonial-card">
+      <div className="mb-2 mb-md-8 ml-md-4">
         <ReactPlayer
-          // options={{ loadSprite: true, clickToPlay: true }}
-          // source={{
-          //   type: "video",
-          //   sources: [
-          //     { src: videoUrl },
-          //     // { src: "https://www.youtube.com/watch?v=aPTv60w1upk" },
-          //   ],
-          // }}
           url={item?.attributes.video_url}
+          width={isDesktop ? 650 : 420}
         />
       </div>
-      <div className="pt-10">
+      <div className="md-pt-10 pt-4">
         <blockquote className={blockClassName}>
           <p>“{item?.attributes.review}”</p>
           <div className={blockDetailsClassName}>

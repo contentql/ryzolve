@@ -105,7 +105,7 @@ const Navbar: FC<NavbarProps> = (props) => {
 
               <ul
                 className="dropdown-menu"
-                style={{ top: "0.2px", marginTop: "55px" }}
+                style={{ top: "60px", marginTop: "8px" }}
               >
                 {blogsNavigation.map(({ id, url, title, children }: any) => {
                   if (!url && children) {
