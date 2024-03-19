@@ -86,7 +86,7 @@ const Navbar: FC<NavbarProps> = (props) => {
   // all main header contents
   const headerContent = (
     <Fragment>
-      <div className="navbar-brand w-100">
+      <div className="navbar-brand w-100 " style={{ margin: "10px" }}>
         <NextLink href="/" title={<Logo />} />
       </div>
 
@@ -95,7 +95,13 @@ const Navbar: FC<NavbarProps> = (props) => {
         data-bs-scroll="true"
         className="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
       >
-        <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+        <div
+          className="offcanvas-body ms-lg-auto d-flex flex-column h-100"
+          style={{ padding: "10px" }}
+        >
+          <div className="w-100 d-lg-none">
+            <NextLink href="/" title={<Logo />} />
+          </div>
           <ul className="navbar-nav custom-description-text">
             <li className="nav-item dropdown">
               <DropdownToggleLink
@@ -163,7 +169,10 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
           </ul>
 
-          <div style={{ display: "flex", gap: 6, paddingTop: 8 }}>
+          <div
+            className="offcanvas-body d-lg-none"
+            style={{ display: "flex", gap: 10, padding: 4 }}
+          >
             {button && <>{button}</>}
             {loginButton && <>{loginButton}</>}
           </div>
