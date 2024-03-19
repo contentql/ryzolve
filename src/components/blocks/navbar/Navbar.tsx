@@ -163,18 +163,22 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
           </ul>
 
+          <div style={{ display: "flex", gap: 6, paddingTop: 8 }}>
+            {button && <>{button}</>}
+            {loginButton && <>{loginButton}</>}
+          </div>
+
           {/* ============= show contact info in the small device sidebar ============= */}
           <div className="offcanvas-footer d-lg-none">
             <div>
               <NextLink
-                title="info@email.com"
+                title="pas@ryzolve.com"
                 className="link-inverse"
                 href="mailto:first.last@email.com"
               />
               <br />
-              <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
+              <NextLink href="tel:9363559490" title="9363559490" />
               <br />
-              <SocialLinks />
             </div>
           </div>
         </div>
@@ -214,7 +218,9 @@ const Navbar: FC<NavbarProps> = (props) => {
 
           {/* ============= contact button ============= */}
           <div style={{ display: "flex", gap: 12 }}>
-            {button && <li className="nav-item d-none d-md-block">{button}</li>}
+            {button && (
+              <li className=" nav-item d-none d-md-block">{button}</li>
+            )}
             {loginButton && (
               <li className="nav-item d-none d-md-block">{loginButton}</li>
             )}
