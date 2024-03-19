@@ -6,6 +6,7 @@ import SocialLinks from "components/reuseable/SocialLinks";
 import { helps, learnMore } from "data/footer";
 import { getFooterData } from "queries/footer";
 import { useQuery } from "@tanstack/react-query";
+import Social from "../navbar/partials/Social";
 
 // =================================================
 type Footer3Props = { hiddenNewsletter?: boolean };
@@ -14,6 +15,7 @@ type Footer3Props = { hiddenNewsletter?: boolean };
 type Link = { id: number; name: string; link: string };
 
 const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
+  const year = new Date();
   const { data } = useQuery({
     queryKey: ["footerData"],
     queryFn: getFooterData,
@@ -135,11 +137,7 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
                 Lets make something great together. We are trusted by over 5000+
                 clients. Join them by using our services and grow your business.
               </p>
-              <NextLink
-                title="Join Us"
-                href="#"
-                className="btn  btn-secondary rounded-pill"
-              />
+              <Social />
             </div>
           </div>
 
@@ -171,7 +169,9 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
         <hr className="mt-13 mt-md-15 mb-7" />
 
         <div className="d-md-flex align-items-center justify-content-between">
-          <p className="mb-2 mb-lg-0">© 2022 ryzolve. All rights reserved.</p>
+          <p className="mb-2 mb-lg-0">
+            © {year.getFullYear()} ryzolve. All rights reserved.
+          </p>
           <SocialLinks className="nav social  text-md-end" />
         </div>
       </div>

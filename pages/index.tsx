@@ -22,21 +22,14 @@ import { getHomePageData } from "queries/home-page";
 import { Navbar } from "components/blocks/navbar";
 import NextLink from "components/reuseable/links/NextLink";
 
-// style={{ top: "-1.7rem", left: "-1.5rem" }}
-
 const ryzolve = () => {
   const { data } = useQuery({
     queryKey: ["homepage"],
     queryFn: getHomePageData,
   });
 
-  // console.log(data);
-
   return (
     <main className="content-wrapper">
-      {/* <section className="bg-gray"> */}
-      {/* <header className="wrapper"> */}
-      {/* <RyzolveHeader /> */}
       <div className="custom-description-text">
         <Navbar
           logoAlt="logo-purple"
