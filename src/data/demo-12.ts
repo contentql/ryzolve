@@ -10,7 +10,7 @@ import BriefcaseTwo from "icons/lineal/BriefcaseTwo";
 const services = [
   {
     id: 1,
-    link: "#",
+    link: "/document-management",
     Icon: Browser,
     title: "Improve Efficiency",
     linkType: LinkType.yellow,
@@ -20,7 +20,7 @@ const services = [
   },
   {
     id: 2,
-    link: "#",
+    link: "/compliance-regulation",
     Icon: ChatTwo,
     title: "Stay Compliant",
     linkType: LinkType.green,
@@ -30,7 +30,7 @@ const services = [
   },
   {
     id: 3,
-    link: "#",
+    link: "/claims-and-bills",
     Icon: Gift,
     linkType: LinkType.orange,
     title: "Increase Profits",
@@ -40,7 +40,7 @@ const services = [
   },
   {
     id: 4,
-    link: "#",
+    link: "https://training.ryzolve.com/",
     Icon: IdCard,
     linkType: LinkType.blue,
     title: "Training",

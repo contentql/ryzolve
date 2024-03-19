@@ -95,7 +95,7 @@ import NextLink from "../links/NextLink";
 // ===============================================================
 type ServiceCard1Props = {
   title: string;
-  linkUrl: string;
+  link: string;
   linkType: LinkType;
   description: string;
   cardClassName?: string;
@@ -109,7 +109,7 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
     title,
     description,
     Icon,
-    linkUrl,
+    link,
     linkType,
     cardClassName = "",
     iconClassName,
@@ -124,7 +124,7 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
           <p className="mb-2 custom-card-description-text ">{description}</p>
           <NextLink
             title="Learn More"
-            href={linkUrl}
+            href={link}
             className={`more hover link-${linkType}`}
           />
         </div>
