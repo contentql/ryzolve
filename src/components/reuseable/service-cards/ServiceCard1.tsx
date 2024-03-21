@@ -94,7 +94,7 @@ import NextLink from "../links/NextLink";
 
 // ===============================================================
 type ServiceCard1Props = {
-  title: string;
+  name: string;
   link: string;
   linkType: LinkType;
   description: string;
@@ -106,7 +106,7 @@ type ServiceCard1Props = {
 
 const ServiceCard1: FC<ServiceCard1Props> = (props) => {
   const {
-    title,
+    name,
     description,
     Icon,
     link,
@@ -120,7 +120,7 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
       <div className={`card shadow-lg ${cardClassName}`}>
         <div className="card-body">
           <Icon className={iconClassName} />
-          <h4 className="custom-card-text">{title}</h4>
+          <h4 className="custom-card-text">{name}</h4>
           <p className="mb-2 custom-card-description-text ">{description}</p>
           <NextLink
             title="Learn More"

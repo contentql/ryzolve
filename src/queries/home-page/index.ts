@@ -7,6 +7,11 @@ export const getHomePageData = async () => {
             homePage{
                 data{
                 attributes{
+                  services{
+                    name
+                    description
+                    link
+                  }
                     hero{
                     id
                     title

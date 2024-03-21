@@ -21,6 +21,8 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
     queryFn: getFooterData,
   });
 
+  console.log("footer", data);
+
   // common links section
   const widget = (list: Link[], title: string) => {
     return (
@@ -134,10 +136,8 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
                 Join the Community
               </h2>
               <p className="mb-5 custom-card-description-text">
-                Lets make something great together. We are trusted by over 5000+
-                clients. Join them by using our services and grow your business.
+                {data?.JoinTheCommunity}
               </p>
-              <Social />
             </div>
           </div>
 

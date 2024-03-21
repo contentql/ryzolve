@@ -7,7 +7,7 @@ import Browser from "icons/lineal/Browser";
 import { LinkType } from "types/demo-1";
 import BriefcaseTwo from "icons/lineal/BriefcaseTwo";
 
-const services = [
+const servicess = [
   {
     id: 1,
     link: "/document-management",
@@ -107,4 +107,4 @@ const reviews = [
   },
 ];
 
-export { services, processList, factList, reviews };
+export { servicess, processList, factList, reviews };

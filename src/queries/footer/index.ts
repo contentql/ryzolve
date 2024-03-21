@@ -7,6 +7,7 @@ export const getFooterData = async () => {
         footer{
             data{
             attributes{
+                JoinTheCommunity
                 NeedHelp{
                 help{
                     id

@@ -65,7 +65,7 @@ const ryzolve = () => {
         {/* </section> */}
 
         <div className="container pt-4 pb-6 pt-md-16 ">
-          <Services16 />
+          <Services16 services={data?.services} />
         </div>
 
         <section className="pb-8 pb-md-8 bg-gray">
