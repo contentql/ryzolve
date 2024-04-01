@@ -1,8 +1,13 @@
 import { FC } from "react";
+import Markdown from "../../reuseable/markdown";
 // -------- data -------- //
 import { processList7 } from "data/process";
 
-const Process8: FC = () => {
+type Process8Props = {
+  data: any;
+};
+
+const Process8: FC<Process8Props> = ({ data }: any) => {
   return (
     <div className="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-8 align-items-center">
       <div className="col-lg-7">
@@ -16,7 +21,7 @@ const Process8: FC = () => {
           Our Philosophy ?
         </h2>
 
-        <div>
+        {/* <div>
           Our goals and services are based on two fundamental philosophical
           principles
           <div style={{ paddingTop: "10px" }}>
@@ -40,7 +45,8 @@ const Process8: FC = () => {
             fully dedicated to rehabilitating aged and disabled individuals
             within the confines of their residence.
           </div>
-        </div>
+        </div> */}
+        <Markdown content={data?.ourPhilosophy} />
       </div>
     </div>
   );

@@ -21,8 +21,6 @@ const Footer3: FC<Footer3Props> = ({ hiddenNewsletter }) => {
     queryFn: getFooterData,
   });
 
-  console.log("footer", data);
-
   // common links section
   const widget = (list: Link[], title: string) => {
     return (

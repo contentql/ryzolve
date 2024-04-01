@@ -3,7 +3,15 @@ import { slideInDownAnimate } from "utils/animation";
 import NextLink from "components/reuseable/links/NextLink";
 import Typewriter from "typewriter-effect";
 
-const Hero12: FC = () => {
+type Hero12 = {
+  data: any;
+};
+
+const Hero12: FC<Hero12> = ({ data }: any) => {
+  const titleServices = data?.services.map(
+    (service: any) => service.description
+  );
+
   return (
     <section className="content-wrapper">
       <div className="container pt-10 pb-2 pt-md-5 pb-md-16">
@@ -13,14 +21,14 @@ const Hero12: FC = () => {
               className="display-1 mb-5 mx-md-n5 mx-lg-0 custom-heading-text"
               style={slideInDownAnimate("600ms")}
             >
-              Enhance your agency's
+              {data?.title}
               {/* <span className="text-blue">Efficiency & Compliance</span> */}
               <span className="text-primary">
                 <Typewriter
                   options={{
                     loop: true,
                     autoStart: true,
-                    strings: ["efficiency", "compliance", "profits"],
+                    strings: titleServices,
                   }}
                 />
               </span>
@@ -30,8 +38,7 @@ const Hero12: FC = () => {
               className="fs-lg mb-7 custom-description-text"
               style={slideInDownAnimate("900ms")}
             >
-              Provider management software to help PAS agencies be more
-              efficient
+              {data?.subtitle}
             </p>
 
             <div className="d-flex justify-content-center justify-content-lg-start">

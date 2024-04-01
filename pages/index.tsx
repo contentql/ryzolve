@@ -53,7 +53,7 @@ const ryzolve = () => {
       {/* </header> */}
       <section>
         {/* <Hero2 title={data?.hero.title} subtitle={data?.hero.subtitle} /> */}
-        <Hero12 />
+        <Hero12 data={data?.hero} />
         {/* </section> */}
       </section>
       <section>

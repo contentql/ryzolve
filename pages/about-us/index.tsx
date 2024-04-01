@@ -14,6 +14,10 @@ import Browser from "icons/lineal/Browser";
 import ChatTwo from "icons/lineal/ChatTwo";
 import Gift from "icons/lineal/Gift";
 import IdCard from "icons/lineal/IdCard";
+import { getHomePageData } from "queries/home-page";
+import { useQuery } from "@tanstack/react-query";
+import { getFooterData } from "queries/footer";
+import { getAboutUsData } from "queries/aboutUs";
 const serviceList2 = [
   {
     id: 1,
@@ -42,6 +46,35 @@ const serviceList2 = [
 ];
 
 const AboutTwo: NextPage = () => {
+  const { data } = useQuery({
+    queryKey: ["homepage"],
+    queryFn: getHomePageData,
+  });
+
+  const { data: footer } = useQuery({
+    queryKey: ["footerData"],
+    queryFn: getFooterData,
+  });
+
+  const { data: aboutUs } = useQuery({
+    queryKey: ["aboutUs"],
+    queryFn: getAboutUsData,
+  });
+
+  console.log("About", aboutUs);
+
+  const combinedArray = data?.services?.map((service: any, index: number) => {
+    const { name, description, link } = service;
+    const { Icon } = serviceList2[index];
+
+    return {
+      name,
+      description,
+      link,
+      Icon,
+    };
+  });
+
   return (
     <Fragment>
       {/* ========== header section ========== */}
@@ -96,25 +129,17 @@ const AboutTwo: NextPage = () => {
 
             <div className="row gx-lg-8 gx-xl-12 gy-6 mb-10 align-items-center bg-gray py-14 text-center">
               <div className="" style={{ width: 800, marginLeft: 300 }}>
-                <h3 className="mb-5 display-5">Our Mission Statement</h3>
+                <h3 className="mb-5 display-5">{aboutUs?.title}</h3>
 
-                <p>
-                  Our mission is to provide professional and paraprofessional
-                  services to clients in their homes, assisting them to achieve
-                  the highest level of potential in their day-to-day self-care
-                  activities. We are committed to providing high quality,
-                  multidisciplinary Home Health Care by professionals who
-                  recognize the need for comprehensive assessment of needs, from
-                  both client and professional point of view.
-                </p>
+                <p>{aboutUs?.description}</p>
               </div>
             </div>
 
             <div className="row gx-lg-8 gx-xl-12 gy-6 gy-md-0 pt-14 text-center">
-              {serviceList2.map(({ id, Icon, title, description }) => (
+              {combinedArray?.map(({ id, Icon, name, description }: any) => (
                 <div className="col-md-6 col-lg-3" key={id}>
                   {Icon}
-                  <h4>{title}</h4>
+                  <h4>{name}</h4>
                   <p className="mb-2">{description}</p>
                 </div>
               ))}
@@ -125,7 +150,8 @@ const AboutTwo: NextPage = () => {
         <section className="wrapper bg-gray">
           <div className="container py-14 py-md-14">
             {/* ========== how it work section ========== */}
-            <Process8 />
+
+            <Process8 data={aboutUs} />
           </div>
         </section>
 
@@ -155,9 +181,7 @@ const AboutTwo: NextPage = () => {
                   </div>
                   <div>
                     <h5 className="mb-1">Address</h5>
-                    <address>
-                      Ryzolve LLC 9309 State Highway 75 S New Waverly TX, 77358
-                    </address>
+                    <address>{footer?.ContactUs?.address}</address>
                   </div>
                 </div>
                 <div className="d-flex flex-row">
@@ -168,7 +192,7 @@ const AboutTwo: NextPage = () => {
                   </div>
                   <div>
                     <h5 className="mb-1">Phone</h5>
-                    <p>(936) 355-9490</p>
+                    <p>{footer?.ContactUs?.phone}</p>
                   </div>
                 </div>
                 <div className="d-flex flex-row">
@@ -181,7 +205,7 @@ const AboutTwo: NextPage = () => {
                     <h5 className="mb-1">E-mail</h5>
                     <p className="mb-0">
                       <a href="mailto:sandbox@email.com" className="link-body">
-                        care@ryzolve.com
+                        {footer?.ContactUs?.email}
                       </a>
                     </p>
                   </div>

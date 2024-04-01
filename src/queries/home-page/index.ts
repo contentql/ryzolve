@@ -4,6 +4,14 @@ export const getHomePageData = async () => {
   const data = await fetchData(
     `
     query{
+        ryzolveContact{
+          data{
+            attributes{
+              title
+              description
+            }
+          }
+        }
             homePage{
                 data{
                 attributes{
@@ -16,6 +24,9 @@ export const getHomePageData = async () => {
                     id
                     title
                     subtitle
+                    services{
+                      description
+                    }
                     }
                     ourSolutions{
                     id

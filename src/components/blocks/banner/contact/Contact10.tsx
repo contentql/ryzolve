@@ -2,6 +2,8 @@ import { FC } from "react";
 import Email from "icons/lineal/Email";
 import SocialLinks from "components/reuseable/SocialLinks";
 import { useRouter } from "next/router";
+import { getNewsLetter } from "queries/news-letter";
+import { useQuery } from "@tanstack/react-query";
 
 const Contact10: FC = () => {
   const router = useRouter();
@@ -10,6 +12,12 @@ const Contact10: FC = () => {
   //   // router.push('https://www.africau.edu/images/default/sample.pdf');
   //   window.location.assign('https://www.africau.edu/images/default/sample.pdf');
   // };
+
+  const { data } = useQuery({
+    queryKey: ["newsletter"],
+    queryFn: getNewsLetter,
+  });
+
   return (
     <section className="wrapper bg-light">
       <div className="container pt-10 pt-md-10">
@@ -19,14 +27,10 @@ const Contact10: FC = () => {
               <div className="col-lg-6 ">
                 <Email />
                 <h2 className="display-4 mb-3 pe-lg-10 custom-description-text">
-                  7 Common Reasons Agencies Fail State Audits.
-                  <h2 className="pt-2 custom-description-text">
-                    (and Proven Checklist to Avoid Them)
-                  </h2>
+                  {data?.title}
                 </h2>
                 <p className="pe-lg-12 mb-0 custom-description-text">
-                  Complete the form below to receive this free downloadable
-                  guide.
+                  {data?.description}
                 </p>
               </div>
 
