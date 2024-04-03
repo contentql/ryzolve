@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import Email from "icons/lineal/Email";
 import SocialLinks from "components/reuseable/SocialLinks";
 import { useRouter } from "next/router";
@@ -13,10 +13,47 @@ const Contact10: FC = () => {
   //   window.location.assign('https://www.africau.edu/images/default/sample.pdf');
   // };
 
-  const { data } = useQuery({
+  const [data, setData] = useState<any>({});
+
+  const { data: newsletter } = useQuery({
     queryKey: ["newsletter"],
     queryFn: getNewsLetter,
   });
+
+  const updateData = (e: any) => {
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: any) => {
+    console.log(data);
+    e.preventDefault();
+    const requestBody = {
+      data: {
+        email: data.email,
+        name: data.name,
+      },
+    };
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/customers`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestBody),
+        }
+      );
+
+      setData({});
+      const resData = await response.json();
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <section className="wrapper bg-light">
@@ -27,96 +64,79 @@ const Contact10: FC = () => {
               <div className="col-lg-6 ">
                 <Email />
                 <h2 className="display-4 mb-3 pe-lg-10 custom-description-text">
-                  {data?.title}
+                  {newsletter?.title}
                 </h2>
                 <p className="pe-lg-12 mb-0 custom-description-text">
-                  {data?.description}
+                  {newsletter?.description}
                 </p>
               </div>
 
               <div className="col-lg-6 pt-8">
-                {/* <form
-                  className='contact-form needs-validation'
-                  // onSubmit={(e) => handleSubmit(e)}
-                > */}
-                <div className="messages"></div>
-                <div className="row gx-4">
-                  <div className="col-12">
-                    <div className="form-floating mb-4">
-                      <input
-                        required
-                        type="text"
-                        name="name"
-                        id="frm_name"
-                        placeholder="Jane"
-                        className="form-control border-0"
-                        data-error="First Name is required."
-                      />
-
-                      <label htmlFor="frm_name">Name *</label>
-                      <div className="invalid-feedback">
-                        Please enter your name.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-12">
-                    <div className="form-floating mb-4">
-                      <input
-                        required
-                        type="email"
-                        name="email"
-                        id="frm_email"
-                        className="form-control border-0"
-                        placeholder="jane.doe@example.com"
-                        data-error="Valid email is required."
-                      />
-
-                      <label htmlFor="frm_email">Email *</label>
-                      <div className="valid-feedback">Looks good!</div>
-                      <div className="invalid-feedback">
-                        Please provide a valid email address.
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* <div className='col-12'>
-                      <div className='form-floating mb-4'>
-                        <textarea
+                <form
+                  className="contact-form needs-validation"
+                  onSubmit={(e) => handleSubmit(e)}
+                >
+                  <div className="messages"></div>
+                  <div className="row gx-4">
+                    <div className="col-12">
+                      <div className="form-floating mb-4">
+                        <input
                           required
-                          name='message'
-                          id='frm_message'
-                          placeholder='Your message'
-                          className='form-control border-0'
-                          style={{ height: 150 }}
+                          type="text"
+                          name="name"
+                          id="frm_name"
+                          placeholder="Jane"
+                          className="form-control border-0"
+                          data-error="First Name is required."
+                          onChange={updateData}
                         />
 
-                        <label htmlFor='frm_message'>Message *</label>
-                        <div className='valid-feedback'>Looks good!</div>
-                        <div className='invalid-feedback'>
-                          Please enter your messsage.
+                        <label htmlFor="frm_name">Name *</label>
+                        <div className="invalid-feedback">
+                          Please enter your name.
                         </div>
                       </div>
-                    </div> */}
+                    </div>
 
-                  <div className="col-12">
-                    {/* <input
+                    <div className="col-12">
+                      <div className="form-floating mb-4">
+                        <input
+                          required
+                          type="email"
+                          name="email"
+                          id="frm_email"
+                          className="form-control border-0"
+                          placeholder="jane.doe@example.com"
+                          data-error="Valid email is required."
+                          onChange={updateData}
+                        />
+
+                        <label htmlFor="frm_email">Email *</label>
+                        <div className="valid-feedback">Looks good!</div>
+                        <div className="invalid-feedback">
+                          Please provide a valid email address.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-12">
+                      {/* <input
                         type='submit'
                         value='Download Now'
                         className='btn btn-outline-primary rounded-pill btn-send mb-3'
                       /> */}
-                    <a
-                      href="https://www.africau.edu/images/default/sample.pdf"
-                      target="_blank"
-                      type="submit"
-                    >
-                      <button className="btn btn-outline-secondary rounded-pill btn-send mb-3">
-                        Download Now
-                      </button>
-                    </a>
+                      <a
+                        href="https://www.africau.edu/images/default/sample.pdf"
+                        target="_blank"
+                        type="submit"
+                      >
+                        <button className="btn btn-outline-secondary rounded-pill btn-send mb-3">
+                          Download Now
+                        </button>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                {/* </form> */}
+                </form>
               </div>
             </div>
           </div>
