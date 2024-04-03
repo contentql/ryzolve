@@ -61,8 +61,6 @@ const AboutTwo: NextPage = () => {
     queryFn: getAboutUsData,
   });
 
-  console.log("About", aboutUs);
-
   const combinedArray = data?.services?.map((service: any, index: number) => {
     const { name, description, link } = service;
     const { Icon } = serviceList2[index];

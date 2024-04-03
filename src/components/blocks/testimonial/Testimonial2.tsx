@@ -14,7 +14,6 @@ const Testimonial2: FC = () => {
     (testimonial: any) => testimonial.attributes.display
   );
 
-  console.log("testimonals", testimonals);
   return (
     <div className="position-relative mb-10 mb-md-10 md-px-12 px-2">
       <div className="row">

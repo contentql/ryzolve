@@ -10,7 +10,6 @@ const ContactForm: FC = () => {
     });
   };
   const handleSubmit = async (e: any) => {
-    console.log(data);
     e.preventDefault();
     const requestBody = {
       data: {
