@@ -47,8 +47,8 @@ const Contact10: FC = () => {
         }
       );
 
-      setData({});
       const resData = await response.json();
+      setData({});
     } catch (error) {
       console.error(error);
     }
@@ -130,7 +130,7 @@ const Contact10: FC = () => {
                         type="submit"
                       >
                         <button className="btn btn-outline-secondary rounded-pill btn-send mb-3">
-                          Download Now
+                          Send email
                         </button>
                       </a>
                     </div>
