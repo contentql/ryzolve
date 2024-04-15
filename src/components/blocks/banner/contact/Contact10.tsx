@@ -4,14 +4,11 @@ import SocialLinks from "components/reuseable/SocialLinks";
 import { useRouter } from "next/router";
 import { getNewsLetter } from "queries/news-letter";
 import { useQuery } from "@tanstack/react-query";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact10: FC = () => {
   const router = useRouter();
-  // const handleSubmit = (e: any) => {
-  //   e.preventDefault();
-  //   // router.push('https://www.africau.edu/images/default/sample.pdf');
-  //   window.location.assign('https://www.africau.edu/images/default/sample.pdf');
-  // };
 
   const [data, setData] = useState<any>({});
 
@@ -27,8 +24,7 @@ const Contact10: FC = () => {
     });
   };
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     const requestBody = {
       data: {
         email: data.email,
@@ -46,9 +42,18 @@ const Contact10: FC = () => {
           body: JSON.stringify(requestBody),
         }
       );
-
-      const resData = await response.json();
+      toast("Email sent successfully", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       setData({});
+      const resData = await response.json();
     } catch (error) {
       console.error(error);
     }
@@ -71,71 +76,64 @@ const Contact10: FC = () => {
               </div>
 
               <div className="col-lg-6 pt-8">
-                <form
-                  className="contact-form needs-validation"
-                  onSubmit={(e) => handleSubmit(e)}
-                >
-                  <div className="messages"></div>
-                  <div className="row gx-4">
-                    <div className="col-12">
-                      <div className="form-floating mb-4">
-                        <input
-                          required
-                          type="text"
-                          name="name"
-                          id="frm_name"
-                          placeholder="Jane"
-                          className="form-control border-0"
-                          data-error="First Name is required."
-                          onChange={updateData}
-                        />
+                <div className="messages"></div>
+                <div className="row gx-4">
+                  <div className="col-12">
+                    <div className="form-floating mb-4">
+                      <input
+                        required
+                        type="text"
+                        name="name"
+                        id="frm_name"
+                        placeholder="Jane"
+                        className="form-control border-0"
+                        data-error="First Name is required."
+                        onChange={updateData}
+                      />
 
-                        <label htmlFor="frm_name">Name *</label>
-                        <div className="invalid-feedback">
-                          Please enter your name.
-                        </div>
+                      <label htmlFor="frm_name">Name *</label>
+                      <div className="invalid-feedback">
+                        Please enter your name.
                       </div>
                     </div>
+                  </div>
 
-                    <div className="col-12">
-                      <div className="form-floating mb-4">
-                        <input
-                          required
-                          type="email"
-                          name="email"
-                          id="frm_email"
-                          className="form-control border-0"
-                          placeholder="jane.doe@example.com"
-                          data-error="Valid email is required."
-                          onChange={updateData}
-                        />
+                  <div className="col-12">
+                    <div className="form-floating mb-4">
+                      <input
+                        required
+                        type="email"
+                        name="email"
+                        id="frm_email"
+                        className="form-control border-0"
+                        placeholder="jane.doe@example.com"
+                        data-error="Valid email is required."
+                        onChange={updateData}
+                      />
 
-                        <label htmlFor="frm_email">Email *</label>
-                        <div className="valid-feedback">Looks good!</div>
-                        <div className="invalid-feedback">
-                          Please provide a valid email address.
-                        </div>
+                      <label htmlFor="frm_email">Email *</label>
+                      <div className="valid-feedback">Looks good!</div>
+                      <div className="invalid-feedback">
+                        Please provide a valid email address.
                       </div>
                     </div>
+                  </div>
 
-                    <div className="col-12">
-                      {/* <input
+                  <div className="col-12">
+                    {/* <input
                         type='submit'
                         value='Download Now'
                         className='btn btn-outline-primary rounded-pill btn-send mb-3'
                       /> */}
-                      <a
-                        href="https://www.africau.edu/images/default/sample.pdf"
-                        target="_blank"
-                        type="submit"
-                      >
-                        <button className="btn btn-outline-secondary rounded-pill btn-send mb-3">
-                          Send email
-                        </button>
-                      </a>
-                    </div>
+
+                    <button
+                      className="btn btn-outline-secondary rounded-pill btn-send mb-3"
+                      onClick={() => handleSubmit()}
+                    >
+                      Send email
+                    </button>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
