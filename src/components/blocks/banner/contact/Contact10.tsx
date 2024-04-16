@@ -10,25 +10,27 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact10: FC = () => {
   const router = useRouter();
 
-  const [data, setData] = useState<any>({});
+  const [email, setEmail] = useState<any>("");
+  const [name, setName] = useState<any>("");
 
   const { data: newsletter } = useQuery({
     queryKey: ["newsletter"],
     queryFn: getNewsLetter,
   });
 
-  const updateData = (e: any) => {
-    setData({
-      ...data,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const updateData = (e: any) => {
+  //   setData({
+  //     ...data,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   const handleSubmit = async () => {
     const requestBody = {
       data: {
-        email: data.email,
-        name: data.name,
+        email: email,
+        name: name,
+        source: "ryzolve",
       },
     };
     try {
@@ -52,7 +54,10 @@ const Contact10: FC = () => {
         progress: undefined,
         theme: "light",
       });
-      setData({});
+      if (response.status === 200) {
+        setEmail("");
+        setName("");
+      }
       const resData = await response.json();
     } catch (error) {
       console.error(error);
@@ -88,7 +93,7 @@ const Contact10: FC = () => {
                         placeholder="Jane"
                         className="form-control border-0"
                         data-error="First Name is required."
-                        onChange={updateData}
+                        onChange={(e) => setName(e.target.value)}
                       />
 
                       <label htmlFor="frm_name">Name *</label>
@@ -108,7 +113,7 @@ const Contact10: FC = () => {
                         className="form-control border-0"
                         placeholder="jane.doe@example.com"
                         data-error="Valid email is required."
-                        onChange={updateData}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
 
                       <label htmlFor="frm_email">Email *</label>
