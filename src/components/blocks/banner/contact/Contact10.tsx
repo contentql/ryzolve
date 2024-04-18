@@ -18,13 +18,6 @@ const Contact10: FC = () => {
     queryFn: getNewsLetter,
   });
 
-  // const updateData = (e: any) => {
-  //   setData({
-  //     ...data,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-
   const handleSubmit = async () => {
     const requestBody = {
       data: {
@@ -54,10 +47,10 @@ const Contact10: FC = () => {
         progress: undefined,
         theme: "light",
       });
-      if (response.status === 200) {
-        setEmail("");
-        setName("");
-      }
+
+      setEmail("");
+      setName("");
+
       const resData = await response.json();
     } catch (error) {
       console.error(error);
@@ -87,6 +80,7 @@ const Contact10: FC = () => {
                     <div className="form-floating mb-4">
                       <input
                         required
+                        value={name}
                         type="text"
                         name="name"
                         id="frm_name"
@@ -107,6 +101,7 @@ const Contact10: FC = () => {
                     <div className="form-floating mb-4">
                       <input
                         required
+                        value={email}
                         type="email"
                         name="email"
                         id="frm_email"
