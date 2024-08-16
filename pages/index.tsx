@@ -37,7 +37,7 @@ const ryzolve = () => {
           button={
             <NextLink
               title="Training Login"
-              href={`${process.env.NEXT_PUBLIC_RYZOLVE_TRAINING}/login`}
+              href={`${process.env.NEXT_PUBLIC_RYZOLVE_TRAINING}/auth/login`}
               className="btn btn-sm btn-outline-secondary rounded"
             />
           }
