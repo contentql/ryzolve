@@ -1,13 +1,18 @@
-import IconProps from 'types/icon';
+import IconProps from "types/icon";
 
 const Team = ({ className }: IconProps) => {
   return (
     <svg
       viewBox="0 0 409.6 356.2"
       xmlns="http://www.w3.org/2000/svg"
-      className={`svg-inject icon-svg ${className || 'icon-svg-sm text-purple me-4'}`}
+      className={`svg-inject icon-svg ${
+        className || "icon-svg-sm text-primary mb-3"
+      }`}
     >
-      <path className="lineal-fill" d="M265.2 180.7H144.4v-17.6c0-33.3 27-60.4 60.4-60.4s60.4 27 60.4 60.4v17.6z" />
+      <path
+        className="lineal-fill"
+        d="M265.2 180.7H144.4v-17.6c0-33.3 27-60.4 60.4-60.4s60.4 27 60.4 60.4v17.6z"
+      />
       <path
         className="lineal-stroke"
         d="M265.2 191.7H144.4c-6.1 0-11.1-5-11.1-11.1V163c-.5-39.5 31.1-71.8 70.6-72.3s71.8 31.1 72.3 70.6v19.3c0 6.2-4.9 11.1-11 11.1zm-109.7-22.1h98.6v-6.5c.4-27.2-21.4-49.6-48.6-50s-49.6 21.4-50 48.6v7.9z"

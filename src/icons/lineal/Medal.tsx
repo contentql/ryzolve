@@ -1,11 +1,13 @@
-import IconProps from 'types/icon';
+import IconProps from "types/icon";
 
 const Medal = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 316.5 409.6"
-      className={`svg-inject icon-svg ${className || 'icon-svg-sm text-yellow me-4'}`}
+      className={`svg-inject icon-svg ${
+        className || "icon-svg-sm text-primary mb-3"
+      }`}
     >
       <path
         className="lineal-stroke"

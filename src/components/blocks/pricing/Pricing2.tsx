@@ -45,7 +45,7 @@ const Pricing2: FC<Pricing2Props> = ({ className, planData }) => {
         <p className="mb-0 ps-3">Yearly</p>
       </div>
 
-      <div className="row gy-6 mt-3 mt-md-5">
+      <div className="row gy-6 mt-3 mt-md-5 justify-content-center">
         {planData?.map((item, i) => (
           <div className={`col-md-6 col-lg-4 ${i === 1 && "popular"}`} key={i}>
             <PricingCard2
