@@ -101,6 +101,9 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
   const yearClasses = activeYearly ? "price-show" : "price-hide price-hidden";
   const monthClasses = !activeYearly ? "price-show" : "price-hide price-hidden";
 
+  console.log("yearly_price", yearly_price);
+  console.log("monthly", monthly_price);
+
   return (
     <>
       <div className="pricing card shadow-lg custom-description-text">
@@ -109,10 +112,16 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
 
           <h4 className="card-title">{plan_name}</h4>
 
-          <div className="prices">
-            <Price duration="mo" value={monthly_price} classes={monthClasses} />
-            <Price duration="yr" value={yearly_price} classes={yearClasses} />
-          </div>
+          {monthly_price || yearly_price === 0 ? null : (
+            <div className="prices">
+              <Price
+                duration="mo"
+                value={monthly_price}
+                classes={monthClasses}
+              />
+              <Price duration="yr" value={yearly_price} classes={yearClasses} />
+            </div>
+          )}
 
           <ul className="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
             {plan_features.map((item, i) => (
