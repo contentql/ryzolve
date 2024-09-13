@@ -112,7 +112,17 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
 
           <h4 className="card-title">{plan_name}</h4>
 
-          {monthly_price || yearly_price === 0 ? null : (
+          {/* {monthly_price || yearly_price === 0 ? null : (
+            <div className="prices">
+              <Price
+                duration="mo"
+                value={monthly_price}
+                classes={monthClasses}
+              />
+              <Price duration="yr" value={yearly_price} classes={yearClasses} />
+            </div>
+          )} */}
+          {(monthly_price !== 0 || yearly_price !== 0) && (
             <div className="prices">
               <Price
                 duration="mo"
