@@ -8,7 +8,7 @@ type Hero12 = {
 };
 
 const Hero12: FC<Hero12> = ({ data }: any) => {
-  const titleServices = data?.services.map(
+  const titleServices = data?.services?.map(
     (service: any) => service.description
   );
 

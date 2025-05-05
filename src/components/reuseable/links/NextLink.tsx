@@ -13,7 +13,7 @@ const NextLink: FC<NextLinkProps> = (props) => {
   const { href, className, title } = props;
 
   return (
-    <Link href={href} className={className} scroll={false}>
+    <Link href={href||''} className={className} scroll={false}>
       {title}
     </Link>
   );

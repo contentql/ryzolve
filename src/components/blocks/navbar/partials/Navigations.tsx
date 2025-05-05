@@ -39,7 +39,7 @@ const Navigations: FC = () => {
             <ul className='row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled'>
               {demos.map(({ id, title, url, thumnail }) => (
                 <li className='col' key={id}>
-                  <Link href={url} passHref legacyBehavior>
+                  <Link href={url||''} passHref legacyBehavior>
                     <a className='dropdown-item'>
                       <img
                         alt={title}
