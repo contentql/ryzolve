@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 import { getPricingData } from "queries/pricing";
 import { FC } from "react";
 import Pricing2 from "./Pricing2";
-import PricingTable from "./PricingTable";
 
 const Pricing4: FC = () => {
   const { data } = useQuery({ queryKey: ["pricing"], queryFn: getPricingData });
