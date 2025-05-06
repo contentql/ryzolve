@@ -12,6 +12,8 @@ query {
           monthly_price
           yearly_price
           plan_name
+          suggested_for
+          support
           plan_features{
             id
             item

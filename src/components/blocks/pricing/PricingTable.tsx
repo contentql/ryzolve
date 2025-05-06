@@ -16,6 +16,8 @@ type Pricing2Props = {
     monthly_price: number;
     yearly_price: number;
     plan_name: string;
+    suggested_for: string;
+    support: string;
     plan_features: {
       id: string;
       item: string;
@@ -140,17 +142,28 @@ const PricingTable: FC<Pricing2Props> = ({ className, planData = [] }) => {
               <tr>
                 <th className="custom-card-text">Features</th>
                 {planData.map((plan) => (
-                  <th key={plan.id} className="custom-card-text">
+                  <th key={plan.id} className="custom-card-text feature-value">
                     {plan.plan_name}
-                    {/* <div className="mt-1 text-muted small">
+                    <div className="mt-1 text-muted">
                     ${activeYearly ? plan.yearly_price : plan.monthly_price}/
                     {activeYearly ? "yr" : "mo"}
-                  </div> */}
+                  </div>
                   </th>
                 ))}
               </tr>
             </thead>
             <tbody>
+              {/* Suggested For Row */}
+              <tr>
+                <td className="custom-card-description-text">Suggested For</td>
+                {planData.map((plan) => (
+                  <td key={plan.id + "-suggested"} className="custom-card-description-text feature-value">
+                    {plan.suggested_for}
+                  </td>
+                ))}
+              </tr>
+
+              {/* Plan Features */}
               {allFeatures.map((featureKey, idx) => (
                 <tr key={idx}>
                   <td className="custom-card-description-text">
@@ -168,6 +181,18 @@ const PricingTable: FC<Pricing2Props> = ({ className, planData = [] }) => {
                   })}
                 </tr>
               ))}
+
+               {/* Support Row */}
+               <tr>
+                <td className="custom-card-description-text">Support</td>
+                {planData.map((plan) => (
+                  <td key={plan.id + "-support"} className="custom-card-description-text feature-value">
+                    {plan.support}
+                  </td>
+                ))}
+              </tr>
+
+              {/* Choose Plan Buttons */}
               <tr>
                 <td></td>
                 {planData.map((plan) => (
