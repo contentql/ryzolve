@@ -72,3 +72,81 @@
     width: 88%;
   }
 }
+
+.pricing-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.pricing-table {
+  width: 100%;
+  min-width: 600px;
+  max-width: 1200px;
+  margin: 1rem auto;
+  border-collapse: separate;       /* 👈 this allows border-radius to work */
+  border-spacing: 0;               /* 👈 prevents gaps between cells */
+  background-color: #fff !important;
+  border-radius: 8px;              /* 👈 this now works */
+  border: 1px solid #d1d5db;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;                /* for clipped corners if needed */
+}
+
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  white-space: nowrap; /* prevents content from wrapping */
+}
+
+.feature-title {
+  text-align: left;
+  font-weight: 600;
+}
+
+.plan-title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.feature-value {
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .pricing-switcher-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Rounded corners for top row */
+.pricing-table thead th:first-child {
+  border-top-left-radius: 8px;
+}
+.pricing-table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Rounded corners for bottom row */
+.pricing-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+.pricing-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
