@@ -1,16 +1,24 @@
 import { FC, useState } from "react";
+import { toast } from "react-toastify";
 
 const ContactForm: FC = () => {
-  const [data, setData] = useState<any>({});
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const updateData = (e: any) => {
+  const updateData = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setData({
       ...data,
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = async (e: any) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     const requestBody = {
       data: {
         fullname: data.name,
@@ -19,6 +27,7 @@ const ContactForm: FC = () => {
         message: data.message,
       },
     };
+
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/contacts`,
@@ -31,38 +40,27 @@ const ContactForm: FC = () => {
         }
       );
 
-      setData({});
-      // toast.success('Thank you for contacting us', {
-      //   position: 'bottom-right',
-      //   autoClose: 3000,
-      //   hideProgressBar: true,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: 'light',
-      // });
+      toast("Thank you for contacting us", {
+        position: "bottom-right",
+        autoClose: 5000,
+        theme: "light",
+      });
+
+      setData({ name: "", email: "", subject: "", message: "" });
+
       const resData = await response.json();
     } catch (error) {
-      // toast.error('error, please try again', {
-      //   position: 'bottom-right',
-      //   autoClose: 3000,
-      //   hideProgressBar: true,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: 'light',
-      // });
       console.error(error);
+      toast.error("Error, please try again", {
+        position: "bottom-right",
+        autoClose: 3000,
+        theme: "light",
+      });
     }
   };
+
   return (
-    <form
-      className="contact-form needs-validation"
-      method="post"
-      onSubmit={(e) => handleSubmit(e)}
-    >
+    <form className="contact-form needs-validation" method="post" onSubmit={handleSubmit}>
       <div className="messages"></div>
       <div className="row gx-4">
         <div className="col-md-6">
@@ -75,13 +73,11 @@ const ContactForm: FC = () => {
               placeholder="Jane"
               className="form-control"
               onChange={updateData}
+              value={data.name}
             />
             <label htmlFor="form_name">First Name *</label>
-            <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback">
-              {" "}
-              Please enter your first name.{" "}
-            </div>
+            <div className="valid-feedback">Looks good!</div>
+            <div className="invalid-feedback">Please enter your first name.</div>
           </div>
         </div>
 
@@ -95,13 +91,11 @@ const ContactForm: FC = () => {
               className="form-control"
               placeholder="jane.doe@example.com"
               onChange={updateData}
+              value={data.email}
             />
             <label htmlFor="form_email">Email *</label>
-            <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback">
-              {" "}
-              Please provide a valid email address.{" "}
-            </div>
+            <div className="valid-feedback">Looks good!</div>
+            <div className="invalid-feedback">Please provide a valid email address.</div>
           </div>
         </div>
 
@@ -111,40 +105,17 @@ const ContactForm: FC = () => {
               required
               type="text"
               name="subject"
-              placeholder="Doe"
+              placeholder="Subject"
               id="form_lastname"
               className="form-control"
               onChange={updateData}
+              value={data.subject}
             />
             <label htmlFor="form_lastname">Subject *</label>
-            <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback"> Please enter subject. </div>
+            <div className="valid-feedback">Looks good!</div>
+            <div className="invalid-feedback">Please enter subject.</div>
           </div>
         </div>
-
-        {/* <div className="col-md-6">
-          <div className="form-select-wrapper mb-4">
-            <select
-              className="form-select"
-              id="form-select"
-              name="department"
-              required
-            >
-              <option disabled value="">
-                Select a department
-              </option>
-              <option value="Sales">Sales</option>
-              <option value="Marketing">Marketing</option>
-              <option value="Customer Support">Customer Support</option>
-            </select>
-
-            <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback">
-              {" "}
-              Please select a department.{" "}
-            </div>
-          </div>
-        </div> */}
 
         <div className="col-12">
           <div className="form-floating mb-4">
@@ -156,14 +127,11 @@ const ContactForm: FC = () => {
               placeholder="Your message"
               style={{ height: 150 }}
               onChange={updateData}
+              value={data.message}
             />
-
             <label htmlFor="form_message">Message *</label>
-            <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback">
-              {" "}
-              Please enter your messsage.{" "}
-            </div>
+            <div className="valid-feedback">Looks good!</div>
+            <div className="invalid-feedback">Please enter your message.</div>
           </div>
         </div>
 
