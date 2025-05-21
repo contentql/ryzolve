@@ -18,6 +18,8 @@ query {
             id
             item
           }
+          enable_pricing
+          custom_pricing
         }
       }
     }
