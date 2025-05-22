@@ -25,7 +25,6 @@ const PricingContactModel: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
     // Add your form submission logic here
   };
 
