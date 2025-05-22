@@ -8,6 +8,9 @@ query {
     data{
       attributes{
         title
+        enable_pricing
+        content
+        note
         plans{
           monthly_price
           yearly_price
@@ -18,9 +21,9 @@ query {
             id
             item
           }
-          enable_pricing
           custom_pricing
         }
+        
       }
     }
   }
