@@ -1,17 +1,17 @@
-import { NextPage } from "next";
-import { Fragment } from "react";
+import { NextPage } from 'next';
+import { Fragment } from 'react';
 // -------- custom component -------- //
-import { Navbar } from "components/blocks/navbar";
-import { Footer3 } from "components/blocks/footer";
-import Breadcrumb from "components/reuseable/Breadcrumb";
+import { Navbar } from 'components/blocks/navbar';
+import { Footer3 } from 'components/blocks/footer';
+import Breadcrumb from 'components/reuseable/Breadcrumb';
 // import PageProgress from "components/common/PageProgress";
-import ContactForm from "components/common/ContactForm";
-import NextLink from "components/reuseable/links/NextLink";
-import PageProgress from "components/common/PageProgress";
+import ContactForm from 'components/common/ContactForm';
+import NextLink from 'components/reuseable/links/NextLink';
+import PageProgress from 'components/common/PageProgress';
 // -------- data -------- //
 const breadcrumb = [
-  { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "Contact", url: "#" },
+  { id: 1, title: 'Home', url: '/' },
+  { id: 2, title: 'Contact', url: '#' },
 ];
 
 const Contact: NextPage = () => {
@@ -20,45 +20,45 @@ const Contact: NextPage = () => {
       <PageProgress />
 
       {/* ========== header section ========== */}
-      <header className="wrapper bg-soft-primary">
+      <header className='wrapper bg-soft-primary'>
         <Navbar
-          logoAlt="logo-purple"
-          navClassName="navbar navbar-expand-lg center-nav transparent navbar-light"
+          logoAlt='logo-purple'
+          navClassName='navbar navbar-expand-lg center-nav transparent navbar-light'
           button={
             <NextLink
-              title="Book a Demo"
-              href="/calendly"
-              className="btn btn-sm btn-secondary rounded"
+              title='Book a Demo'
+              href='/calendly'
+              className='btn btn-sm btn-secondary rounded'
             />
           }
           loginButton={
             <NextLink
-              title="Login"
-              href={`${process.env.NEXT_PUBLIC_RYZOLVE_MAIN}/providerapp`}
-              className="btn btn-sm btn-outline-secondary rounded"
+              title='Login'
+              href='https://ryzolve.com/providerapp'
+              className='btn btn-sm btn-outline-secondary rounded'
             />
           }
         />
       </header>
 
-      <main className="content-wrapper">
+      <main className='content-wrapper'>
         {/* ========== page title section ========== */}
         <section
-          className="wrapper "
+          className='wrapper '
           //   style={{ backgroundImage: "url(/img/photos/bg3.jpg)" }}
         >
-          <div className="container pt-17 pb-20 pt-md-10 pb-md-10 text-center">
-            <div className="row">
-              <div className="col-lg-8 mx-auto">
-                <h1 className="display-1 mb-3 text-dark">Get in Touch</h1>
-                <Breadcrumb className="text-dark" data={breadcrumb} />
+          <div className='container pt-17 pb-20 pt-md-10 pb-md-10 text-center'>
+            <div className='row'>
+              <div className='col-lg-8 mx-auto'>
+                <h1 className='display-1 mb-3 text-dark'>Get in Touch</h1>
+                <Breadcrumb className='text-dark' data={breadcrumb} />
               </div>
             </div>
           </div>
         </section>
 
-        <div className="wrapper bg-light angled upper-end">
-          <div className="container pb-11">
+        <div className='wrapper bg-light angled upper-end'>
+          <div className='container pb-11'>
             {/* ========== contact info section ========== */}
             {/* <div className="row mb-14 mb-md-16">
               <div className="col-xl-10 mx-auto mt-n19">
@@ -141,8 +141,8 @@ const Contact: NextPage = () => {
             </div> */}
 
             {/* ========== contact form section ========== */}
-            <div className="row">
-              <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            <div className='row'>
+              <div className='col-lg-10 offset-lg-1 col-xl-8 offset-xl-2'>
                 <ContactForm />
               </div>
             </div>
