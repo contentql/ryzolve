@@ -40,7 +40,7 @@ const servicess = [
   },
   {
     id: 4,
-    link: "https://training.ryzolve.com/",
+    link: process.env.NEXT_PUBLIC_RYZOLVE_TRAINING,
     Icon: IdCard,
     linkType: LinkType.blue,
     title: "Training",

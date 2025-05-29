@@ -19,7 +19,7 @@ const RyzolveHeader = () => {
         loginButton={
           <NextLink
             title="Login"
-            href="https://ryzolve.com/providerapp"
+            href={`${process.env.NEXT_PUBLIC_RYZOLVE_MAIN}/providerapp`}
             className="btn btn-sm btn-outline-secondary rounded"
           />
         }
